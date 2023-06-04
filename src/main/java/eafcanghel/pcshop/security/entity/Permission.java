@@ -1,4 +1,4 @@
-package eafcanghel.pcshop.security;
+package eafcanghel.pcshop.security.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -9,8 +9,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "ROLE")
-public class Role {
+@Table(name = "PERMISSION")
+public class Permission {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -19,3 +19,5 @@ public class Role {
     @Column(name = "DESCRIPTION")
     private String description;
 }
+
+

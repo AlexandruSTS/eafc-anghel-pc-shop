@@ -1,4 +1,4 @@
-package eafcanghel.pcshop.security;
+package eafcanghel.pcshop.security.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -29,7 +29,4 @@ public class User {
     @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     @JoinColumn(name = "USER_ROLE_ID")
     private Role role;
-
-//    @Enumerated(EnumType.STRING)
-//    private Role role;
 }
