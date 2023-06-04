@@ -9,8 +9,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "ROLE")
-public class Role {
+@Table(name = "PERMISSION")
+public class Permission {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -19,3 +19,4 @@ public class Role {
     @Column(name = "DESCRIPTION")
     private String description;
 }
+
