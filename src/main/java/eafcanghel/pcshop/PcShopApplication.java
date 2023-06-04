@@ -1,17 +1,12 @@
 package eafcanghel.pcshop;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 
 @SpringBootApplication
 public class PcShopApplication {
-
-
-	public static void main(String[] args) {
-		SpringApplication.run(PcShopApplication.class, args);
-
-
-
-	}
-
+    public static void main(String[] args) {
+        SpringApplication.run(PcShopApplication.class, args);
+    }
 }
