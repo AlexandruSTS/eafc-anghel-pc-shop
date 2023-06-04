@@ -1,15 +1,13 @@
 package eafcanghel.pcshop.security.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.Date;
 
 @Data
 @NoArgsConstructor
-@AllArgsConstructor
+@RequiredArgsConstructor
 @Entity
 //_user so that there is no conflict with Spring USER table
 @Table(name = "_USER")
@@ -18,17 +16,22 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    @NonNull
     @Column(name = "FIRST_NAME")
     private String firstName;
+    @NonNull
     @Column(name = "LAST_NAME")
     private String lastName;
+    @NonNull
     @Column(name = "EMAIL")
     private String email;
+    @NonNull
     private String password;
+    @NonNull
     @Column(name = "DATE_OF_BIRTH")
     private Date dob;
-
-    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @NonNull
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "USER_ROLE_ID")
     private Role role;
 }

@@ -2,11 +2,13 @@ package eafcanghel.pcshop.service;
 
 import eafcanghel.pcshop.security.entity.Permission;
 import eafcanghel.pcshop.security.entity.Role;
+import eafcanghel.pcshop.security.entity.User;
 import eafcanghel.pcshop.security.repo.PermissionRepository;
 import eafcanghel.pcshop.security.repo.RoleRepository;
 import eafcanghel.pcshop.security.repo.UserRepository;
 import org.springframework.stereotype.Service;
 
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,27 +30,57 @@ public class MyDbService {
         Permission readPerm = new Permission("read", "the read permission");
         Permission catalogPerm = new Permission("catalog", "the catalog permission");
 
-        Role admin = new Role("admin", "the admin role");
-        Role user = new Role("user", "the user role");
+        Role adminRole = new Role("admin", "the admin role");
+        Role userRole = new Role("user", "the user role");
+
 
         List<Permission> adminPerms = new ArrayList<Permission>();
         adminPerms.add(writePerm);
         adminPerms.add(readPerm);
         adminPerms.add(catalogPerm);
-        admin.setPermissions(adminPerms);
+        adminRole.setPermissions(adminPerms);
 
         List<Permission> userPerms = new ArrayList<Permission>();
         userPerms.add(writePerm);
         userPerms.add(readPerm);
-        user.setPermissions(userPerms);
+        userRole.setPermissions(userPerms);
+
+        User user1 = new User(
+                "Alex",
+                "Anghel",
+                "alex@email.com",
+                "psw",
+                new Timestamp(System.currentTimeMillis()),
+                adminRole
+        );
+
+        User user2 = new User(
+                "John",
+                "Doe",
+                "jd@email.com",
+                "psw2",
+                new Timestamp(System.currentTimeMillis()),
+                userRole
+        );
 
         permissionRepository.save(writePerm);
         permissionRepository.save(readPerm);
         permissionRepository.save(catalogPerm);
 
-        roleRepository.save(admin);
-        roleRepository.save(user);
+        roleRepository.save(adminRole);
+        roleRepository.save(userRole);
 
-        permissionRepository.deleteById(2);
+        userRepository.save(user1);
+        userRepository.save(user2);
+
+//        userRepository.deleteById(user1.getId());
+//        roleRepository.deleteById(adminRole.getId());
+        permissionRepository.deleteById(catalogPerm.getId());
+
+
     }
+
+//    public void deletePerm(Integer id) {
+//        userRepository.de
+//    }
 }

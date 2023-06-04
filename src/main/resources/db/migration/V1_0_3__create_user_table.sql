@@ -5,7 +5,7 @@ CREATE TABLE _USER
     LAST_NAME     VARCHAR(255)    NOT NULL,
     EMAIL         VARCHAR(255)    NOT NULL,
     PASSWORD      VARCHAR(255)    NOT NULL,
-    DATE_OF_BIRTH DATETIME        NOT NULL,
+    DATE_OF_BIRTH TIMESTAMP        NOT NULL,
     USER_ROLE_ID INT NOT NULL ,
     constraint FK_USER_ROLE_ID
         foreign key (USER_ROLE_ID) references

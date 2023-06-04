@@ -20,7 +20,6 @@ public class TestController {
         this.myDbService = myDbService;
     }
 
-
     @GetMapping(value = "/save")
     public ResponseEntity save() {
         try {

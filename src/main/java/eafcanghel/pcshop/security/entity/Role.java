@@ -21,7 +21,7 @@ public class Role {
     @Column(name = "DESCRIPTION")
     private String description;
 
-    @ManyToMany(cascade = CascadeType.ALL)
+    @ManyToMany()
     @JoinTable(name = "ROLE_PERMISSION",
             joinColumns = @JoinColumn(name = "ROLE_PERMISSION_ROLE_ID"),
             inverseJoinColumns = @JoinColumn(name = "ROLE_PERMISSION_PERMISSION_ID"))

@@ -8971,3 +8971,210 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:54:56,551 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8090 (http) with context path '/pc-shop'
 2023-06-04 16:54:56,559 INFO [restartedMain] e.p.PcShopApplication [StartupInfoLogger.java:57] Started PcShopApplication in 3.177 seconds (process running for 3.851)
 2023-06-04 16:54:59,082 INFO [http-nio-8090-exec-2] o.a.c.c.C.[.[.[/pc-shop] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-04 17:34:53,510 INFO [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-04 17:34:53,900 WARN [SpringApplicationShutdownHook] o.s.b.f.s.DisposableBeanAdapter [DisposableBeanAdapter.java:211] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-06-04 17:34:53,901 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-06-04 17:34:54,032 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-06-04 17:34:59,117 INFO [restartedMain] e.p.PcShopApplication [StartupInfoLogger.java:51] Starting PcShopApplication using Java 18.0.2.1 with PID 14487 (/Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes started by dantatar in /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop)
+2023-06-04 17:34:59,120 INFO [restartedMain] e.p.PcShopApplication [SpringApplication.java:633] No active profile set, falling back to 1 default profile: "default"
+2023-06-04 17:34:59,175 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-04 17:34:59,175 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-04 17:34:59,801 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-04 17:34:59,860 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 51 ms. Found 3 JPA repository interfaces.
+2023-06-04 17:35:00,433 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8090 (http)
+2023-06-04 17:35:00,443 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8090"]
+2023-06-04 17:35:00,444 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-06-04 17:35:00,444 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-04 17:35:00,495 INFO [restartedMain] o.a.c.c.C.[.[.[/pc-shop] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-06-04 17:35:00,496 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1320 ms
+2023-06-04 17:35:00,525 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-06-04 17:35:00,720 INFO [restartedMain] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:pcshop user=PCSHOP
+2023-06-04 17:35:00,722 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-06-04 17:35:00,733 INFO [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:pcshop'
+2023-06-04 17:35:00,866 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] Flyway Community Edition 9.19.1 by Redgate
+2023-06-04 17:35:00,867 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] See release notes here: https://rd.gt/416ObMi
+2023-06-04 17:35:00,867 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] 
+2023-06-04 17:35:00,870 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Scanning for classpath resources at 'classpath:db/callback' ...
+2023-06-04 17:35:00,870 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Determining location urls for classpath:db/callback using ClassLoader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@536e7995 ...
+2023-06-04 17:35:00,870 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Unable to resolve location classpath:db/callback.
+2023-06-04 17:35:00,871 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Scanning for classpath resources at 'classpath:db/migration' ...
+2023-06-04 17:35:00,871 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Determining location urls for classpath:db/migration using ClassLoader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@536e7995 ...
+2023-06-04 17:35:00,871 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Scanning URL: file:/Users/dantatar/ditar/dev/SynologyDrive/AAN/school%202023/PROJINT/Projets/pc-shop/target/classes/db/migration
+2023-06-04 17:35:00,872 DEBUG [restartedMain] o.f.c.i.s.c.FileSystemClassPathLocationScanner [Slf4jLog.java:33] Scanning starting at classpath root in filesystem: /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes/
+2023-06-04 17:35:00,872 DEBUG [restartedMain] o.f.c.i.s.c.FileSystemClassPathLocationScanner [Slf4jLog.java:33] Scanning for resources in path: /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes/db/migration (db/migration)
+2023-06-04 17:35:00,873 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_1__create_permission_table.sql
+2023-06-04 17:35:00,874 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_2__create_role_table.sql
+2023-06-04 17:35:00,874 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_3__create_user_table.sql
+2023-06-04 17:35:00,874 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_4__create_role_permission_table.sql
+2023-06-04 17:35:00,874 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Scanning for classes at classpath:db/migration
+2023-06-04 17:35:00,877 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_3__create_user_table.sql
+2023-06-04 17:35:00,878 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_1__create_permission_table.sql
+2023-06-04 17:35:00,878 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_4__create_role_permission_table.sql
+2023-06-04 17:35:00,878 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_2__create_role_table.sql
+2023-06-04 17:35:00,884 INFO [restartedMain] o.f.c.i.d.b.BaseDatabaseType [Slf4jLog.java:37] Database: jdbc:h2:mem:pcshop (H2 2.1)
+2023-06-04 17:35:00,884 DEBUG [restartedMain] o.f.c.i.d.b.BaseDatabaseType [Slf4jLog.java:33] Driver  : H2 JDBC Driver 2.1.214 (2022-06-13)
+2023-06-04 17:35:00,920 DEBUG [restartedMain] o.f.c.FlywayExecutor [Slf4jLog.java:33] DDL Transactions Supported: false
+2023-06-04 17:35:00,923 DEBUG [restartedMain] o.f.c.i.s.SchemaHistoryFactory [Slf4jLog.java:33] Schemas: 
+2023-06-04 17:35:00,923 DEBUG [restartedMain] o.f.c.i.s.SchemaHistoryFactory [Slf4jLog.java:33] Default schema: null
+2023-06-04 17:35:00,932 DEBUG [restartedMain] o.f.c.i.c.SqlScriptCallbackFactory [Slf4jLog.java:33] Scanning for SQL callbacks ...
+2023-06-04 17:35:00,940 DEBUG [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:33] Validating migrations ...
+2023-06-04 17:35:00,952 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_3__create_user_table.sql (filename: V1_0_3__create_user_table.sql)
+2023-06-04 17:35:00,952 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_1__create_permission_table.sql (filename: V1_0_1__create_permission_table.sql)
+2023-06-04 17:35:00,952 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_4__create_role_permission_table.sql (filename: V1_0_4__create_role_permission_table.sql)
+2023-06-04 17:35:00,953 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_2__create_role_table.sql (filename: V1_0_2__create_role_table.sql)
+2023-06-04 17:35:00,955 INFO [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:37] Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+2023-06-04 17:35:00,957 INFO [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:37] Successfully validated 4 migrations (execution time 00:00.015s)
+2023-06-04 17:35:00,959 DEBUG [restartedMain] o.f.c.i.c.DbSchemas [Slf4jLog.java:33] Skipping creation of existing schema: "PUBLIC"
+2023-06-04 17:35:00,963 INFO [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:37] Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2023-06-04 17:35:00,966 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing  ...
+2023-06-04 17:35:00,973 DEBUG [restartedMain] o.f.c.i.s.ParserSqlScript [Slf4jLog.java:33] Found statement at line 1: CREATE TABLE IF NOT EXISTS "PUBLIC"."flyway_schema_history" (
+    "installed_rank" INT NOT NULL,
+    "version" VARCHAR(50),
+    "description" VARCHAR(200) NOT NULL,
+    "type" VARCHAR(20) NOT NULL,
+    "script" VARCHAR(1000) NOT NULL,
+    "checksum" INT,
+    "installed_by" VARCHAR(100) NOT NULL,
+    "installed_on" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "execution_time" INT NOT NULL,
+    "success" BOOLEAN NOT NULL,
+    CONSTRAINT "flyway_schema_history_pk" PRIMARY KEY ("installed_rank")
+) AS SELECT -1, NULL, '<< Flyway Schema History table created >>', 'TABLE', '', NULL, 'PCSHOP', CURRENT_TIMESTAMP, 0, TRUE
+2023-06-04 17:35:00,973 DEBUG [restartedMain] o.f.c.i.s.ParserSqlScript [Slf4jLog.java:33] Found statement at line 14: CREATE INDEX "PUBLIC"."flyway_schema_history_s_idx" ON "PUBLIC"."flyway_schema_history" ("success")
+2023-06-04 17:35:00,973 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] Executing SQL: CREATE TABLE IF NOT EXISTS "PUBLIC"."flyway_schema_history" (
+    "installed_rank" INT NOT NULL,
+    "version" VARCHAR(50),
+    "description" VARCHAR(200) NOT NULL,
+    "type" VARCHAR(20) NOT NULL,
+    "script" VARCHAR(1000) NOT NULL,
+    "checksum" INT,
+    "installed_by" VARCHAR(100) NOT NULL,
+    "installed_on" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "execution_time" INT NOT NULL,
+    "success" BOOLEAN NOT NULL,
+    CONSTRAINT "flyway_schema_history_pk" PRIMARY KEY ("installed_rank")
+) AS SELECT -1, NULL, '<< Flyway Schema History table created >>', 'TABLE', '', NULL, 'PCSHOP', CURRENT_TIMESTAMP, 0, TRUE
+2023-06-04 17:35:00,980 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] 0 rows affected
+2023-06-04 17:35:00,980 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] Executing SQL: CREATE INDEX "PUBLIC"."flyway_schema_history_s_idx" ON "PUBLIC"."flyway_schema_history" ("success")
+2023-06-04 17:35:00,982 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] 0 rows affected
+2023-06-04 17:35:00,982 DEBUG [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:33] Created Schema History table "PUBLIC"."flyway_schema_history"
+2023-06-04 17:35:00,987 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Current version of schema "PUBLIC": << Empty Schema >>
+2023-06-04 17:35:00,988 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_1__create_permission_table.sql ...
+2023-06-04 17:35:00,989 DEBUG [restartedMain] o.f.c.i.s.ParserSqlScript [Slf4jLog.java:33] Found statement at line 1: CREATE TABLE PERMISSION
+(
+    ID          INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    NAME        VARCHAR(255)    NOT NULL,
+    DESCRIPTION VARCHAR(255)    NOT NULL
+)
+2023-06-04 17:35:00,990 DEBUG [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:33] Starting migration of schema "PUBLIC" to version "1.0.1 - create permission table" ...
+2023-06-04 17:35:00,992 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Migrating schema "PUBLIC" to version "1.0.1 - create permission table"
+2023-06-04 17:35:00,993 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] Executing SQL: CREATE TABLE PERMISSION
+(
+    ID          INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    NAME        VARCHAR(255)    NOT NULL,
+    DESCRIPTION VARCHAR(255)    NOT NULL
+)
+2023-06-04 17:35:00,997 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] 0 rows affected
+2023-06-04 17:35:00,997 DEBUG [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:33] Successfully completed migration of schema "PUBLIC" to version "1.0.1 - create permission table"
+2023-06-04 17:35:00,999 DEBUG [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:33] Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+2023-06-04 17:35:01,003 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_2__create_role_table.sql ...
+2023-06-04 17:35:01,006 DEBUG [restartedMain] o.f.c.i.s.ParserSqlScript [Slf4jLog.java:33] Found statement at line 1: CREATE TABLE ROLE
+(
+    ID          INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    NAME        VARCHAR(255)    NOT NULL,
+    DESCRIPTION VARCHAR(255)    NOT NULL
+)
+2023-06-04 17:35:01,006 DEBUG [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:33] Starting migration of schema "PUBLIC" to version "1.0.2 - create role table" ...
+2023-06-04 17:35:01,006 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Migrating schema "PUBLIC" to version "1.0.2 - create role table"
+2023-06-04 17:35:01,007 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] Executing SQL: CREATE TABLE ROLE
+(
+    ID          INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    NAME        VARCHAR(255)    NOT NULL,
+    DESCRIPTION VARCHAR(255)    NOT NULL
+)
+2023-06-04 17:35:01,008 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] 0 rows affected
+2023-06-04 17:35:01,008 DEBUG [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:33] Successfully completed migration of schema "PUBLIC" to version "1.0.2 - create role table"
+2023-06-04 17:35:01,010 DEBUG [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:33] Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+2023-06-04 17:35:01,011 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_3__create_user_table.sql ...
+2023-06-04 17:35:01,013 DEBUG [restartedMain] o.f.c.i.s.ParserSqlScript [Slf4jLog.java:33] Found statement at line 1: CREATE TABLE _USER
+(
+    ID            INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    FIRST_NAME    VARCHAR(255)    NOT NULL,
+    LAST_NAME     VARCHAR(255)    NOT NULL,
+    EMAIL         VARCHAR(255)    NOT NULL,
+    PASSWORD      VARCHAR(255)    NOT NULL,
+    DATE_OF_BIRTH TIMESTAMP        NOT NULL,
+    USER_ROLE_ID INT NOT NULL ,
+    constraint FK_USER_ROLE_ID
+        foreign key (USER_ROLE_ID) references
+            ROLE (ID)
+)
+2023-06-04 17:35:01,013 DEBUG [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:33] Starting migration of schema "PUBLIC" to version "1.0.3 - create user table" ...
+2023-06-04 17:35:01,014 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Migrating schema "PUBLIC" to version "1.0.3 - create user table"
+2023-06-04 17:35:01,014 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] Executing SQL: CREATE TABLE _USER
+(
+    ID            INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    FIRST_NAME    VARCHAR(255)    NOT NULL,
+    LAST_NAME     VARCHAR(255)    NOT NULL,
+    EMAIL         VARCHAR(255)    NOT NULL,
+    PASSWORD      VARCHAR(255)    NOT NULL,
+    DATE_OF_BIRTH TIMESTAMP        NOT NULL,
+    USER_ROLE_ID INT NOT NULL ,
+    constraint FK_USER_ROLE_ID
+        foreign key (USER_ROLE_ID) references
+            ROLE (ID)
+)
+2023-06-04 17:35:01,020 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] 0 rows affected
+2023-06-04 17:35:01,021 DEBUG [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:33] Successfully completed migration of schema "PUBLIC" to version "1.0.3 - create user table"
+2023-06-04 17:35:01,022 DEBUG [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:33] Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+2023-06-04 17:35:01,025 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_4__create_role_permission_table.sql ...
+2023-06-04 17:35:01,027 DEBUG [restartedMain] o.f.c.i.s.ParserSqlScript [Slf4jLog.java:33] Found statement at line 1: CREATE TABLE ROLE_PERMISSION
+(
+    ID                            INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    ROLE_PERMISSION_ROLE_ID       INT NOT NULL,
+    CONSTRAINT FK_ROLE_PERMISSION_ROLE_ID
+        FOREIGN KEY (ROLE_PERMISSION_ROLE_ID) REFERENCES
+            ROLE (ID),
+    ROLE_PERMISSION_PERMISSION_ID INT NOT NULL,
+    CONSTRAINT FK_ROLE_PERMISSION_PERMISSION_ID
+        FOREIGN KEY (ROLE_PERMISSION_PERMISSION_ID) REFERENCES
+            PERMISSION (ID)
+)
+2023-06-04 17:35:01,028 DEBUG [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:33] Starting migration of schema "PUBLIC" to version "1.0.4 - create role permission table" ...
+2023-06-04 17:35:01,028 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Migrating schema "PUBLIC" to version "1.0.4 - create role permission table"
+2023-06-04 17:35:01,028 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] Executing SQL: CREATE TABLE ROLE_PERMISSION
+(
+    ID                            INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    ROLE_PERMISSION_ROLE_ID       INT NOT NULL,
+    CONSTRAINT FK_ROLE_PERMISSION_ROLE_ID
+        FOREIGN KEY (ROLE_PERMISSION_ROLE_ID) REFERENCES
+            ROLE (ID),
+    ROLE_PERMISSION_PERMISSION_ID INT NOT NULL,
+    CONSTRAINT FK_ROLE_PERMISSION_PERMISSION_ID
+        FOREIGN KEY (ROLE_PERMISSION_PERMISSION_ID) REFERENCES
+            PERMISSION (ID)
+)
+2023-06-04 17:35:01,031 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] 0 rows affected
+2023-06-04 17:35:01,032 DEBUG [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:33] Successfully completed migration of schema "PUBLIC" to version "1.0.4 - create role permission table"
+2023-06-04 17:35:01,033 DEBUG [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:33] Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+2023-06-04 17:35:01,035 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Successfully applied 4 migrations to schema "PUBLIC", now at version v1.0.4 (execution time 00:00.050s)
+2023-06-04 17:35:01,036 DEBUG [restartedMain] o.f.c.FlywayExecutor [Slf4jLog.java:33] Memory usage: 26 of 88M
+2023-06-04 17:35:01,107 INFO [restartedMain] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-04 17:35:01,159 INFO [restartedMain] o.h.Version [Version.java:44] HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-06-04 17:35:01,161 INFO [restartedMain] o.h.c.Environment [Environment.java:191] HHH000406: Using bytecode reflection optimizer
+2023-06-04 17:35:01,297 INFO [restartedMain] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] HHH000021: Bytecode provider name : bytebuddy
+2023-06-04 17:35:01,437 INFO [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-04 17:35:01,473 INFO [restartedMain] o.h.o.dialect [DialectFactoryImpl.java:93] HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
+2023-06-04 17:35:01,684 INFO [restartedMain] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] HHH000021: Bytecode provider name : bytebuddy
+2023-06-04 17:35:02,353 INFO [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:51] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-04 17:35:02,373 INFO [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-04 17:35:02,668 WARN [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:231] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-04 17:35:02,993 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
+2023-06-04 17:35:03,010 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8090"]
+2023-06-04 17:35:03,027 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8090 (http) with context path '/pc-shop'
+2023-06-04 17:35:03,037 INFO [restartedMain] e.p.PcShopApplication [StartupInfoLogger.java:57] Started PcShopApplication in 4.263 seconds (process running for 5.083)
+2023-06-04 17:35:06,309 INFO [http-nio-8090-exec-1] o.a.c.c.C.[.[.[/pc-shop] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-04 17:42:36,077 INFO [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-04 17:42:36,468 WARN [SpringApplicationShutdownHook] o.s.b.f.s.DisposableBeanAdapter [DisposableBeanAdapter.java:211] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-06-04 17:42:36,469 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-06-04 17:42:36,598 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
