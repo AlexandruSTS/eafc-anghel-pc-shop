@@ -70,13 +70,12 @@ public class MyDbService {
         roleRepository.save(adminRole);
         roleRepository.save(userRole);
 
-        userRepository.save(user1);
+//        userRepository.save(user1);
         userRepository.save(user2);
 
 //        userRepository.deleteById(user1.getId());
-//        roleRepository.deleteById(adminRole.getId());
-        permissionRepository.deleteById(catalogPerm.getId());
-
+        roleRepository.deleteById(adminRole.getId());
+//        permissionRepository.deleteById(catalogPerm.getId());
 
     }
 
