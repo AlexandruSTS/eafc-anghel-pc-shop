@@ -1,29 +1,49 @@
 package eafcanghel.pcshop.security.entity;
 
-import jakarta.persistence.*;
-import lombok.*;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 
+import java.util.Collections;
 import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
-@Data
-@NoArgsConstructor
+
 @RequiredArgsConstructor
-@Entity
-@Table(name = "ROLE")
-public class Role {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
-    @NonNull
-    @Column(name = "NAME")
-    private String name;
-    @NonNull
-    @Column(name = "DESCRIPTION")
-    private String description;
+public enum Role {
+    ROLE_ADMIN(
+            Set.of(
+                    Permission.ADMIN_CREATE,
+                    Permission.ADMIN_READ,
+                    Permission.ADMIN_UPDATE,
+                    Permission.ADMIN_DELETE,
+                    Permission.MANAGER_CREATE,
+                    Permission.MANAGER_UPDATE,
+                    Permission.MANAGER_READ,
+                    Permission.MANAGER_DELETE
+            )
+    ),
 
-    @ManyToMany()
-    @JoinTable(name = "ROLE_PERMISSION",
-            joinColumns = @JoinColumn(name = "ROLE_PERMISSION_ROLE_ID"),
-            inverseJoinColumns = @JoinColumn(name = "ROLE_PERMISSION_PERMISSION_ID"))
-    private List<Permission> permissions;
+    ROLE_MANAGER(Set.of(
+            Permission.MANAGER_CREATE,
+            Permission.MANAGER_UPDATE,
+            Permission.MANAGER_READ,
+            Permission.MANAGER_DELETE
+    )),
+    ROLE_USER(Collections.EMPTY_SET);
+
+    @Getter
+    private final Set<Permission> permissions;
+
+    public List<SimpleGrantedAuthority> getAuthorities(){
+        var authorities = getPermissions()
+                .stream()
+                .map(permission -> new SimpleGrantedAuthority(permission.name()))
+                .collect(Collectors.toList());
+
+        authorities.add(new SimpleGrantedAuthority("ROLE_" + this.name()));
+
+        return authorities;
+    }
 }

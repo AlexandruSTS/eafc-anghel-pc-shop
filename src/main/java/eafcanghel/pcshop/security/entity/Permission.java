@@ -1,26 +1,26 @@
 package eafcanghel.pcshop.security.entity;
 
-import jakarta.persistence.*;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.NonNull;
+import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
-@Data
-@NoArgsConstructor
 @RequiredArgsConstructor
-@Entity
-@Table(name = "PERMISSION")
-public class Permission {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
-    @NonNull
-    @Column(name = "NAME")
-    private String name;
-    @NonNull
-    @Column(name = "DESCRIPTION")
-    private String description;
+public enum Permission {
+
+    ADMIN_READ("admin.read"),
+    ADMIN_UPDATE("admin.update"),
+    ADMIN_CREATE("admin.create"),
+    ADMIN_DELETE("admin.delete"),
+
+    MANAGER_READ("management.read"),
+    MANAGER_UPDATE("management.update"),
+    MANAGER_CREATE("management.create"),
+    MANAGER_DELETE("management.delete"),
+
+    USER_READ("user.read"),
+    USER_UPDATE("user.update"),
+    USER_CREATE("user.create"),
+    USER_DELETE("user.delete");
+
+    @Getter
+    private final String permission;
 }
-
-

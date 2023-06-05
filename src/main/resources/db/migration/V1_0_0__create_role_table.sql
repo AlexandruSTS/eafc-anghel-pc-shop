@@ -1,0 +1,14 @@
+CREATE TABLE ROLE
+(
+    ID   INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    NAME VARCHAR(255)                   NOT NULL
+);
+---
+INSERT INTO ROLE (ID, NAME)
+    ---
+VALUES (1, 'admin');
+---
+INSERT INTO ROLE (ID, NAME)
+    ---
+VALUES (2, 'user');
+

@@ -15,6 +15,7 @@ public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "ID")
     private Integer id;
     @NonNull
     @Column(name = "FIRST_NAME")
@@ -26,12 +27,13 @@ public class User {
     @Column(name = "EMAIL")
     private String email;
     @NonNull
+    @Column(name = "PASSWORD")
     private String password;
     @NonNull
     @Column(name = "DATE_OF_BIRTH")
     private Date dob;
     @NonNull
-    @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "USER_ROLE_ID")
+    @Enumerated(EnumType.STRING)
+    @Column(name = "USER_ROLE")
     private Role role;
 }
