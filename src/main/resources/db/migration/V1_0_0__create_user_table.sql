@@ -5,6 +5,6 @@ CREATE TABLE _USER
     LAST_NAME     VARCHAR(255)                   NOT NULL,
     EMAIL         VARCHAR(255)                   NOT NULL,
     PASSWORD      VARCHAR(255)                   NOT NULL,
-    DATE_OF_BIRTH TIMESTAMP                      NOT NULL,
+    DATE_OF_BIRTH DATE                           NOT NULL,
     USER_ROLE     VARCHAR(255)                   NOT NULL
 );

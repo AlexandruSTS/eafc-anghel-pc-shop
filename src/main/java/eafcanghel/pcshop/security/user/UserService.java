@@ -52,7 +52,7 @@ public class UserService implements UserDetailsService {
         user.setLastName(registrationDto.getLastName());
         user.setEmail(registrationDto.getEmail());
         user.setPassword(passwordEncoder.encode(registrationDto.getPassword()));
-        user.setDob(this.getTimestamp(registrationDto.getDob()));
+        user.setDob(registrationDto.getDob());
         user.setRole(Role.ROLE_MANAGER);
 
         // Save the user to the database

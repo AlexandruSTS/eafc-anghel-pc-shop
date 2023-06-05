@@ -6,6 +6,7 @@ import jakarta.validation.constraints.Past;
 import jakarta.validation.constraints.Size;
 import lombok.*;
 
+import java.sql.Date;
 import java.sql.Timestamp;
 @Data
 @NoArgsConstructor
@@ -37,9 +38,9 @@ public class User {
     private String password;
     @NonNull
     @Past
-    @Temporal(TemporalType.TIMESTAMP)
+@Temporal(TemporalType.DATE)
     @Column(name = "DATE_OF_BIRTH", nullable = false)
-    private Timestamp dob;
+    private Date dob;
     @NonNull
     @Enumerated(EnumType.STRING)
     @Column(name = "USER_ROLE")
