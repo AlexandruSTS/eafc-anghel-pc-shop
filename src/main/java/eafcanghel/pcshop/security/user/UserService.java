@@ -42,13 +42,7 @@ public class UserService implements UserDetailsService {
     public void registerUser(UserRegistrationDto registrationDto) {
         // Check if a user with the same email already exists
         if (userRepository.findByEmail(registrationDto.getEmail()).isPresent()) {
-
             User user = userRepository.findByEmail(registrationDto.getEmail()).get();
-            var auth = user.getRole().getAuthorities();
-
-            System.out.println();
-            System.out.println(user.getRole().getPermissions());
-
             throw new IllegalArgumentException("User with the provided email already exists");
         }
 
