@@ -1,4 +1,4 @@
-package eafcanghel.pcshop.security.controller;
+package eafcanghel.pcshop.controller;
 
 import eafcanghel.pcshop.service.MyDbService;
 import org.slf4j.Logger;
