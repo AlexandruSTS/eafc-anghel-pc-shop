@@ -2229,9 +2229,9 @@ Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statemen
 2023-06-04 14:32:04,550 DEBUG [restartedMain] o.f.c.i.s.c.FileSystemClassPathLocationScanner [Slf4jLog.java:33] Scanning for resources in path: /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes/db/migration (db/migration)
 2023-06-04 14:32:04,551 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_permission_table.sql
 2023-06-04 14:32:04,552 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_2__create_role_table.sql
-2023-06-04 14:32:04,552 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_3__create_user_table.sql
+2023-06-04 14:32:04,552 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_user_table.sql
 2023-06-04 14:32:04,552 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Scanning for classes at classpath:db/migration
-2023-06-04 14:32:04,554 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_3__create_user_table.sql
+2023-06-04 14:32:04,554 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_user_table.sql
 2023-06-04 14:32:04,555 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_permission_table.sql
 2023-06-04 14:32:04,555 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_2__create_role_table.sql
 2023-06-04 14:32:04,560 INFO [restartedMain] o.f.c.i.d.b.BaseDatabaseType [Slf4jLog.java:37] Database: jdbc:h2:mem:pcshop (H2 2.1)
@@ -2241,7 +2241,7 @@ Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statemen
 2023-06-04 14:32:04,591 DEBUG [restartedMain] o.f.c.i.s.SchemaHistoryFactory [Slf4jLog.java:33] Default schema: null
 2023-06-04 14:32:04,599 DEBUG [restartedMain] o.f.c.i.c.SqlScriptCallbackFactory [Slf4jLog.java:33] Scanning for SQL callbacks ...
 2023-06-04 14:32:04,606 DEBUG [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:33] Validating migrations ...
-2023-06-04 14:32:04,616 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_3__create_user_table.sql (filename: V1_0_3__create_user_table.sql)
+2023-06-04 14:32:04,616 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_user_table.sql (filename: V1_0_0__create_user_table.sql)
 2023-06-04 14:32:04,617 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_permission_table.sql (filename: V1_0_0__create_permission_table.sql)
 2023-06-04 14:32:04,617 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_2__create_role_table.sql (filename: V1_0_2__create_role_table.sql)
 2023-06-04 14:32:04,619 INFO [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:37] Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
@@ -2458,9 +2458,9 @@ INSERT INTO PERMISSION (ID, NAME, DESCRIPTION, PERMISSION_ROLE_ID) VALUES (1, 'r
 2023-06-04 14:32:37,165 DEBUG [restartedMain] o.f.c.i.s.c.FileSystemClassPathLocationScanner [Slf4jLog.java:33] Scanning for resources in path: /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes/db/migration (db/migration)
 2023-06-04 14:32:37,166 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_permission_table.sql
 2023-06-04 14:32:37,166 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_2__create_role_table.sql
-2023-06-04 14:32:37,166 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_3__create_user_table.sql
+2023-06-04 14:32:37,166 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_user_table.sql
 2023-06-04 14:32:37,166 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Scanning for classes at classpath:db/migration
-2023-06-04 14:32:37,169 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_3__create_user_table.sql
+2023-06-04 14:32:37,169 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_user_table.sql
 2023-06-04 14:32:37,170 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_permission_table.sql
 2023-06-04 14:32:37,170 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_2__create_role_table.sql
 2023-06-04 14:32:37,175 INFO [restartedMain] o.f.c.i.d.b.BaseDatabaseType [Slf4jLog.java:37] Database: jdbc:h2:mem:pcshop (H2 2.1)
@@ -2470,7 +2470,7 @@ INSERT INTO PERMISSION (ID, NAME, DESCRIPTION, PERMISSION_ROLE_ID) VALUES (1, 'r
 2023-06-04 14:32:37,206 DEBUG [restartedMain] o.f.c.i.s.SchemaHistoryFactory [Slf4jLog.java:33] Default schema: null
 2023-06-04 14:32:37,216 DEBUG [restartedMain] o.f.c.i.c.SqlScriptCallbackFactory [Slf4jLog.java:33] Scanning for SQL callbacks ...
 2023-06-04 14:32:37,223 DEBUG [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:33] Validating migrations ...
-2023-06-04 14:32:37,233 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_3__create_user_table.sql (filename: V1_0_3__create_user_table.sql)
+2023-06-04 14:32:37,233 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_user_table.sql (filename: V1_0_0__create_user_table.sql)
 2023-06-04 14:32:37,234 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_permission_table.sql (filename: V1_0_0__create_permission_table.sql)
 2023-06-04 14:32:37,234 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_2__create_role_table.sql (filename: V1_0_2__create_role_table.sql)
 2023-06-04 14:32:37,236 INFO [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:37] Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
@@ -2702,9 +2702,9 @@ VALUES (2, 'catalog', 'the catalog perm') [23505-214]
 2023-06-04 14:32:58,586 DEBUG [restartedMain] o.f.c.i.s.c.FileSystemClassPathLocationScanner [Slf4jLog.java:33] Scanning for resources in path: /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes/db/migration (db/migration)
 2023-06-04 14:32:58,587 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_permission_table.sql
 2023-06-04 14:32:58,587 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_2__create_role_table.sql
-2023-06-04 14:32:58,587 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_3__create_user_table.sql
+2023-06-04 14:32:58,587 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_user_table.sql
 2023-06-04 14:32:58,587 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Scanning for classes at classpath:db/migration
-2023-06-04 14:32:58,590 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_3__create_user_table.sql
+2023-06-04 14:32:58,590 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_user_table.sql
 2023-06-04 14:32:58,590 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_permission_table.sql
 2023-06-04 14:32:58,590 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_2__create_role_table.sql
 2023-06-04 14:32:58,597 INFO [restartedMain] o.f.c.i.d.b.BaseDatabaseType [Slf4jLog.java:37] Database: jdbc:h2:mem:pcshop (H2 2.1)
@@ -2714,7 +2714,7 @@ VALUES (2, 'catalog', 'the catalog perm') [23505-214]
 2023-06-04 14:32:58,627 DEBUG [restartedMain] o.f.c.i.s.SchemaHistoryFactory [Slf4jLog.java:33] Default schema: null
 2023-06-04 14:32:58,636 DEBUG [restartedMain] o.f.c.i.c.SqlScriptCallbackFactory [Slf4jLog.java:33] Scanning for SQL callbacks ...
 2023-06-04 14:32:58,644 DEBUG [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:33] Validating migrations ...
-2023-06-04 14:32:58,654 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_3__create_user_table.sql (filename: V1_0_3__create_user_table.sql)
+2023-06-04 14:32:58,654 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_user_table.sql (filename: V1_0_0__create_user_table.sql)
 2023-06-04 14:32:58,655 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_permission_table.sql (filename: V1_0_0__create_permission_table.sql)
 2023-06-04 14:32:58,655 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_2__create_role_table.sql (filename: V1_0_2__create_role_table.sql)
 2023-06-04 14:32:58,657 INFO [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:37] Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
@@ -2815,7 +2815,7 @@ VALUES (2, 'user', 'the user role')
 2023-06-04 14:32:58,718 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] 1 row affected
 2023-06-04 14:32:58,718 DEBUG [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:33] Successfully completed migration of schema "PUBLIC" to version "1.0.2 - create role table"
 2023-06-04 14:32:58,719 DEBUG [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:33] Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
-2023-06-04 14:32:58,721 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_3__create_user_table.sql ...
+2023-06-04 14:32:58,721 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_0__create_user_table.sql ...
 2023-06-04 14:32:58,722 DEBUG [restartedMain] o.f.c.i.s.ParserSqlScript [Slf4jLog.java:33] Found statement at line 1: CREATE TABLE _USER
 (
     ID            INT PRIMARY KEY NOT NULL,
@@ -2896,10 +2896,10 @@ VALUES (2, 'user', 'the user role')
 2023-06-04 14:47:00,162 DEBUG [restartedMain] o.f.c.i.s.c.FileSystemClassPathLocationScanner [Slf4jLog.java:33] Scanning for resources in path: /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes/db/migration (db/migration)
 2023-06-04 14:47:00,163 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_permission_table.sql
 2023-06-04 14:47:00,164 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_2__create_role_table.sql
-2023-06-04 14:47:00,164 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_3__create_user_table.sql
+2023-06-04 14:47:00,164 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_user_table.sql
 2023-06-04 14:47:00,164 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_4__create_role_permission_table.sql
 2023-06-04 14:47:00,164 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Scanning for classes at classpath:db/migration
-2023-06-04 14:47:00,167 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_3__create_user_table.sql
+2023-06-04 14:47:00,167 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_user_table.sql
 2023-06-04 14:47:00,169 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_4__create_role_permission_table.sql
 2023-06-04 14:47:00,169 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_permission_table.sql
 2023-06-04 14:47:00,169 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_2__create_role_table.sql
@@ -2910,7 +2910,7 @@ VALUES (2, 'user', 'the user role')
 2023-06-04 14:47:00,206 DEBUG [restartedMain] o.f.c.i.s.SchemaHistoryFactory [Slf4jLog.java:33] Default schema: null
 2023-06-04 14:47:00,213 DEBUG [restartedMain] o.f.c.i.c.SqlScriptCallbackFactory [Slf4jLog.java:33] Scanning for SQL callbacks ...
 2023-06-04 14:47:00,222 DEBUG [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:33] Validating migrations ...
-2023-06-04 14:47:00,233 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_3__create_user_table.sql (filename: V1_0_3__create_user_table.sql)
+2023-06-04 14:47:00,233 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_user_table.sql (filename: V1_0_0__create_user_table.sql)
 2023-06-04 14:47:00,233 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_4__create_role_permission_table.sql (filename: V1_0_4__create_role_permission_table.sql)
 2023-06-04 14:47:00,233 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_permission_table.sql (filename: V1_0_0__create_permission_table.sql)
 2023-06-04 14:47:00,233 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_2__create_role_table.sql (filename: V1_0_2__create_role_table.sql)
@@ -3012,7 +3012,7 @@ VALUES (2, 'user', 'the user role')
 2023-06-04 14:47:00,299 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] 1 row affected
 2023-06-04 14:47:00,299 DEBUG [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:33] Successfully completed migration of schema "PUBLIC" to version "1.0.2 - create role table"
 2023-06-04 14:47:00,300 DEBUG [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:33] Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
-2023-06-04 14:47:00,302 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_3__create_user_table.sql ...
+2023-06-04 14:47:00,302 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_0__create_user_table.sql ...
 2023-06-04 14:47:00,303 DEBUG [restartedMain] o.f.c.i.s.ParserSqlScript [Slf4jLog.java:33] Found statement at line 1: CREATE TABLE _USER
 (
     ID            INT PRIMARY KEY NOT NULL,
@@ -3169,10 +3169,10 @@ Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema-valid
 2023-06-04 14:48:11,304 DEBUG [restartedMain] o.f.c.i.s.c.FileSystemClassPathLocationScanner [Slf4jLog.java:33] Scanning for resources in path: /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes/db/migration (db/migration)
 2023-06-04 14:48:11,306 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_permission_table.sql
 2023-06-04 14:48:11,306 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_2__create_role_table.sql
-2023-06-04 14:48:11,306 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_3__create_user_table.sql
+2023-06-04 14:48:11,306 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_user_table.sql
 2023-06-04 14:48:11,306 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_4__create_role_permission_table.sql
 2023-06-04 14:48:11,306 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Scanning for classes at classpath:db/migration
-2023-06-04 14:48:11,308 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_3__create_user_table.sql
+2023-06-04 14:48:11,308 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_user_table.sql
 2023-06-04 14:48:11,309 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_4__create_role_permission_table.sql
 2023-06-04 14:48:11,310 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_permission_table.sql
 2023-06-04 14:48:11,310 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_2__create_role_table.sql
@@ -3183,7 +3183,7 @@ Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema-valid
 2023-06-04 14:48:11,345 DEBUG [restartedMain] o.f.c.i.s.SchemaHistoryFactory [Slf4jLog.java:33] Default schema: null
 2023-06-04 14:48:11,353 DEBUG [restartedMain] o.f.c.i.c.SqlScriptCallbackFactory [Slf4jLog.java:33] Scanning for SQL callbacks ...
 2023-06-04 14:48:11,361 DEBUG [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:33] Validating migrations ...
-2023-06-04 14:48:11,371 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_3__create_user_table.sql (filename: V1_0_3__create_user_table.sql)
+2023-06-04 14:48:11,371 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_user_table.sql (filename: V1_0_0__create_user_table.sql)
 2023-06-04 14:48:11,371 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_4__create_role_permission_table.sql (filename: V1_0_4__create_role_permission_table.sql)
 2023-06-04 14:48:11,371 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_permission_table.sql (filename: V1_0_0__create_permission_table.sql)
 2023-06-04 14:48:11,371 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_2__create_role_table.sql (filename: V1_0_2__create_role_table.sql)
@@ -3285,7 +3285,7 @@ VALUES (2, 'user', 'the user role')
 2023-06-04 14:48:11,438 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] 1 row affected
 2023-06-04 14:48:11,438 DEBUG [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:33] Successfully completed migration of schema "PUBLIC" to version "1.0.2 - create role table"
 2023-06-04 14:48:11,440 DEBUG [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:33] Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
-2023-06-04 14:48:11,442 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_3__create_user_table.sql ...
+2023-06-04 14:48:11,442 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_0__create_user_table.sql ...
 2023-06-04 14:48:11,443 DEBUG [restartedMain] o.f.c.i.s.ParserSqlScript [Slf4jLog.java:33] Found statement at line 1: CREATE TABLE _USER
 (
     ID            INT PRIMARY KEY NOT NULL,
@@ -3356,8 +3356,8 @@ VALUES (2, 'user', 'the user role')
 2023-06-04 14:48:11,822 INFO [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] No LoadTimeWeaver setup: ignoring JPA class transformer
 2023-06-04 14:48:11,854 INFO [restartedMain] o.h.o.dialect [DialectFactoryImpl.java:93] HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
 2023-06-04 14:48:12,047 INFO [restartedMain] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] HHH000021: Bytecode provider name : bytebuddy
-2023-06-04 14:48:12,106 ERROR [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:426] Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for collection: eafcanghel.pcshop.security.entity.Role.permissions column: ROLE_PERMISSION_PERMISSION_ID
-2023-06-04 14:48:12,107 WARN [restartedMain] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:616] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for collection: eafcanghel.pcshop.security.entity.Role.permissions column: ROLE_PERMISSION_PERMISSION_ID
+2023-06-04 14:48:12,106 ERROR [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:426] Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for collection: eafcanghel.pcshop.security.enums.Role.permissions column: ROLE_PERMISSION_PERMISSION_ID
+2023-06-04 14:48:12,107 WARN [restartedMain] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:616] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for collection: eafcanghel.pcshop.security.enums.Role.permissions column: ROLE_PERMISSION_PERMISSION_ID
 2023-06-04 14:48:12,313 WARN [restartedMain] o.s.b.f.s.DisposableBeanAdapter [DisposableBeanAdapter.java:211] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
 2023-06-04 14:48:12,314 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
 2023-06-04 14:48:12,317 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
@@ -3366,7 +3366,7 @@ VALUES (2, 'user', 'the user role')
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
 2023-06-04 14:48:12,349 ERROR [restartedMain] o.s.b.SpringApplication [SpringApplication.java:823] Application run failed
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for collection: eafcanghel.pcshop.security.entity.Role.permissions column: ROLE_PERMISSION_PERMISSION_ID
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for collection: eafcanghel.pcshop.security.enums.Role.permissions column: ROLE_PERMISSION_PERMISSION_ID
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
@@ -3387,14 +3387,14 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
-Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for collection: eafcanghel.pcshop.security.entity.Role.permissions column: ROLE_PERMISSION_PERMISSION_ID
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Repeated column in mapping for collection: eafcanghel.pcshop.security.enums.Role.permissions column: ROLE_PERMISSION_PERMISSION_ID
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
 	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
 	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
 	... 19 common frames omitted
-Caused by: org.hibernate.MappingException: Repeated column in mapping for collection: eafcanghel.pcshop.security.entity.Role.permissions column: ROLE_PERMISSION_PERMISSION_ID
+Caused by: org.hibernate.MappingException: Repeated column in mapping for collection: eafcanghel.pcshop.security.enums.Role.permissions column: ROLE_PERMISSION_PERMISSION_ID
 	at org.hibernate.mapping.Collection.checkColumnDuplication(Collection.java:410)
 	at org.hibernate.mapping.Collection.checkColumnDuplication(Collection.java:434)
 	at org.hibernate.mapping.Collection.validate(Collection.java:392)
@@ -3435,10 +3435,10 @@ Caused by: org.hibernate.MappingException: Repeated column in mapping for collec
 2023-06-04 14:49:21,265 DEBUG [restartedMain] o.f.c.i.s.c.FileSystemClassPathLocationScanner [Slf4jLog.java:33] Scanning for resources in path: /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes/db/migration (db/migration)
 2023-06-04 14:49:21,266 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_permission_table.sql
 2023-06-04 14:49:21,267 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_2__create_role_table.sql
-2023-06-04 14:49:21,267 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_3__create_user_table.sql
+2023-06-04 14:49:21,267 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_user_table.sql
 2023-06-04 14:49:21,267 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_4__create_role_permission_table.sql
 2023-06-04 14:49:21,267 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Scanning for classes at classpath:db/migration
-2023-06-04 14:49:21,270 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_3__create_user_table.sql
+2023-06-04 14:49:21,270 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_user_table.sql
 2023-06-04 14:49:21,272 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_4__create_role_permission_table.sql
 2023-06-04 14:49:21,272 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_permission_table.sql
 2023-06-04 14:49:21,272 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_2__create_role_table.sql
@@ -3449,7 +3449,7 @@ Caused by: org.hibernate.MappingException: Repeated column in mapping for collec
 2023-06-04 14:49:21,310 DEBUG [restartedMain] o.f.c.i.s.SchemaHistoryFactory [Slf4jLog.java:33] Default schema: null
 2023-06-04 14:49:21,317 DEBUG [restartedMain] o.f.c.i.c.SqlScriptCallbackFactory [Slf4jLog.java:33] Scanning for SQL callbacks ...
 2023-06-04 14:49:21,326 DEBUG [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:33] Validating migrations ...
-2023-06-04 14:49:21,335 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_3__create_user_table.sql (filename: V1_0_3__create_user_table.sql)
+2023-06-04 14:49:21,335 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_user_table.sql (filename: V1_0_0__create_user_table.sql)
 2023-06-04 14:49:21,335 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_4__create_role_permission_table.sql (filename: V1_0_4__create_role_permission_table.sql)
 2023-06-04 14:49:21,336 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_permission_table.sql (filename: V1_0_0__create_permission_table.sql)
 2023-06-04 14:49:21,337 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_2__create_role_table.sql (filename: V1_0_2__create_role_table.sql)
@@ -3551,7 +3551,7 @@ VALUES (2, 'user', 'the user role')
 2023-06-04 14:49:21,405 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] 1 row affected
 2023-06-04 14:49:21,405 DEBUG [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:33] Successfully completed migration of schema "PUBLIC" to version "1.0.2 - create role table"
 2023-06-04 14:49:21,406 DEBUG [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:33] Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
-2023-06-04 14:49:21,408 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_3__create_user_table.sql ...
+2023-06-04 14:49:21,408 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_0__create_user_table.sql ...
 2023-06-04 14:49:21,409 DEBUG [restartedMain] o.f.c.i.s.ParserSqlScript [Slf4jLog.java:33] Found statement at line 1: CREATE TABLE _USER
 (
     ID            INT PRIMARY KEY NOT NULL,
@@ -3662,10 +3662,10 @@ VALUES (2, 'user', 'the user role')
 2023-06-04 14:54:09,295 DEBUG [restartedMain] o.f.c.i.s.c.FileSystemClassPathLocationScanner [Slf4jLog.java:33] Scanning for resources in path: /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes/db/migration (db/migration)
 2023-06-04 14:54:09,296 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_permission_table.sql
 2023-06-04 14:54:09,296 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_2__create_role_table.sql
-2023-06-04 14:54:09,296 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_3__create_user_table.sql
+2023-06-04 14:54:09,296 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_user_table.sql
 2023-06-04 14:54:09,296 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_4__create_role_permission_table.sql
 2023-06-04 14:54:09,296 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Scanning for classes at classpath:db/migration
-2023-06-04 14:54:09,299 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_3__create_user_table.sql
+2023-06-04 14:54:09,299 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_user_table.sql
 2023-06-04 14:54:09,299 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_4__create_role_permission_table.sql
 2023-06-04 14:54:09,299 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_permission_table.sql
 2023-06-04 14:54:09,300 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_2__create_role_table.sql
@@ -3676,7 +3676,7 @@ VALUES (2, 'user', 'the user role')
 2023-06-04 14:54:09,338 DEBUG [restartedMain] o.f.c.i.s.SchemaHistoryFactory [Slf4jLog.java:33] Default schema: null
 2023-06-04 14:54:09,346 DEBUG [restartedMain] o.f.c.i.c.SqlScriptCallbackFactory [Slf4jLog.java:33] Scanning for SQL callbacks ...
 2023-06-04 14:54:09,355 DEBUG [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:33] Validating migrations ...
-2023-06-04 14:54:09,366 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_3__create_user_table.sql (filename: V1_0_3__create_user_table.sql)
+2023-06-04 14:54:09,366 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_user_table.sql (filename: V1_0_0__create_user_table.sql)
 2023-06-04 14:54:09,366 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_4__create_role_permission_table.sql (filename: V1_0_4__create_role_permission_table.sql)
 2023-06-04 14:54:09,366 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_permission_table.sql (filename: V1_0_0__create_permission_table.sql)
 2023-06-04 14:54:09,367 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_2__create_role_table.sql (filename: V1_0_2__create_role_table.sql)
@@ -3778,7 +3778,7 @@ VALUES (2, 'user', 'the user role')
 2023-06-04 14:54:09,433 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] 1 row affected
 2023-06-04 14:54:09,434 DEBUG [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:33] Successfully completed migration of schema "PUBLIC" to version "1.0.2 - create role table"
 2023-06-04 14:54:09,435 DEBUG [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:33] Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
-2023-06-04 14:54:09,439 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_3__create_user_table.sql ...
+2023-06-04 14:54:09,439 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_0__create_user_table.sql ...
 2023-06-04 14:54:09,440 DEBUG [restartedMain] o.f.c.i.s.ParserSqlScript [Slf4jLog.java:33] Found statement at line 1: CREATE TABLE _USER
 (
     ID            INT PRIMARY KEY NOT NULL,
@@ -3918,10 +3918,10 @@ VALUES (5,2, 3 )
 2023-06-04 14:59:31,658 DEBUG [restartedMain] o.f.c.i.s.c.FileSystemClassPathLocationScanner [Slf4jLog.java:33] Scanning for resources in path: /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes/db/migration (db/migration)
 2023-06-04 14:59:31,660 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_permission_table.sql
 2023-06-04 14:59:31,660 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_2__create_role_table.sql
-2023-06-04 14:59:31,660 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_3__create_user_table.sql
+2023-06-04 14:59:31,660 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_user_table.sql
 2023-06-04 14:59:31,660 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_4__create_role_permission_table.sql
 2023-06-04 14:59:31,660 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Scanning for classes at classpath:db/migration
-2023-06-04 14:59:31,662 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_3__create_user_table.sql
+2023-06-04 14:59:31,662 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_user_table.sql
 2023-06-04 14:59:31,663 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_4__create_role_permission_table.sql
 2023-06-04 14:59:31,663 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_permission_table.sql
 2023-06-04 14:59:31,664 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_2__create_role_table.sql
@@ -3932,7 +3932,7 @@ VALUES (5,2, 3 )
 2023-06-04 14:59:31,705 DEBUG [restartedMain] o.f.c.i.s.SchemaHistoryFactory [Slf4jLog.java:33] Default schema: null
 2023-06-04 14:59:31,714 DEBUG [restartedMain] o.f.c.i.c.SqlScriptCallbackFactory [Slf4jLog.java:33] Scanning for SQL callbacks ...
 2023-06-04 14:59:31,723 DEBUG [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:33] Validating migrations ...
-2023-06-04 14:59:31,734 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_3__create_user_table.sql (filename: V1_0_3__create_user_table.sql)
+2023-06-04 14:59:31,734 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_user_table.sql (filename: V1_0_0__create_user_table.sql)
 2023-06-04 14:59:31,734 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_4__create_role_permission_table.sql (filename: V1_0_4__create_role_permission_table.sql)
 2023-06-04 14:59:31,734 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_permission_table.sql (filename: V1_0_0__create_permission_table.sql)
 2023-06-04 14:59:31,734 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_2__create_role_table.sql (filename: V1_0_2__create_role_table.sql)
@@ -4034,7 +4034,7 @@ VALUES (2, 'user', 'the user role')
 2023-06-04 14:59:31,793 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] 1 row affected
 2023-06-04 14:59:31,793 DEBUG [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:33] Successfully completed migration of schema "PUBLIC" to version "1.0.2 - create role table"
 2023-06-04 14:59:31,794 DEBUG [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:33] Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
-2023-06-04 14:59:31,796 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_3__create_user_table.sql ...
+2023-06-04 14:59:31,796 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_0__create_user_table.sql ...
 2023-06-04 14:59:31,797 DEBUG [restartedMain] o.f.c.i.s.ParserSqlScript [Slf4jLog.java:33] Found statement at line 1: CREATE TABLE _USER
 (
     ID            INT PRIMARY KEY NOT NULL,
@@ -4175,10 +4175,10 @@ VALUES (5, 2, 3)
 2023-06-04 15:08:25,995 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_permission_table_Alex-MacBook-Pro.local_Jun-04-150112-2023_CaseConflict.sql
 2023-06-04 15:08:25,995 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_1__create_permission_table.sql
 2023-06-04 15:08:25,995 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_2__create_role_table.sql
-2023-06-04 15:08:25,995 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_3__create_user_table.sql
+2023-06-04 15:08:25,995 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_user_table.sql
 2023-06-04 15:08:25,996 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_4__create_role_permission_table.sql
 2023-06-04 15:08:25,996 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Scanning for classes at classpath:db/migration
-2023-06-04 15:08:26,000 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_3__create_user_table.sql
+2023-06-04 15:08:26,000 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_user_table.sql
 2023-06-04 15:08:26,000 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_1__create_permission_table.sql
 2023-06-04 15:08:26,001 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_4__create_role_permission_table.sql
 2023-06-04 15:08:26,001 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_permission_table_Alex-MacBook-Pro.local_Jun-04-150112-2023_CaseConflict.sql
@@ -4190,7 +4190,7 @@ VALUES (5, 2, 3)
 2023-06-04 15:08:26,044 DEBUG [restartedMain] o.f.c.i.s.SchemaHistoryFactory [Slf4jLog.java:33] Default schema: null
 2023-06-04 15:08:26,055 DEBUG [restartedMain] o.f.c.i.c.SqlScriptCallbackFactory [Slf4jLog.java:33] Scanning for SQL callbacks ...
 2023-06-04 15:08:26,063 DEBUG [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:33] Validating migrations ...
-2023-06-04 15:08:26,074 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_3__create_user_table.sql (filename: V1_0_3__create_user_table.sql)
+2023-06-04 15:08:26,074 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_user_table.sql (filename: V1_0_0__create_user_table.sql)
 2023-06-04 15:08:26,074 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_1__create_permission_table.sql (filename: V1_0_1__create_permission_table.sql)
 2023-06-04 15:08:26,074 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_4__create_role_permission_table.sql (filename: V1_0_4__create_role_permission_table.sql)
 2023-06-04 15:08:26,074 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_permission_table_Alex-MacBook-Pro.local_Jun-04-150112-2023_CaseConflict.sql (filename: V1_0_0__create_permission_table_Alex-MacBook-Pro.local_Jun-04-150112-2023_CaseConflict.sql)
@@ -4474,10 +4474,10 @@ CREATE TABLE PERMISSION
 2023-06-04 15:08:46,767 DEBUG [restartedMain] o.f.c.i.s.c.FileSystemClassPathLocationScanner [Slf4jLog.java:33] Scanning for resources in path: /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes/db/migration (db/migration)
 2023-06-04 15:08:46,768 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_1__create_permission_table.sql
 2023-06-04 15:08:46,769 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_2__create_role_table.sql
-2023-06-04 15:08:46,769 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_3__create_user_table.sql
+2023-06-04 15:08:46,769 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_user_table.sql
 2023-06-04 15:08:46,769 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_4__create_role_permission_table.sql
 2023-06-04 15:08:46,769 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Scanning for classes at classpath:db/migration
-2023-06-04 15:08:46,771 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_3__create_user_table.sql
+2023-06-04 15:08:46,771 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_user_table.sql
 2023-06-04 15:08:46,772 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_1__create_permission_table.sql
 2023-06-04 15:08:46,772 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_4__create_role_permission_table.sql
 2023-06-04 15:08:46,772 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_2__create_role_table.sql
@@ -4488,7 +4488,7 @@ CREATE TABLE PERMISSION
 2023-06-04 15:08:46,814 DEBUG [restartedMain] o.f.c.i.s.SchemaHistoryFactory [Slf4jLog.java:33] Default schema: null
 2023-06-04 15:08:46,823 DEBUG [restartedMain] o.f.c.i.c.SqlScriptCallbackFactory [Slf4jLog.java:33] Scanning for SQL callbacks ...
 2023-06-04 15:08:46,832 DEBUG [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:33] Validating migrations ...
-2023-06-04 15:08:46,841 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_3__create_user_table.sql (filename: V1_0_3__create_user_table.sql)
+2023-06-04 15:08:46,841 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_user_table.sql (filename: V1_0_0__create_user_table.sql)
 2023-06-04 15:08:46,842 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_1__create_permission_table.sql (filename: V1_0_1__create_permission_table.sql)
 2023-06-04 15:08:46,842 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_4__create_role_permission_table.sql (filename: V1_0_4__create_role_permission_table.sql)
 2023-06-04 15:08:46,842 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_2__create_role_table.sql (filename: V1_0_2__create_role_table.sql)
@@ -4565,7 +4565,7 @@ CREATE TABLE PERMISSION
 2023-06-04 15:08:46,895 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] 0 rows affected
 2023-06-04 15:08:46,895 DEBUG [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:33] Successfully completed migration of schema "PUBLIC" to version "1.0.2 - create role table"
 2023-06-04 15:08:46,897 DEBUG [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:33] Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
-2023-06-04 15:08:46,899 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_3__create_user_table.sql ...
+2023-06-04 15:08:46,899 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_0__create_user_table.sql ...
 2023-06-04 15:08:46,900 DEBUG [restartedMain] o.f.c.i.s.ParserSqlScript [Slf4jLog.java:33] Found statement at line 1: CREATE TABLE _USER
 (
     ID            INT PRIMARY KEY NOT NULL,
@@ -4676,10 +4676,10 @@ CREATE TABLE PERMISSION
 2023-06-04 15:31:26,774 DEBUG [restartedMain] o.f.c.i.s.c.FileSystemClassPathLocationScanner [Slf4jLog.java:33] Scanning for resources in path: /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes/db/migration (db/migration)
 2023-06-04 15:31:26,775 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_1__create_permission_table.sql
 2023-06-04 15:31:26,776 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_2__create_role_table.sql
-2023-06-04 15:31:26,776 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_3__create_user_table.sql
+2023-06-04 15:31:26,776 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_user_table.sql
 2023-06-04 15:31:26,776 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_4__create_role_permission_table.sql
 2023-06-04 15:31:26,776 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Scanning for classes at classpath:db/migration
-2023-06-04 15:31:26,778 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_3__create_user_table.sql
+2023-06-04 15:31:26,778 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_user_table.sql
 2023-06-04 15:31:26,780 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_1__create_permission_table.sql
 2023-06-04 15:31:26,781 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_4__create_role_permission_table.sql
 2023-06-04 15:31:26,781 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_2__create_role_table.sql
@@ -4690,7 +4690,7 @@ CREATE TABLE PERMISSION
 2023-06-04 15:31:26,822 DEBUG [restartedMain] o.f.c.i.s.SchemaHistoryFactory [Slf4jLog.java:33] Default schema: null
 2023-06-04 15:31:26,830 DEBUG [restartedMain] o.f.c.i.c.SqlScriptCallbackFactory [Slf4jLog.java:33] Scanning for SQL callbacks ...
 2023-06-04 15:31:26,838 DEBUG [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:33] Validating migrations ...
-2023-06-04 15:31:26,849 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_3__create_user_table.sql (filename: V1_0_3__create_user_table.sql)
+2023-06-04 15:31:26,849 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_user_table.sql (filename: V1_0_0__create_user_table.sql)
 2023-06-04 15:31:26,850 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_1__create_permission_table.sql (filename: V1_0_1__create_permission_table.sql)
 2023-06-04 15:31:26,851 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_4__create_role_permission_table.sql (filename: V1_0_4__create_role_permission_table.sql)
 2023-06-04 15:31:26,852 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_2__create_role_table.sql (filename: V1_0_2__create_role_table.sql)
@@ -4767,7 +4767,7 @@ CREATE TABLE PERMISSION
 2023-06-04 15:31:26,904 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] 0 rows affected
 2023-06-04 15:31:26,904 DEBUG [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:33] Successfully completed migration of schema "PUBLIC" to version "1.0.2 - create role table"
 2023-06-04 15:31:26,905 DEBUG [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:33] Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
-2023-06-04 15:31:26,907 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_3__create_user_table.sql ...
+2023-06-04 15:31:26,907 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_0__create_user_table.sql ...
 2023-06-04 15:31:26,909 DEBUG [restartedMain] o.f.c.i.s.ParserSqlScript [Slf4jLog.java:33] Found statement at line 1: CREATE TABLE _USER
 (
     ID            INT PRIMARY KEY NOT NULL,
@@ -4878,10 +4878,10 @@ CREATE TABLE PERMISSION
 2023-06-04 15:37:08,239 DEBUG [restartedMain] o.f.c.i.s.c.FileSystemClassPathLocationScanner [Slf4jLog.java:33] Scanning for resources in path: /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes/db/migration (db/migration)
 2023-06-04 15:37:08,240 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_1__create_permission_table.sql
 2023-06-04 15:37:08,240 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_2__create_role_table.sql
-2023-06-04 15:37:08,240 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_3__create_user_table.sql
+2023-06-04 15:37:08,240 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_user_table.sql
 2023-06-04 15:37:08,240 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_4__create_role_permission_table.sql
 2023-06-04 15:37:08,240 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Scanning for classes at classpath:db/migration
-2023-06-04 15:37:08,244 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_3__create_user_table.sql
+2023-06-04 15:37:08,244 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_user_table.sql
 2023-06-04 15:37:08,245 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_1__create_permission_table.sql
 2023-06-04 15:37:08,245 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_4__create_role_permission_table.sql
 2023-06-04 15:37:08,245 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_2__create_role_table.sql
@@ -4892,7 +4892,7 @@ CREATE TABLE PERMISSION
 2023-06-04 15:37:08,293 DEBUG [restartedMain] o.f.c.i.s.SchemaHistoryFactory [Slf4jLog.java:33] Default schema: null
 2023-06-04 15:37:08,301 DEBUG [restartedMain] o.f.c.i.c.SqlScriptCallbackFactory [Slf4jLog.java:33] Scanning for SQL callbacks ...
 2023-06-04 15:37:08,311 DEBUG [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:33] Validating migrations ...
-2023-06-04 15:37:08,322 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_3__create_user_table.sql (filename: V1_0_3__create_user_table.sql)
+2023-06-04 15:37:08,322 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_user_table.sql (filename: V1_0_0__create_user_table.sql)
 2023-06-04 15:37:08,323 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_1__create_permission_table.sql (filename: V1_0_1__create_permission_table.sql)
 2023-06-04 15:37:08,323 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_4__create_role_permission_table.sql (filename: V1_0_4__create_role_permission_table.sql)
 2023-06-04 15:37:08,323 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_2__create_role_table.sql (filename: V1_0_2__create_role_table.sql)
@@ -4969,7 +4969,7 @@ CREATE TABLE PERMISSION
 2023-06-04 15:37:08,379 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] 0 rows affected
 2023-06-04 15:37:08,379 DEBUG [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:33] Successfully completed migration of schema "PUBLIC" to version "1.0.2 - create role table"
 2023-06-04 15:37:08,381 DEBUG [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:33] Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
-2023-06-04 15:37:08,383 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_3__create_user_table.sql ...
+2023-06-04 15:37:08,383 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_0__create_user_table.sql ...
 2023-06-04 15:37:08,385 DEBUG [restartedMain] o.f.c.i.s.ParserSqlScript [Slf4jLog.java:33] Found statement at line 1: CREATE TABLE _USER
 (
     ID            INT PRIMARY KEY NOT NULL,
@@ -5226,10 +5226,10 @@ insert into PERMISSION (DESCRIPTION,NAME,id) values (?,?,default) [23502-214]
 2023-06-04 15:42:17,433 DEBUG [restartedMain] o.f.c.i.s.c.FileSystemClassPathLocationScanner [Slf4jLog.java:33] Scanning for resources in path: /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes/db/migration (db/migration)
 2023-06-04 15:42:17,434 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_1__create_permission_table.sql
 2023-06-04 15:42:17,434 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_2__create_role_table.sql
-2023-06-04 15:42:17,434 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_3__create_user_table.sql
+2023-06-04 15:42:17,434 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_user_table.sql
 2023-06-04 15:42:17,434 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_4__create_role_permission_table.sql
 2023-06-04 15:42:17,434 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Scanning for classes at classpath:db/migration
-2023-06-04 15:42:17,436 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_3__create_user_table.sql
+2023-06-04 15:42:17,436 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_user_table.sql
 2023-06-04 15:42:17,437 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_1__create_permission_table.sql
 2023-06-04 15:42:17,437 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_4__create_role_permission_table.sql
 2023-06-04 15:42:17,437 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_2__create_role_table.sql
@@ -5240,7 +5240,7 @@ insert into PERMISSION (DESCRIPTION,NAME,id) values (?,?,default) [23502-214]
 2023-06-04 15:42:17,480 DEBUG [restartedMain] o.f.c.i.s.SchemaHistoryFactory [Slf4jLog.java:33] Default schema: null
 2023-06-04 15:42:17,488 DEBUG [restartedMain] o.f.c.i.c.SqlScriptCallbackFactory [Slf4jLog.java:33] Scanning for SQL callbacks ...
 2023-06-04 15:42:17,495 DEBUG [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:33] Validating migrations ...
-2023-06-04 15:42:17,505 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_3__create_user_table.sql (filename: V1_0_3__create_user_table.sql)
+2023-06-04 15:42:17,505 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_user_table.sql (filename: V1_0_0__create_user_table.sql)
 2023-06-04 15:42:17,505 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_1__create_permission_table.sql (filename: V1_0_1__create_permission_table.sql)
 2023-06-04 15:42:17,506 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_4__create_role_permission_table.sql (filename: V1_0_4__create_role_permission_table.sql)
 2023-06-04 15:42:17,506 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_2__create_role_table.sql (filename: V1_0_2__create_role_table.sql)
@@ -5317,7 +5317,7 @@ insert into PERMISSION (DESCRIPTION,NAME,id) values (?,?,default) [23502-214]
 2023-06-04 15:42:17,562 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] 0 rows affected
 2023-06-04 15:42:17,562 DEBUG [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:33] Successfully completed migration of schema "PUBLIC" to version "1.0.2 - create role table"
 2023-06-04 15:42:17,563 DEBUG [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:33] Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
-2023-06-04 15:42:17,565 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_3__create_user_table.sql ...
+2023-06-04 15:42:17,565 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_0__create_user_table.sql ...
 2023-06-04 15:42:17,567 DEBUG [restartedMain] o.f.c.i.s.ParserSqlScript [Slf4jLog.java:33] Found statement at line 1: CREATE TABLE _USER
 (
     ID            INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
@@ -5429,10 +5429,10 @@ insert into PERMISSION (DESCRIPTION,NAME,id) values (?,?,default) [23502-214]
 2023-06-04 15:47:42,972 DEBUG [restartedMain] o.f.c.i.s.c.FileSystemClassPathLocationScanner [Slf4jLog.java:33] Scanning for resources in path: /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes/db/migration (db/migration)
 2023-06-04 15:47:42,973 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_1__create_permission_table.sql
 2023-06-04 15:47:42,973 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_2__create_role_table.sql
-2023-06-04 15:47:42,973 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_3__create_user_table.sql
+2023-06-04 15:47:42,973 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_user_table.sql
 2023-06-04 15:47:42,973 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_4__create_role_permission_table.sql
 2023-06-04 15:47:42,973 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Scanning for classes at classpath:db/migration
-2023-06-04 15:47:42,976 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_3__create_user_table.sql
+2023-06-04 15:47:42,976 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_user_table.sql
 2023-06-04 15:47:42,977 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_1__create_permission_table.sql
 2023-06-04 15:47:42,977 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_4__create_role_permission_table.sql
 2023-06-04 15:47:42,977 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_2__create_role_table.sql
@@ -5443,7 +5443,7 @@ insert into PERMISSION (DESCRIPTION,NAME,id) values (?,?,default) [23502-214]
 2023-06-04 15:47:43,020 DEBUG [restartedMain] o.f.c.i.s.SchemaHistoryFactory [Slf4jLog.java:33] Default schema: null
 2023-06-04 15:47:43,028 DEBUG [restartedMain] o.f.c.i.c.SqlScriptCallbackFactory [Slf4jLog.java:33] Scanning for SQL callbacks ...
 2023-06-04 15:47:43,037 DEBUG [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:33] Validating migrations ...
-2023-06-04 15:47:43,049 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_3__create_user_table.sql (filename: V1_0_3__create_user_table.sql)
+2023-06-04 15:47:43,049 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_user_table.sql (filename: V1_0_0__create_user_table.sql)
 2023-06-04 15:47:43,050 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_1__create_permission_table.sql (filename: V1_0_1__create_permission_table.sql)
 2023-06-04 15:47:43,050 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_4__create_role_permission_table.sql (filename: V1_0_4__create_role_permission_table.sql)
 2023-06-04 15:47:43,050 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_2__create_role_table.sql (filename: V1_0_2__create_role_table.sql)
@@ -5520,7 +5520,7 @@ insert into PERMISSION (DESCRIPTION,NAME,id) values (?,?,default) [23502-214]
 2023-06-04 15:47:43,110 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] 0 rows affected
 2023-06-04 15:47:43,110 DEBUG [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:33] Successfully completed migration of schema "PUBLIC" to version "1.0.2 - create role table"
 2023-06-04 15:47:43,111 DEBUG [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:33] Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
-2023-06-04 15:47:43,114 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_3__create_user_table.sql ...
+2023-06-04 15:47:43,114 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_0__create_user_table.sql ...
 2023-06-04 15:47:43,116 DEBUG [restartedMain] o.f.c.i.s.ParserSqlScript [Slf4jLog.java:33] Found statement at line 1: CREATE TABLE _USER
 (
     ID            INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
@@ -5632,10 +5632,10 @@ insert into PERMISSION (DESCRIPTION,NAME,id) values (?,?,default) [23502-214]
 2023-06-04 15:56:07,791 DEBUG [restartedMain] o.f.c.i.s.c.FileSystemClassPathLocationScanner [Slf4jLog.java:33] Scanning for resources in path: /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes/db/migration (db/migration)
 2023-06-04 15:56:07,792 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_1__create_permission_table.sql
 2023-06-04 15:56:07,792 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_2__create_role_table.sql
-2023-06-04 15:56:07,792 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_3__create_user_table.sql
+2023-06-04 15:56:07,792 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_user_table.sql
 2023-06-04 15:56:07,793 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_4__create_role_permission_table.sql
 2023-06-04 15:56:07,793 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Scanning for classes at classpath:db/migration
-2023-06-04 15:56:07,794 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_3__create_user_table.sql
+2023-06-04 15:56:07,794 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_user_table.sql
 2023-06-04 15:56:07,795 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_1__create_permission_table.sql
 2023-06-04 15:56:07,795 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_4__create_role_permission_table.sql
 2023-06-04 15:56:07,795 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_2__create_role_table.sql
@@ -5646,7 +5646,7 @@ insert into PERMISSION (DESCRIPTION,NAME,id) values (?,?,default) [23502-214]
 2023-06-04 15:56:07,829 DEBUG [restartedMain] o.f.c.i.s.SchemaHistoryFactory [Slf4jLog.java:33] Default schema: null
 2023-06-04 15:56:07,836 DEBUG [restartedMain] o.f.c.i.c.SqlScriptCallbackFactory [Slf4jLog.java:33] Scanning for SQL callbacks ...
 2023-06-04 15:56:07,842 DEBUG [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:33] Validating migrations ...
-2023-06-04 15:56:07,850 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_3__create_user_table.sql (filename: V1_0_3__create_user_table.sql)
+2023-06-04 15:56:07,850 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_user_table.sql (filename: V1_0_0__create_user_table.sql)
 2023-06-04 15:56:07,851 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_1__create_permission_table.sql (filename: V1_0_1__create_permission_table.sql)
 2023-06-04 15:56:07,851 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_4__create_role_permission_table.sql (filename: V1_0_4__create_role_permission_table.sql)
 2023-06-04 15:56:07,851 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_2__create_role_table.sql (filename: V1_0_2__create_role_table.sql)
@@ -5723,7 +5723,7 @@ insert into PERMISSION (DESCRIPTION,NAME,id) values (?,?,default) [23502-214]
 2023-06-04 15:56:07,892 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] 0 rows affected
 2023-06-04 15:56:07,892 DEBUG [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:33] Successfully completed migration of schema "PUBLIC" to version "1.0.2 - create role table"
 2023-06-04 15:56:07,893 DEBUG [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:33] Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
-2023-06-04 15:56:07,894 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_3__create_user_table.sql ...
+2023-06-04 15:56:07,894 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_0__create_user_table.sql ...
 2023-06-04 15:56:07,895 DEBUG [restartedMain] o.f.c.i.s.ParserSqlScript [Slf4jLog.java:33] Found statement at line 1: CREATE TABLE _USER
 (
     ID            INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
@@ -5959,10 +5959,10 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 15:58:22,730 DEBUG [restartedMain] o.f.c.i.s.c.FileSystemClassPathLocationScanner [Slf4jLog.java:33] Scanning for resources in path: /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes/db/migration (db/migration)
 2023-06-04 15:58:22,731 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_1__create_permission_table.sql
 2023-06-04 15:58:22,732 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_2__create_role_table.sql
-2023-06-04 15:58:22,732 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_3__create_user_table.sql
+2023-06-04 15:58:22,732 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_user_table.sql
 2023-06-04 15:58:22,732 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_4__create_role_permission_table.sql
 2023-06-04 15:58:22,732 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Scanning for classes at classpath:db/migration
-2023-06-04 15:58:22,736 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_3__create_user_table.sql
+2023-06-04 15:58:22,736 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_user_table.sql
 2023-06-04 15:58:22,736 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_1__create_permission_table.sql
 2023-06-04 15:58:22,737 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_4__create_role_permission_table.sql
 2023-06-04 15:58:22,737 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_2__create_role_table.sql
@@ -5973,7 +5973,7 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 15:58:22,778 DEBUG [restartedMain] o.f.c.i.s.SchemaHistoryFactory [Slf4jLog.java:33] Default schema: null
 2023-06-04 15:58:22,787 DEBUG [restartedMain] o.f.c.i.c.SqlScriptCallbackFactory [Slf4jLog.java:33] Scanning for SQL callbacks ...
 2023-06-04 15:58:22,794 DEBUG [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:33] Validating migrations ...
-2023-06-04 15:58:22,807 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_3__create_user_table.sql (filename: V1_0_3__create_user_table.sql)
+2023-06-04 15:58:22,807 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_user_table.sql (filename: V1_0_0__create_user_table.sql)
 2023-06-04 15:58:22,808 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_1__create_permission_table.sql (filename: V1_0_1__create_permission_table.sql)
 2023-06-04 15:58:22,808 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_4__create_role_permission_table.sql (filename: V1_0_4__create_role_permission_table.sql)
 2023-06-04 15:58:22,808 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_2__create_role_table.sql (filename: V1_0_2__create_role_table.sql)
@@ -6050,7 +6050,7 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 15:58:22,861 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] 0 rows affected
 2023-06-04 15:58:22,862 DEBUG [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:33] Successfully completed migration of schema "PUBLIC" to version "1.0.2 - create role table"
 2023-06-04 15:58:22,863 DEBUG [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:33] Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
-2023-06-04 15:58:22,864 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_3__create_user_table.sql ...
+2023-06-04 15:58:22,864 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_0__create_user_table.sql ...
 2023-06-04 15:58:22,866 DEBUG [restartedMain] o.f.c.i.s.ParserSqlScript [Slf4jLog.java:33] Found statement at line 1: CREATE TABLE _USER
 (
     ID            INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
@@ -6162,10 +6162,10 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:09:46,001 DEBUG [restartedMain] o.f.c.i.s.c.FileSystemClassPathLocationScanner [Slf4jLog.java:33] Scanning for resources in path: /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes/db/migration (db/migration)
 2023-06-04 16:09:46,003 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_1__create_permission_table.sql
 2023-06-04 16:09:46,003 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_2__create_role_table.sql
-2023-06-04 16:09:46,003 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_3__create_user_table.sql
+2023-06-04 16:09:46,003 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_user_table.sql
 2023-06-04 16:09:46,003 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_4__create_role_permission_table.sql
 2023-06-04 16:09:46,003 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Scanning for classes at classpath:db/migration
-2023-06-04 16:09:46,005 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_3__create_user_table.sql
+2023-06-04 16:09:46,005 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_user_table.sql
 2023-06-04 16:09:46,006 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_1__create_permission_table.sql
 2023-06-04 16:09:46,006 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_4__create_role_permission_table.sql
 2023-06-04 16:09:46,006 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_2__create_role_table.sql
@@ -6176,7 +6176,7 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:09:46,049 DEBUG [restartedMain] o.f.c.i.s.SchemaHistoryFactory [Slf4jLog.java:33] Default schema: null
 2023-06-04 16:09:46,058 DEBUG [restartedMain] o.f.c.i.c.SqlScriptCallbackFactory [Slf4jLog.java:33] Scanning for SQL callbacks ...
 2023-06-04 16:09:46,066 DEBUG [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:33] Validating migrations ...
-2023-06-04 16:09:46,077 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_3__create_user_table.sql (filename: V1_0_3__create_user_table.sql)
+2023-06-04 16:09:46,077 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_user_table.sql (filename: V1_0_0__create_user_table.sql)
 2023-06-04 16:09:46,078 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_1__create_permission_table.sql (filename: V1_0_1__create_permission_table.sql)
 2023-06-04 16:09:46,078 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_4__create_role_permission_table.sql (filename: V1_0_4__create_role_permission_table.sql)
 2023-06-04 16:09:46,078 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_2__create_role_table.sql (filename: V1_0_2__create_role_table.sql)
@@ -6253,7 +6253,7 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:09:46,134 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] 0 rows affected
 2023-06-04 16:09:46,134 DEBUG [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:33] Successfully completed migration of schema "PUBLIC" to version "1.0.2 - create role table"
 2023-06-04 16:09:46,135 DEBUG [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:33] Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
-2023-06-04 16:09:46,137 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_3__create_user_table.sql ...
+2023-06-04 16:09:46,137 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_0__create_user_table.sql ...
 2023-06-04 16:09:46,138 DEBUG [restartedMain] o.f.c.i.s.ParserSqlScript [Slf4jLog.java:33] Found statement at line 1: CREATE TABLE _USER
 (
     ID            INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
@@ -6365,10 +6365,10 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:10:47,846 DEBUG [restartedMain] o.f.c.i.s.c.FileSystemClassPathLocationScanner [Slf4jLog.java:33] Scanning for resources in path: /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes/db/migration (db/migration)
 2023-06-04 16:10:47,847 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_1__create_permission_table.sql
 2023-06-04 16:10:47,848 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_2__create_role_table.sql
-2023-06-04 16:10:47,848 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_3__create_user_table.sql
+2023-06-04 16:10:47,848 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_user_table.sql
 2023-06-04 16:10:47,848 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_4__create_role_permission_table.sql
 2023-06-04 16:10:47,848 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Scanning for classes at classpath:db/migration
-2023-06-04 16:10:47,850 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_3__create_user_table.sql
+2023-06-04 16:10:47,850 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_user_table.sql
 2023-06-04 16:10:47,851 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_1__create_permission_table.sql
 2023-06-04 16:10:47,852 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_4__create_role_permission_table.sql
 2023-06-04 16:10:47,852 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_2__create_role_table.sql
@@ -6379,7 +6379,7 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:10:47,892 DEBUG [restartedMain] o.f.c.i.s.SchemaHistoryFactory [Slf4jLog.java:33] Default schema: null
 2023-06-04 16:10:47,901 DEBUG [restartedMain] o.f.c.i.c.SqlScriptCallbackFactory [Slf4jLog.java:33] Scanning for SQL callbacks ...
 2023-06-04 16:10:47,910 DEBUG [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:33] Validating migrations ...
-2023-06-04 16:10:47,920 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_3__create_user_table.sql (filename: V1_0_3__create_user_table.sql)
+2023-06-04 16:10:47,920 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_user_table.sql (filename: V1_0_0__create_user_table.sql)
 2023-06-04 16:10:47,920 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_1__create_permission_table.sql (filename: V1_0_1__create_permission_table.sql)
 2023-06-04 16:10:47,920 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_4__create_role_permission_table.sql (filename: V1_0_4__create_role_permission_table.sql)
 2023-06-04 16:10:47,920 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_2__create_role_table.sql (filename: V1_0_2__create_role_table.sql)
@@ -6456,7 +6456,7 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:10:47,980 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] 0 rows affected
 2023-06-04 16:10:47,980 DEBUG [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:33] Successfully completed migration of schema "PUBLIC" to version "1.0.2 - create role table"
 2023-06-04 16:10:47,981 DEBUG [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:33] Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
-2023-06-04 16:10:47,983 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_3__create_user_table.sql ...
+2023-06-04 16:10:47,983 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_0__create_user_table.sql ...
 2023-06-04 16:10:47,985 DEBUG [restartedMain] o.f.c.i.s.ParserSqlScript [Slf4jLog.java:33] Found statement at line 1: CREATE TABLE _USER
 (
     ID            INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
@@ -6568,10 +6568,10 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:12:49,076 DEBUG [restartedMain] o.f.c.i.s.c.FileSystemClassPathLocationScanner [Slf4jLog.java:33] Scanning for resources in path: /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes/db/migration (db/migration)
 2023-06-04 16:12:49,077 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_1__create_permission_table.sql
 2023-06-04 16:12:49,077 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_2__create_role_table.sql
-2023-06-04 16:12:49,078 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_3__create_user_table.sql
+2023-06-04 16:12:49,078 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_user_table.sql
 2023-06-04 16:12:49,078 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_4__create_role_permission_table.sql
 2023-06-04 16:12:49,078 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Scanning for classes at classpath:db/migration
-2023-06-04 16:12:49,081 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_3__create_user_table.sql
+2023-06-04 16:12:49,081 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_user_table.sql
 2023-06-04 16:12:49,082 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_1__create_permission_table.sql
 2023-06-04 16:12:49,082 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_4__create_role_permission_table.sql
 2023-06-04 16:12:49,083 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_2__create_role_table.sql
@@ -6582,7 +6582,7 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:12:49,125 DEBUG [restartedMain] o.f.c.i.s.SchemaHistoryFactory [Slf4jLog.java:33] Default schema: null
 2023-06-04 16:12:49,134 DEBUG [restartedMain] o.f.c.i.c.SqlScriptCallbackFactory [Slf4jLog.java:33] Scanning for SQL callbacks ...
 2023-06-04 16:12:49,142 DEBUG [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:33] Validating migrations ...
-2023-06-04 16:12:49,152 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_3__create_user_table.sql (filename: V1_0_3__create_user_table.sql)
+2023-06-04 16:12:49,152 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_user_table.sql (filename: V1_0_0__create_user_table.sql)
 2023-06-04 16:12:49,152 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_1__create_permission_table.sql (filename: V1_0_1__create_permission_table.sql)
 2023-06-04 16:12:49,153 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_4__create_role_permission_table.sql (filename: V1_0_4__create_role_permission_table.sql)
 2023-06-04 16:12:49,153 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_2__create_role_table.sql (filename: V1_0_2__create_role_table.sql)
@@ -6659,7 +6659,7 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:12:49,209 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] 0 rows affected
 2023-06-04 16:12:49,209 DEBUG [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:33] Successfully completed migration of schema "PUBLIC" to version "1.0.2 - create role table"
 2023-06-04 16:12:49,211 DEBUG [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:33] Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
-2023-06-04 16:12:49,212 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_3__create_user_table.sql ...
+2023-06-04 16:12:49,212 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_0__create_user_table.sql ...
 2023-06-04 16:12:49,214 DEBUG [restartedMain] o.f.c.i.s.ParserSqlScript [Slf4jLog.java:33] Found statement at line 1: CREATE TABLE _USER
 (
     ID            INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
@@ -6771,10 +6771,10 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:19:51,612 DEBUG [restartedMain] o.f.c.i.s.c.FileSystemClassPathLocationScanner [Slf4jLog.java:33] Scanning for resources in path: /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes/db/migration (db/migration)
 2023-06-04 16:19:51,613 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_1__create_permission_table.sql
 2023-06-04 16:19:51,613 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_2__create_role_table.sql
-2023-06-04 16:19:51,613 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_3__create_user_table.sql
+2023-06-04 16:19:51,613 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_user_table.sql
 2023-06-04 16:19:51,614 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_4__create_role_permission_table.sql
 2023-06-04 16:19:51,614 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Scanning for classes at classpath:db/migration
-2023-06-04 16:19:51,616 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_3__create_user_table.sql
+2023-06-04 16:19:51,616 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_user_table.sql
 2023-06-04 16:19:51,618 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_1__create_permission_table.sql
 2023-06-04 16:19:51,618 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_4__create_role_permission_table.sql
 2023-06-04 16:19:51,618 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_2__create_role_table.sql
@@ -6785,7 +6785,7 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:19:51,663 DEBUG [restartedMain] o.f.c.i.s.SchemaHistoryFactory [Slf4jLog.java:33] Default schema: null
 2023-06-04 16:19:51,672 DEBUG [restartedMain] o.f.c.i.c.SqlScriptCallbackFactory [Slf4jLog.java:33] Scanning for SQL callbacks ...
 2023-06-04 16:19:51,679 DEBUG [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:33] Validating migrations ...
-2023-06-04 16:19:51,692 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_3__create_user_table.sql (filename: V1_0_3__create_user_table.sql)
+2023-06-04 16:19:51,692 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_user_table.sql (filename: V1_0_0__create_user_table.sql)
 2023-06-04 16:19:51,693 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_1__create_permission_table.sql (filename: V1_0_1__create_permission_table.sql)
 2023-06-04 16:19:51,693 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_4__create_role_permission_table.sql (filename: V1_0_4__create_role_permission_table.sql)
 2023-06-04 16:19:51,693 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_2__create_role_table.sql (filename: V1_0_2__create_role_table.sql)
@@ -6862,7 +6862,7 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:19:51,750 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] 0 rows affected
 2023-06-04 16:19:51,750 DEBUG [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:33] Successfully completed migration of schema "PUBLIC" to version "1.0.2 - create role table"
 2023-06-04 16:19:51,752 DEBUG [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:33] Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
-2023-06-04 16:19:51,754 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_3__create_user_table.sql ...
+2023-06-04 16:19:51,754 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_0__create_user_table.sql ...
 2023-06-04 16:19:51,755 DEBUG [restartedMain] o.f.c.i.s.ParserSqlScript [Slf4jLog.java:33] Found statement at line 1: CREATE TABLE _USER
 (
     ID            INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
@@ -6974,10 +6974,10 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:20:45,230 DEBUG [restartedMain] o.f.c.i.s.c.FileSystemClassPathLocationScanner [Slf4jLog.java:33] Scanning for resources in path: /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes/db/migration (db/migration)
 2023-06-04 16:20:45,231 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_1__create_permission_table.sql
 2023-06-04 16:20:45,231 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_2__create_role_table.sql
-2023-06-04 16:20:45,231 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_3__create_user_table.sql
+2023-06-04 16:20:45,231 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_user_table.sql
 2023-06-04 16:20:45,232 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_4__create_role_permission_table.sql
 2023-06-04 16:20:45,232 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Scanning for classes at classpath:db/migration
-2023-06-04 16:20:45,234 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_3__create_user_table.sql
+2023-06-04 16:20:45,234 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_user_table.sql
 2023-06-04 16:20:45,235 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_1__create_permission_table.sql
 2023-06-04 16:20:45,235 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_4__create_role_permission_table.sql
 2023-06-04 16:20:45,235 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_2__create_role_table.sql
@@ -6988,7 +6988,7 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:20:45,275 DEBUG [restartedMain] o.f.c.i.s.SchemaHistoryFactory [Slf4jLog.java:33] Default schema: null
 2023-06-04 16:20:45,287 DEBUG [restartedMain] o.f.c.i.c.SqlScriptCallbackFactory [Slf4jLog.java:33] Scanning for SQL callbacks ...
 2023-06-04 16:20:45,296 DEBUG [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:33] Validating migrations ...
-2023-06-04 16:20:45,305 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_3__create_user_table.sql (filename: V1_0_3__create_user_table.sql)
+2023-06-04 16:20:45,305 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_user_table.sql (filename: V1_0_0__create_user_table.sql)
 2023-06-04 16:20:45,305 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_1__create_permission_table.sql (filename: V1_0_1__create_permission_table.sql)
 2023-06-04 16:20:45,305 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_4__create_role_permission_table.sql (filename: V1_0_4__create_role_permission_table.sql)
 2023-06-04 16:20:45,306 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_2__create_role_table.sql (filename: V1_0_2__create_role_table.sql)
@@ -7065,7 +7065,7 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:20:45,361 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] 0 rows affected
 2023-06-04 16:20:45,361 DEBUG [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:33] Successfully completed migration of schema "PUBLIC" to version "1.0.2 - create role table"
 2023-06-04 16:20:45,362 DEBUG [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:33] Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
-2023-06-04 16:20:45,364 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_3__create_user_table.sql ...
+2023-06-04 16:20:45,364 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_0__create_user_table.sql ...
 2023-06-04 16:20:45,365 DEBUG [restartedMain] o.f.c.i.s.ParserSqlScript [Slf4jLog.java:33] Found statement at line 1: CREATE TABLE _USER
 (
     ID            INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
@@ -7177,10 +7177,10 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:28:59,763 DEBUG [restartedMain] o.f.c.i.s.c.FileSystemClassPathLocationScanner [Slf4jLog.java:33] Scanning for resources in path: /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes/db/migration (db/migration)
 2023-06-04 16:28:59,765 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_1__create_permission_table.sql
 2023-06-04 16:28:59,766 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_2__create_role_table.sql
-2023-06-04 16:28:59,767 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_3__create_user_table.sql
+2023-06-04 16:28:59,767 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_user_table.sql
 2023-06-04 16:28:59,767 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_4__create_role_permission_table.sql
 2023-06-04 16:28:59,768 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Scanning for classes at classpath:db/migration
-2023-06-04 16:28:59,770 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_3__create_user_table.sql
+2023-06-04 16:28:59,770 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_user_table.sql
 2023-06-04 16:28:59,771 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_1__create_permission_table.sql
 2023-06-04 16:28:59,771 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_4__create_role_permission_table.sql
 2023-06-04 16:28:59,772 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_2__create_role_table.sql
@@ -7191,7 +7191,7 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:28:59,818 DEBUG [restartedMain] o.f.c.i.s.SchemaHistoryFactory [Slf4jLog.java:33] Default schema: null
 2023-06-04 16:28:59,830 DEBUG [restartedMain] o.f.c.i.c.SqlScriptCallbackFactory [Slf4jLog.java:33] Scanning for SQL callbacks ...
 2023-06-04 16:28:59,838 DEBUG [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:33] Validating migrations ...
-2023-06-04 16:28:59,851 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_3__create_user_table.sql (filename: V1_0_3__create_user_table.sql)
+2023-06-04 16:28:59,851 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_user_table.sql (filename: V1_0_0__create_user_table.sql)
 2023-06-04 16:28:59,851 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_1__create_permission_table.sql (filename: V1_0_1__create_permission_table.sql)
 2023-06-04 16:28:59,852 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_4__create_role_permission_table.sql (filename: V1_0_4__create_role_permission_table.sql)
 2023-06-04 16:28:59,852 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_2__create_role_table.sql (filename: V1_0_2__create_role_table.sql)
@@ -7268,7 +7268,7 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:28:59,910 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] 0 rows affected
 2023-06-04 16:28:59,910 DEBUG [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:33] Successfully completed migration of schema "PUBLIC" to version "1.0.2 - create role table"
 2023-06-04 16:28:59,911 DEBUG [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:33] Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
-2023-06-04 16:28:59,913 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_3__create_user_table.sql ...
+2023-06-04 16:28:59,913 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_0__create_user_table.sql ...
 2023-06-04 16:28:59,914 DEBUG [restartedMain] o.f.c.i.s.ParserSqlScript [Slf4jLog.java:33] Found statement at line 1: CREATE TABLE _USER
 (
     ID            INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
@@ -7380,10 +7380,10 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:30:30,069 DEBUG [restartedMain] o.f.c.i.s.c.FileSystemClassPathLocationScanner [Slf4jLog.java:33] Scanning for resources in path: /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes/db/migration (db/migration)
 2023-06-04 16:30:30,070 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_1__create_permission_table.sql
 2023-06-04 16:30:30,070 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_2__create_role_table.sql
-2023-06-04 16:30:30,070 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_3__create_user_table.sql
+2023-06-04 16:30:30,070 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_user_table.sql
 2023-06-04 16:30:30,071 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_4__create_role_permission_table.sql
 2023-06-04 16:30:30,071 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Scanning for classes at classpath:db/migration
-2023-06-04 16:30:30,073 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_3__create_user_table.sql
+2023-06-04 16:30:30,073 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_user_table.sql
 2023-06-04 16:30:30,074 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_1__create_permission_table.sql
 2023-06-04 16:30:30,074 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_4__create_role_permission_table.sql
 2023-06-04 16:30:30,074 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_2__create_role_table.sql
@@ -7394,7 +7394,7 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:30:30,119 DEBUG [restartedMain] o.f.c.i.s.SchemaHistoryFactory [Slf4jLog.java:33] Default schema: null
 2023-06-04 16:30:30,127 DEBUG [restartedMain] o.f.c.i.c.SqlScriptCallbackFactory [Slf4jLog.java:33] Scanning for SQL callbacks ...
 2023-06-04 16:30:30,136 DEBUG [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:33] Validating migrations ...
-2023-06-04 16:30:30,147 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_3__create_user_table.sql (filename: V1_0_3__create_user_table.sql)
+2023-06-04 16:30:30,147 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_user_table.sql (filename: V1_0_0__create_user_table.sql)
 2023-06-04 16:30:30,148 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_1__create_permission_table.sql (filename: V1_0_1__create_permission_table.sql)
 2023-06-04 16:30:30,148 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_4__create_role_permission_table.sql (filename: V1_0_4__create_role_permission_table.sql)
 2023-06-04 16:30:30,148 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_2__create_role_table.sql (filename: V1_0_2__create_role_table.sql)
@@ -7471,7 +7471,7 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:30:30,207 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] 0 rows affected
 2023-06-04 16:30:30,207 DEBUG [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:33] Successfully completed migration of schema "PUBLIC" to version "1.0.2 - create role table"
 2023-06-04 16:30:30,208 DEBUG [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:33] Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
-2023-06-04 16:30:30,210 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_3__create_user_table.sql ...
+2023-06-04 16:30:30,210 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_0__create_user_table.sql ...
 2023-06-04 16:30:30,213 DEBUG [restartedMain] o.f.c.i.s.ParserSqlScript [Slf4jLog.java:33] Found statement at line 1: CREATE TABLE _USER
 (
     ID            INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
@@ -7583,10 +7583,10 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:32:26,700 DEBUG [restartedMain] o.f.c.i.s.c.FileSystemClassPathLocationScanner [Slf4jLog.java:33] Scanning for resources in path: /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes/db/migration (db/migration)
 2023-06-04 16:32:26,702 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_1__create_permission_table.sql
 2023-06-04 16:32:26,702 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_2__create_role_table.sql
-2023-06-04 16:32:26,702 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_3__create_user_table.sql
+2023-06-04 16:32:26,702 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_user_table.sql
 2023-06-04 16:32:26,703 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_4__create_role_permission_table.sql
 2023-06-04 16:32:26,703 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Scanning for classes at classpath:db/migration
-2023-06-04 16:32:26,705 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_3__create_user_table.sql
+2023-06-04 16:32:26,705 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_user_table.sql
 2023-06-04 16:32:26,706 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_1__create_permission_table.sql
 2023-06-04 16:32:26,706 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_4__create_role_permission_table.sql
 2023-06-04 16:32:26,706 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_2__create_role_table.sql
@@ -7597,7 +7597,7 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:32:26,750 DEBUG [restartedMain] o.f.c.i.s.SchemaHistoryFactory [Slf4jLog.java:33] Default schema: null
 2023-06-04 16:32:26,759 DEBUG [restartedMain] o.f.c.i.c.SqlScriptCallbackFactory [Slf4jLog.java:33] Scanning for SQL callbacks ...
 2023-06-04 16:32:26,767 DEBUG [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:33] Validating migrations ...
-2023-06-04 16:32:26,777 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_3__create_user_table.sql (filename: V1_0_3__create_user_table.sql)
+2023-06-04 16:32:26,777 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_user_table.sql (filename: V1_0_0__create_user_table.sql)
 2023-06-04 16:32:26,777 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_1__create_permission_table.sql (filename: V1_0_1__create_permission_table.sql)
 2023-06-04 16:32:26,778 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_4__create_role_permission_table.sql (filename: V1_0_4__create_role_permission_table.sql)
 2023-06-04 16:32:26,778 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_2__create_role_table.sql (filename: V1_0_2__create_role_table.sql)
@@ -7674,7 +7674,7 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:32:26,836 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] 0 rows affected
 2023-06-04 16:32:26,836 DEBUG [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:33] Successfully completed migration of schema "PUBLIC" to version "1.0.2 - create role table"
 2023-06-04 16:32:26,838 DEBUG [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:33] Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
-2023-06-04 16:32:26,839 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_3__create_user_table.sql ...
+2023-06-04 16:32:26,839 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_0__create_user_table.sql ...
 2023-06-04 16:32:26,841 DEBUG [restartedMain] o.f.c.i.s.ParserSqlScript [Slf4jLog.java:33] Found statement at line 1: CREATE TABLE _USER
 (
     ID            INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
@@ -7786,10 +7786,10 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:33:22,911 DEBUG [restartedMain] o.f.c.i.s.c.FileSystemClassPathLocationScanner [Slf4jLog.java:33] Scanning for resources in path: /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes/db/migration (db/migration)
 2023-06-04 16:33:22,912 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_1__create_permission_table.sql
 2023-06-04 16:33:22,913 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_2__create_role_table.sql
-2023-06-04 16:33:22,913 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_3__create_user_table.sql
+2023-06-04 16:33:22,913 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_user_table.sql
 2023-06-04 16:33:22,913 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_4__create_role_permission_table.sql
 2023-06-04 16:33:22,913 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Scanning for classes at classpath:db/migration
-2023-06-04 16:33:22,915 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_3__create_user_table.sql
+2023-06-04 16:33:22,915 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_user_table.sql
 2023-06-04 16:33:22,916 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_1__create_permission_table.sql
 2023-06-04 16:33:22,918 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_4__create_role_permission_table.sql
 2023-06-04 16:33:22,918 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_2__create_role_table.sql
@@ -7800,7 +7800,7 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:33:22,961 DEBUG [restartedMain] o.f.c.i.s.SchemaHistoryFactory [Slf4jLog.java:33] Default schema: null
 2023-06-04 16:33:22,971 DEBUG [restartedMain] o.f.c.i.c.SqlScriptCallbackFactory [Slf4jLog.java:33] Scanning for SQL callbacks ...
 2023-06-04 16:33:22,979 DEBUG [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:33] Validating migrations ...
-2023-06-04 16:33:22,992 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_3__create_user_table.sql (filename: V1_0_3__create_user_table.sql)
+2023-06-04 16:33:22,992 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_user_table.sql (filename: V1_0_0__create_user_table.sql)
 2023-06-04 16:33:22,993 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_1__create_permission_table.sql (filename: V1_0_1__create_permission_table.sql)
 2023-06-04 16:33:22,993 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_4__create_role_permission_table.sql (filename: V1_0_4__create_role_permission_table.sql)
 2023-06-04 16:33:22,993 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_2__create_role_table.sql (filename: V1_0_2__create_role_table.sql)
@@ -7877,7 +7877,7 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:33:23,055 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] 0 rows affected
 2023-06-04 16:33:23,056 DEBUG [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:33] Successfully completed migration of schema "PUBLIC" to version "1.0.2 - create role table"
 2023-06-04 16:33:23,057 DEBUG [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:33] Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
-2023-06-04 16:33:23,060 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_3__create_user_table.sql ...
+2023-06-04 16:33:23,060 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_0__create_user_table.sql ...
 2023-06-04 16:33:23,062 DEBUG [restartedMain] o.f.c.i.s.ParserSqlScript [Slf4jLog.java:33] Found statement at line 1: CREATE TABLE _USER
 (
     ID            INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
@@ -7989,10 +7989,10 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:34:31,856 DEBUG [restartedMain] o.f.c.i.s.c.FileSystemClassPathLocationScanner [Slf4jLog.java:33] Scanning for resources in path: /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes/db/migration (db/migration)
 2023-06-04 16:34:31,857 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_1__create_permission_table.sql
 2023-06-04 16:34:31,857 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_2__create_role_table.sql
-2023-06-04 16:34:31,857 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_3__create_user_table.sql
+2023-06-04 16:34:31,857 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_user_table.sql
 2023-06-04 16:34:31,857 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_4__create_role_permission_table.sql
 2023-06-04 16:34:31,857 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Scanning for classes at classpath:db/migration
-2023-06-04 16:34:31,860 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_3__create_user_table.sql
+2023-06-04 16:34:31,860 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_user_table.sql
 2023-06-04 16:34:31,860 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_1__create_permission_table.sql
 2023-06-04 16:34:31,861 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_4__create_role_permission_table.sql
 2023-06-04 16:34:31,861 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_2__create_role_table.sql
@@ -8003,7 +8003,7 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:34:31,903 DEBUG [restartedMain] o.f.c.i.s.SchemaHistoryFactory [Slf4jLog.java:33] Default schema: null
 2023-06-04 16:34:31,911 DEBUG [restartedMain] o.f.c.i.c.SqlScriptCallbackFactory [Slf4jLog.java:33] Scanning for SQL callbacks ...
 2023-06-04 16:34:31,920 DEBUG [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:33] Validating migrations ...
-2023-06-04 16:34:31,931 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_3__create_user_table.sql (filename: V1_0_3__create_user_table.sql)
+2023-06-04 16:34:31,931 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_user_table.sql (filename: V1_0_0__create_user_table.sql)
 2023-06-04 16:34:31,931 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_1__create_permission_table.sql (filename: V1_0_1__create_permission_table.sql)
 2023-06-04 16:34:31,931 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_4__create_role_permission_table.sql (filename: V1_0_4__create_role_permission_table.sql)
 2023-06-04 16:34:31,931 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_2__create_role_table.sql (filename: V1_0_2__create_role_table.sql)
@@ -8080,7 +8080,7 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:34:31,990 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] 0 rows affected
 2023-06-04 16:34:31,991 DEBUG [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:33] Successfully completed migration of schema "PUBLIC" to version "1.0.2 - create role table"
 2023-06-04 16:34:31,992 DEBUG [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:33] Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
-2023-06-04 16:34:31,994 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_3__create_user_table.sql ...
+2023-06-04 16:34:31,994 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_0__create_user_table.sql ...
 2023-06-04 16:34:31,996 DEBUG [restartedMain] o.f.c.i.s.ParserSqlScript [Slf4jLog.java:33] Found statement at line 1: CREATE TABLE _USER
 (
     ID            INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
@@ -8192,10 +8192,10 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:39:34,073 DEBUG [restartedMain] o.f.c.i.s.c.FileSystemClassPathLocationScanner [Slf4jLog.java:33] Scanning for resources in path: /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes/db/migration (db/migration)
 2023-06-04 16:39:34,074 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_1__create_permission_table.sql
 2023-06-04 16:39:34,074 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_2__create_role_table.sql
-2023-06-04 16:39:34,074 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_3__create_user_table.sql
+2023-06-04 16:39:34,074 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_user_table.sql
 2023-06-04 16:39:34,074 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_4__create_role_permission_table.sql
 2023-06-04 16:39:34,074 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Scanning for classes at classpath:db/migration
-2023-06-04 16:39:34,077 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_3__create_user_table.sql
+2023-06-04 16:39:34,077 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_user_table.sql
 2023-06-04 16:39:34,077 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_1__create_permission_table.sql
 2023-06-04 16:39:34,078 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_4__create_role_permission_table.sql
 2023-06-04 16:39:34,078 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_2__create_role_table.sql
@@ -8206,7 +8206,7 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:39:34,121 DEBUG [restartedMain] o.f.c.i.s.SchemaHistoryFactory [Slf4jLog.java:33] Default schema: null
 2023-06-04 16:39:34,129 DEBUG [restartedMain] o.f.c.i.c.SqlScriptCallbackFactory [Slf4jLog.java:33] Scanning for SQL callbacks ...
 2023-06-04 16:39:34,138 DEBUG [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:33] Validating migrations ...
-2023-06-04 16:39:34,149 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_3__create_user_table.sql (filename: V1_0_3__create_user_table.sql)
+2023-06-04 16:39:34,149 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_user_table.sql (filename: V1_0_0__create_user_table.sql)
 2023-06-04 16:39:34,149 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_1__create_permission_table.sql (filename: V1_0_1__create_permission_table.sql)
 2023-06-04 16:39:34,149 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_4__create_role_permission_table.sql (filename: V1_0_4__create_role_permission_table.sql)
 2023-06-04 16:39:34,149 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_2__create_role_table.sql (filename: V1_0_2__create_role_table.sql)
@@ -8283,7 +8283,7 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:39:34,207 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] 0 rows affected
 2023-06-04 16:39:34,208 DEBUG [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:33] Successfully completed migration of schema "PUBLIC" to version "1.0.2 - create role table"
 2023-06-04 16:39:34,209 DEBUG [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:33] Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
-2023-06-04 16:39:34,211 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_3__create_user_table.sql ...
+2023-06-04 16:39:34,211 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_0__create_user_table.sql ...
 2023-06-04 16:39:34,214 DEBUG [restartedMain] o.f.c.i.s.ParserSqlScript [Slf4jLog.java:33] Found statement at line 1: CREATE TABLE _USER
 (
     ID            INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
@@ -8395,10 +8395,10 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:52:02,416 DEBUG [restartedMain] o.f.c.i.s.c.FileSystemClassPathLocationScanner [Slf4jLog.java:33] Scanning for resources in path: /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes/db/migration (db/migration)
 2023-06-04 16:52:02,418 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_1__create_permission_table.sql
 2023-06-04 16:52:02,418 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_2__create_role_table.sql
-2023-06-04 16:52:02,418 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_3__create_user_table.sql
+2023-06-04 16:52:02,418 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_user_table.sql
 2023-06-04 16:52:02,418 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_4__create_role_permission_table.sql
 2023-06-04 16:52:02,418 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Scanning for classes at classpath:db/migration
-2023-06-04 16:52:02,420 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_3__create_user_table.sql
+2023-06-04 16:52:02,420 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_user_table.sql
 2023-06-04 16:52:02,421 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_1__create_permission_table.sql
 2023-06-04 16:52:02,421 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_4__create_role_permission_table.sql
 2023-06-04 16:52:02,422 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_2__create_role_table.sql
@@ -8409,7 +8409,7 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:52:02,457 DEBUG [restartedMain] o.f.c.i.s.SchemaHistoryFactory [Slf4jLog.java:33] Default schema: null
 2023-06-04 16:52:02,463 DEBUG [restartedMain] o.f.c.i.c.SqlScriptCallbackFactory [Slf4jLog.java:33] Scanning for SQL callbacks ...
 2023-06-04 16:52:02,469 DEBUG [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:33] Validating migrations ...
-2023-06-04 16:52:02,479 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_3__create_user_table.sql (filename: V1_0_3__create_user_table.sql)
+2023-06-04 16:52:02,479 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_user_table.sql (filename: V1_0_0__create_user_table.sql)
 2023-06-04 16:52:02,479 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_1__create_permission_table.sql (filename: V1_0_1__create_permission_table.sql)
 2023-06-04 16:52:02,479 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_4__create_role_permission_table.sql (filename: V1_0_4__create_role_permission_table.sql)
 2023-06-04 16:52:02,479 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_2__create_role_table.sql (filename: V1_0_2__create_role_table.sql)
@@ -8486,7 +8486,7 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:52:02,519 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] 0 rows affected
 2023-06-04 16:52:02,519 DEBUG [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:33] Successfully completed migration of schema "PUBLIC" to version "1.0.2 - create role table"
 2023-06-04 16:52:02,520 DEBUG [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:33] Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
-2023-06-04 16:52:02,521 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_3__create_user_table.sql ...
+2023-06-04 16:52:02,521 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_0__create_user_table.sql ...
 2023-06-04 16:52:02,522 DEBUG [restartedMain] o.f.c.i.s.ParserSqlScript [Slf4jLog.java:33] Found statement at line 1: CREATE TABLE _USER
 (
     ID            INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
@@ -8598,10 +8598,10 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:53:29,069 DEBUG [restartedMain] o.f.c.i.s.c.FileSystemClassPathLocationScanner [Slf4jLog.java:33] Scanning for resources in path: /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes/db/migration (db/migration)
 2023-06-04 16:53:29,070 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_1__create_permission_table.sql
 2023-06-04 16:53:29,070 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_2__create_role_table.sql
-2023-06-04 16:53:29,070 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_3__create_user_table.sql
+2023-06-04 16:53:29,070 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_user_table.sql
 2023-06-04 16:53:29,070 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_4__create_role_permission_table.sql
 2023-06-04 16:53:29,070 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Scanning for classes at classpath:db/migration
-2023-06-04 16:53:29,072 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_3__create_user_table.sql
+2023-06-04 16:53:29,072 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_user_table.sql
 2023-06-04 16:53:29,073 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_1__create_permission_table.sql
 2023-06-04 16:53:29,073 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_4__create_role_permission_table.sql
 2023-06-04 16:53:29,073 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_2__create_role_table.sql
@@ -8612,7 +8612,7 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:53:29,105 DEBUG [restartedMain] o.f.c.i.s.SchemaHistoryFactory [Slf4jLog.java:33] Default schema: null
 2023-06-04 16:53:29,111 DEBUG [restartedMain] o.f.c.i.c.SqlScriptCallbackFactory [Slf4jLog.java:33] Scanning for SQL callbacks ...
 2023-06-04 16:53:29,117 DEBUG [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:33] Validating migrations ...
-2023-06-04 16:53:29,126 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_3__create_user_table.sql (filename: V1_0_3__create_user_table.sql)
+2023-06-04 16:53:29,126 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_user_table.sql (filename: V1_0_0__create_user_table.sql)
 2023-06-04 16:53:29,126 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_1__create_permission_table.sql (filename: V1_0_1__create_permission_table.sql)
 2023-06-04 16:53:29,127 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_4__create_role_permission_table.sql (filename: V1_0_4__create_role_permission_table.sql)
 2023-06-04 16:53:29,127 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_2__create_role_table.sql (filename: V1_0_2__create_role_table.sql)
@@ -8689,7 +8689,7 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:53:29,166 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] 0 rows affected
 2023-06-04 16:53:29,166 DEBUG [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:33] Successfully completed migration of schema "PUBLIC" to version "1.0.2 - create role table"
 2023-06-04 16:53:29,167 DEBUG [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:33] Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
-2023-06-04 16:53:29,168 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_3__create_user_table.sql ...
+2023-06-04 16:53:29,168 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_0__create_user_table.sql ...
 2023-06-04 16:53:29,170 DEBUG [restartedMain] o.f.c.i.s.ParserSqlScript [Slf4jLog.java:33] Found statement at line 1: CREATE TABLE _USER
 (
     ID            INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
@@ -8801,10 +8801,10 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:54:54,880 DEBUG [restartedMain] o.f.c.i.s.c.FileSystemClassPathLocationScanner [Slf4jLog.java:33] Scanning for resources in path: /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes/db/migration (db/migration)
 2023-06-04 16:54:54,881 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_1__create_permission_table.sql
 2023-06-04 16:54:54,881 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_2__create_role_table.sql
-2023-06-04 16:54:54,881 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_3__create_user_table.sql
+2023-06-04 16:54:54,881 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_user_table.sql
 2023-06-04 16:54:54,882 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_4__create_role_permission_table.sql
 2023-06-04 16:54:54,882 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Scanning for classes at classpath:db/migration
-2023-06-04 16:54:54,884 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_3__create_user_table.sql
+2023-06-04 16:54:54,884 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_user_table.sql
 2023-06-04 16:54:54,884 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_1__create_permission_table.sql
 2023-06-04 16:54:54,885 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_4__create_role_permission_table.sql
 2023-06-04 16:54:54,885 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_2__create_role_table.sql
@@ -8815,7 +8815,7 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:54:54,918 DEBUG [restartedMain] o.f.c.i.s.SchemaHistoryFactory [Slf4jLog.java:33] Default schema: null
 2023-06-04 16:54:54,924 DEBUG [restartedMain] o.f.c.i.c.SqlScriptCallbackFactory [Slf4jLog.java:33] Scanning for SQL callbacks ...
 2023-06-04 16:54:54,931 DEBUG [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:33] Validating migrations ...
-2023-06-04 16:54:54,938 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_3__create_user_table.sql (filename: V1_0_3__create_user_table.sql)
+2023-06-04 16:54:54,938 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_user_table.sql (filename: V1_0_0__create_user_table.sql)
 2023-06-04 16:54:54,938 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_1__create_permission_table.sql (filename: V1_0_1__create_permission_table.sql)
 2023-06-04 16:54:54,938 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_4__create_role_permission_table.sql (filename: V1_0_4__create_role_permission_table.sql)
 2023-06-04 16:54:54,939 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_2__create_role_table.sql (filename: V1_0_2__create_role_table.sql)
@@ -8892,7 +8892,7 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 16:54:54,979 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] 0 rows affected
 2023-06-04 16:54:54,979 DEBUG [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:33] Successfully completed migration of schema "PUBLIC" to version "1.0.2 - create role table"
 2023-06-04 16:54:54,980 DEBUG [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:33] Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
-2023-06-04 16:54:54,981 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_3__create_user_table.sql ...
+2023-06-04 16:54:54,981 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_0__create_user_table.sql ...
 2023-06-04 16:54:54,983 DEBUG [restartedMain] o.f.c.i.s.ParserSqlScript [Slf4jLog.java:33] Found statement at line 1: CREATE TABLE _USER
 (
     ID            INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
@@ -9004,10 +9004,10 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 17:35:00,872 DEBUG [restartedMain] o.f.c.i.s.c.FileSystemClassPathLocationScanner [Slf4jLog.java:33] Scanning for resources in path: /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes/db/migration (db/migration)
 2023-06-04 17:35:00,873 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_1__create_permission_table.sql
 2023-06-04 17:35:00,874 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_2__create_role_table.sql
-2023-06-04 17:35:00,874 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_3__create_user_table.sql
+2023-06-04 17:35:00,874 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_0__create_user_table.sql
 2023-06-04 17:35:00,874 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Found resource: db/migration/V1_0_4__create_role_permission_table.sql
 2023-06-04 17:35:00,874 DEBUG [restartedMain] o.f.c.i.s.c.ClassPathScanner [Slf4jLog.java:33] Scanning for classes at classpath:db/migration
-2023-06-04 17:35:00,877 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_3__create_user_table.sql
+2023-06-04 17:35:00,877 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_0__create_user_table.sql
 2023-06-04 17:35:00,878 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_1__create_permission_table.sql
 2023-06-04 17:35:00,878 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_4__create_role_permission_table.sql
 2023-06-04 17:35:00,878 DEBUG [restartedMain] o.f.c.i.r.ResourceNameValidator [Slf4jLog.java:33] Validating V1_0_2__create_role_table.sql
@@ -9018,7 +9018,7 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 17:35:00,923 DEBUG [restartedMain] o.f.c.i.s.SchemaHistoryFactory [Slf4jLog.java:33] Default schema: null
 2023-06-04 17:35:00,932 DEBUG [restartedMain] o.f.c.i.c.SqlScriptCallbackFactory [Slf4jLog.java:33] Scanning for SQL callbacks ...
 2023-06-04 17:35:00,940 DEBUG [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:33] Validating migrations ...
-2023-06-04 17:35:00,952 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_3__create_user_table.sql (filename: V1_0_3__create_user_table.sql)
+2023-06-04 17:35:00,952 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_0__create_user_table.sql (filename: V1_0_0__create_user_table.sql)
 2023-06-04 17:35:00,952 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_1__create_permission_table.sql (filename: V1_0_1__create_permission_table.sql)
 2023-06-04 17:35:00,952 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_4__create_role_permission_table.sql (filename: V1_0_4__create_role_permission_table.sql)
 2023-06-04 17:35:00,953 DEBUG [restartedMain] o.f.c.i.s.Scanner [Slf4jLog.java:33] Filtering out resource: db/migration/V1_0_2__create_role_table.sql (filename: V1_0_2__create_role_table.sql)
@@ -9095,7 +9095,7 @@ insert into ROLE_PERMISSION (ROLE_PERMISSION_PERMISSION_ID,ROLE_PERMISSION_ROLE_
 2023-06-04 17:35:01,008 DEBUG [restartedMain] o.f.c.i.s.DefaultSqlScriptExecutor [Slf4jLog.java:33] 0 rows affected
 2023-06-04 17:35:01,008 DEBUG [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:33] Successfully completed migration of schema "PUBLIC" to version "1.0.2 - create role table"
 2023-06-04 17:35:01,010 DEBUG [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:33] Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
-2023-06-04 17:35:01,011 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_3__create_user_table.sql ...
+2023-06-04 17:35:01,011 DEBUG [restartedMain] o.f.c.i.p.Parser [Slf4jLog.java:33] Parsing V1_0_0__create_user_table.sql ...
 2023-06-04 17:35:01,013 DEBUG [restartedMain] o.f.c.i.s.ParserSqlScript [Slf4jLog.java:33] Found statement at line 1: CREATE TABLE _USER
 (
     ID            INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
