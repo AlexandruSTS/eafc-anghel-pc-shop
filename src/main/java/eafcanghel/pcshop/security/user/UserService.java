@@ -2,7 +2,10 @@ package eafcanghel.pcshop.security.user;
 
 import eafcanghel.pcshop.security.enums.Role;
 import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -53,7 +56,7 @@ public class UserService implements UserDetailsService {
         user.setEmail(registrationDto.getEmail());
         user.setPassword(passwordEncoder.encode(registrationDto.getPassword()));
         user.setDob(registrationDto.getDob());
-        user.setRole(Role.ROLE_MANAGER);
+        user.setRole(Role.MANAGER);
 
         // Save the user to the database
         userRepository.save(user);
@@ -63,12 +66,13 @@ public class UserService implements UserDetailsService {
         String email = loginDto.getEmail();
         String password = loginDto.getPassword();
 
-        User user = userRepository.findByEmail(email)
-                .orElseThrow(() -> new UsernameNotFoundException("User not found with email: " + email));
+        Authentication authenticationToken = new UsernamePasswordAuthenticationToken(email, password);
 
-        if (!passwordEncoder.matches(password, user.getPassword())) {
-            throw new IllegalArgumentException("Invalid password");
-        }
+        Authentication authentication = authenticationManager.authenticate(authenticationToken);
+
+        SecurityContextHolder.getContext().setAuthentication(authentication);
+        System.out.println(SecurityContextHolder.getContext().getAuthentication());
+        System.out.println(SecurityContextHolder.getContext().getAuthentication());
 
     }
 
