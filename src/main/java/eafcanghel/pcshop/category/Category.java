@@ -1,10 +1,13 @@
 package eafcanghel.pcshop.category;
 
+import eafcanghel.pcshop.item.Item;
 import eafcanghel.pcshop.order.Order;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.util.Set;
 
 @Data
 @AllArgsConstructor

@@ -1,5 +1,6 @@
 package eafcanghel.pcshop.item;
 
+import eafcanghel.pcshop.category.Category;
 import eafcanghel.pcshop.order.OrderLine;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -27,22 +28,7 @@ public class Item {
     private String description;
     @Column(name = "PRICE")
     private BigDecimal price;
-
-    @ElementCollection
-    @CollectionTable(name = "ITEM_CATEGORY",
-            joinColumns = @JoinColumn(name = "ITEM_ID"))
-    @Column(name = "CATEGORY_ID")
-    private Set<Integer> categoryIds;
-
+    @ManyToMany
+    Set<Category> CATEGORIES;
 }
 
-//public class OrderLine {
-//    private Long id;
-//    private int quantity;
-//    private Item item;
-//    private Order order;
-//
-//    // Constructors, getters, and setters
-//
-//    // ...
-//}

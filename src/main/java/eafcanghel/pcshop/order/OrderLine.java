@@ -1,9 +1,12 @@
 package eafcanghel.pcshop.order;
 
+import eafcanghel.pcshop.item.Item;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.lang.reflect.Type;
 
 
 @Data
@@ -24,5 +27,8 @@ public class OrderLine {
     @Column(name = "QUANTITY")
     private int quantity;
 
+    @ManyToOne
+    @JoinColumn(name = "ITEM_ID")
+    private Item itemId;
 
 }
