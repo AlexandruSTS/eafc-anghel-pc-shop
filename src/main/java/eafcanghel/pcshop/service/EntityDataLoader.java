@@ -136,14 +136,14 @@ public class EntityDataLoader implements CommandLineRunner {
         nvidia_geforce.setCATEGORIES(Set.of(components_category, gpus_category));
 
         Item macbook_air = new Item();
-        macbook_air.setName("MacBook Air Intel");
-        macbook_air.setDescription("The best Macbook Air");
+        macbook_air.setName("MacBook Pro Intel");
+        macbook_air.setDescription("The best Macbook Pro");
         macbook_air.setPrice(1690.57);
         macbook_air.setCATEGORIES(Set.of(laptop_category, apple_category, intel_category));
 
         Item macbook_pro = new Item();
         macbook_pro.setName("MacBook Air M1");
-        macbook_pro.setDescription("The best Macbook Pro");
+        macbook_pro.setDescription("The best Macbook Air");
         macbook_pro.setPrice(5270.62);
         macbook_pro.setCATEGORIES(Set.of(laptop_category, apple_category));
 
@@ -256,7 +256,6 @@ public class EntityDataLoader implements CommandLineRunner {
         orderRepository.saveAll(orders);
         orderLineRepository.saveAll(orderLines);
     }
-
     Double calculateLineTotal(Integer qte, Double price) {
         return price * (double) qte;
     }

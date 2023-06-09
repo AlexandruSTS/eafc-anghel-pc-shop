@@ -1,6 +1,7 @@
 package eafcanghel.pcshop.user;
 
 //import eafcanghel.pcshop.order.Order;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import eafcanghel.pcshop.order.Order;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Past;
@@ -31,9 +32,12 @@ public class User {
     @Size(max = 100)
     @Column(name = "EMAIL", nullable = false, unique = true)
     private String email;
+
+    @JsonIgnore
     @Size(min = 6, max = 100)
     @Column(name = "PASSWORD", nullable = false, unique = true)
     private String password;
+
     @Past
     @Temporal(TemporalType.DATE)
     @Column(name = "DATE_OF_BIRTH", nullable = false)
@@ -41,7 +45,6 @@ public class User {
 
     @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL)
     private List<Order> orders;
-
 
 //    @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL)
 //    private List<Order> orders;
