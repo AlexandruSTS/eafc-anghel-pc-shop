@@ -2,7 +2,7 @@ CREATE TABLE `ORDERS` (
                          ID BIGINT AUTO_INCREMENT PRIMARY KEY,
                          CUSTOMER_ID BIGINT NOT NULL,
                          ORDER_DATE TIMESTAMP NOT NULL,
-                         TOTAL_AMOUNT DECIMAL,
+                         TOTAL_AMOUNT DOUBLE,
                          STATUS VARCHAR(255),
                          SHIPPING_ADDRESS VARCHAR(255),
                          PAYMENT_ID BIGINT,
