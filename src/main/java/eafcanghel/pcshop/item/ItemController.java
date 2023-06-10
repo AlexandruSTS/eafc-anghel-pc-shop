@@ -3,6 +3,8 @@ package eafcanghel.pcshop.item;
 import lombok.AllArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,13 +21,14 @@ public class ItemController {
 
     private final ItemService itemService;
     @GetMapping(value = "/all-items")
-    public ResponseEntity getAllItems() {
+    public ResponseEntity <Page<Item>> getAllItems(Pageable pageable) {
         try {
-            List<Item> itemsList = itemService.getAllItems();
-            return ResponseEntity.accepted().body(itemsList);
+            Page<Item> itemsPage = itemService.getAllItems(pageable);
+            return ResponseEntity.ok(itemsPage);
         } catch (Exception e) {
             LOGGER.warn(e.getMessage(), e);
-            return ResponseEntity.badRequest().body("Error retrieving all items");
+            Page<Item> emptyPage = Page.empty(); // Create an empty page
+            return ResponseEntity.badRequest().body(emptyPage);
         }
     }
 }
