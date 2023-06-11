@@ -260,4 +260,3 @@ public class EntityDataLoader implements CommandLineRunner {
         return price * (double) qte;
     }
 }
-

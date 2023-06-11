@@ -1,0 +1,149 @@
+2023-06-11 11:44:56,734 WARN [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:231] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-11 11:45:48,444 WARN [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:231] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-11 11:45:48,791 ERROR [restartedMain] o.s.b.SpringApplication [SpringApplication.java:822] Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:772)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1304)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1293)
+	at eafcanghel.pcshop.PcShopApplication.main(PcShopApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.dao.InvalidDataAccessApiUsageException: org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : eafcanghel.pcshop.order.OrderLine.itemId -> eafcanghel.pcshop.item.Item
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:368)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:234)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:565)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:660)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:410)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:163)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy4/jdk.proxy4.$Proxy131.saveAll(Unknown Source)
+	at eafcanghel.pcshop.service.EntityDataLoader.run(EntityDataLoader.java:256)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:769)
+	... 10 common frames omitted
+Caused by: java.lang.IllegalStateException: org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : eafcanghel.pcshop.order.OrderLine.itemId -> eafcanghel.pcshop.item.Item
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:161)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:175)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:182)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1429)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:477)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:2234)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:1930)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:439)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:561)
+	... 26 common frames omitted
+Caused by: org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : eafcanghel.pcshop.order.OrderLine.itemId -> eafcanghel.pcshop.item.Item
+	at org.hibernate.engine.spi.CascadingActions$8.noCascade(CascadingActions.java:383)
+	at org.hibernate.engine.internal.Cascade.cascade(Cascade.java:169)
+	at org.hibernate.event.internal.AbstractSaveEventListener.cascadeBeforeSave(AbstractSaveEventListener.java:442)
+	at org.hibernate.event.internal.DefaultPersistEventListener.justCascade(DefaultPersistEventListener.java:167)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsPersistent(DefaultPersistEventListener.java:160)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:125)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:118)
+	at org.hibernate.internal.SessionImpl.persistOnFlush(SessionImpl.java:801)
+	at org.hibernate.engine.spi.CascadingActions$8.cascade(CascadingActions.java:344)
+	at org.hibernate.engine.spi.CascadingActions$8.cascade(CascadingActions.java:334)
+	at org.hibernate.engine.internal.Cascade.cascadeToOne(Cascade.java:513)
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:434)
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:220)
+	at org.hibernate.engine.internal.Cascade.cascadeCollectionElements(Cascade.java:547)
+	at org.hibernate.engine.internal.Cascade.cascadeCollection(Cascade.java:477)
+	at org.hibernate.engine.internal.Cascade.cascadeAssociation(Cascade.java:437)
+	at org.hibernate.engine.internal.Cascade.cascadeProperty(Cascade.java:220)
+	at org.hibernate.engine.internal.Cascade.cascade(Cascade.java:153)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.cascadeOnFlush(AbstractFlushingEventListener.java:155)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.prepareEntityFlushes(AbstractFlushingEventListener.java:145)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.flushEverythingToExecutions(AbstractFlushingEventListener.java:79)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:38)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1425)
+	... 34 common frames omitted
+2023-06-11 11:47:25,341 INFO [background-preinit] o.h.v.i.u.Version [Version.java:21] HV000001: Hibernate Validator 8.0.0.Final
+2023-06-11 11:47:25,382 INFO [restartedMain] e.p.PcShopApplication [StartupInfoLogger.java:51] Starting PcShopApplication using Java 17.0.7 with PID 14993 (/Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes started by dantatar in /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop)
+2023-06-11 11:47:25,383 INFO [restartedMain] e.p.PcShopApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-06-11 11:47:25,422 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-11 11:47:25,423 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-11 11:47:25,943 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-11 11:47:25,994 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 41 ms. Found 6 JPA repository interfaces.
+2023-06-11 11:47:26,484 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8090 (http)
+2023-06-11 11:47:26,494 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8090"]
+2023-06-11 11:47:26,495 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-06-11 11:47:26,495 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-11 11:47:26,540 INFO [restartedMain] o.a.c.c.C.[.[.[/pc-shop] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-06-11 11:47:26,541 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1117 ms
+2023-06-11 11:47:26,558 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-06-11 11:47:26,839 INFO [restartedMain] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection conn1: url=jdbc:h2:./data/pcshop user=PCSHOP
+2023-06-11 11:47:26,841 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-06-11 11:47:26,852 INFO [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:./data/pcshop'
+2023-06-11 11:47:27,116 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Log4j2Log.java:35] Flyway Community Edition 9.19.1 by Redgate
+2023-06-11 11:47:27,118 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Log4j2Log.java:35] See release notes here: https://rd.gt/416ObMi
+2023-06-11 11:47:27,118 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Log4j2Log.java:35] 
+2023-06-11 11:47:27,146 INFO [restartedMain] o.f.c.i.d.b.BaseDatabaseType [Log4j2Log.java:35] Database: jdbc:h2:./data/pcshop (H2 2.1)
+2023-06-11 11:47:27,242 INFO [restartedMain] o.f.c.i.c.DbValidate [Log4j2Log.java:35] Successfully validated 7 migrations (execution time 00:00.038s)
+2023-06-11 11:47:27,253 INFO [restartedMain] o.f.c.i.c.DbMigrate [Log4j2Log.java:35] Current version of schema "PUBLIC": 1.0.6
+2023-06-11 11:47:27,254 INFO [restartedMain] o.f.c.i.c.DbMigrate [Log4j2Log.java:35] Schema "PUBLIC" is up to date. No migration necessary.
+2023-06-11 11:47:27,372 INFO [restartedMain] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-11 11:47:27,475 INFO [restartedMain] o.h.Version [Version.java:44] HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-06-11 11:47:27,725 INFO [restartedMain] SQL dialect [DialectFactoryImpl.java:66] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-06-11 11:47:28,570 INFO [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:51] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-11 11:47:28,579 INFO [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-11 11:47:28,876 WARN [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:231] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-11 11:47:29,224 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
+2023-06-11 11:47:29,326 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8090 (http) with context path '/pc-shop'
+2023-06-11 11:47:29,339 INFO [restartedMain] e.p.PcShopApplication [StartupInfoLogger.java:57] Started PcShopApplication in 4.352 seconds (process running for 5.778)
+2023-06-11 11:47:29,359 INFO [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-11 11:47:29,364 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-06-11 11:47:29,407 INFO [restartedMain] o.s.b.a.l.ConditionEvaluationReportLogger [ConditionEvaluationReportLogger.java:82] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-06-11 11:47:29,414 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-06-11 11:47:33,094 INFO [background-preinit] o.h.v.i.u.Version [Version.java:21] HV000001: Hibernate Validator 8.0.0.Final
+2023-06-11 11:47:33,122 INFO [restartedMain] e.p.PcShopApplication [StartupInfoLogger.java:51] Starting PcShopApplication using Java 17.0.7 with PID 15008 (/Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes started by dantatar in /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop)
+2023-06-11 11:47:33,124 INFO [restartedMain] e.p.PcShopApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-06-11 11:47:33,154 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-11 11:47:33,154 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-11 11:47:33,579 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-11 11:47:33,627 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 43 ms. Found 6 JPA repository interfaces.
+2023-06-11 11:47:34,011 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8090 (http)
+2023-06-11 11:47:34,017 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8090"]
+2023-06-11 11:47:34,017 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-06-11 11:47:34,018 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-11 11:47:34,051 INFO [restartedMain] o.a.c.c.C.[.[.[/pc-shop] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-06-11 11:47:34,052 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 897 ms
+2023-06-11 11:47:34,068 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-06-11 11:47:37,591 INFO [restartedMain] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection conn1: url=jdbc:h2:./data/pcshop user=PCSHOP
+2023-06-11 11:47:37,593 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-06-11 11:47:37,601 INFO [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:./data/pcshop'
+2023-06-11 11:47:37,710 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Log4j2Log.java:35] Flyway Community Edition 9.19.1 by Redgate
+2023-06-11 11:47:37,710 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Log4j2Log.java:35] See release notes here: https://rd.gt/416ObMi
+2023-06-11 11:47:37,711 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Log4j2Log.java:35] 
+2023-06-11 11:47:37,721 INFO [restartedMain] o.f.c.i.d.b.BaseDatabaseType [Log4j2Log.java:35] Database: jdbc:h2:./data/pcshop (H2 2.1)
+2023-06-11 11:47:37,761 INFO [restartedMain] o.f.c.i.c.DbValidate [Log4j2Log.java:35] Successfully validated 7 migrations (execution time 00:00.014s)
+2023-06-11 11:47:37,765 INFO [restartedMain] o.f.c.i.c.DbMigrate [Log4j2Log.java:35] Current version of schema "PUBLIC": 1.0.6
+2023-06-11 11:47:37,766 INFO [restartedMain] o.f.c.i.c.DbMigrate [Log4j2Log.java:35] Schema "PUBLIC" is up to date. No migration necessary.
+2023-06-11 11:47:37,810 INFO [restartedMain] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-11 11:47:37,853 INFO [restartedMain] o.h.Version [Version.java:44] HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-06-11 11:47:38,069 INFO [restartedMain] SQL dialect [DialectFactoryImpl.java:66] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-06-11 11:47:38,686 INFO [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:51] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-11 11:47:38,691 INFO [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-11 11:47:38,953 WARN [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:231] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-11 11:47:39,185 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
+2023-06-11 11:47:39,199 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8090"]
+2023-06-11 11:47:39,209 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8090 (http) with context path '/pc-shop'
+2023-06-11 11:47:39,218 INFO [restartedMain] e.p.PcShopApplication [StartupInfoLogger.java:57] Started PcShopApplication in 6.35 seconds (process running for 6.945)
