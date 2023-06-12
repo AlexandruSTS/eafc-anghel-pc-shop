@@ -5,6 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,8 +20,7 @@ public class ItemController {
     private static final Logger LOGGER = LoggerFactory.getLogger(ItemController.class);
 
     private final ItemService itemService;
-    @GetMapping(value = "/all-items")
-    public ResponseEntity <Page<Item>> getAllItems(Pageable pageable) {
+    @GetMapping(value = "/all-items", produces = MediaType.APPLICATION_JSON_VALUE)    public ResponseEntity <Page<Item>> getAllItems(Pageable pageable) {
         try {
             Page<Item> itemsPage = itemService.getAllItems(pageable);
             return ResponseEntity.ok(itemsPage);
