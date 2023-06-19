@@ -1,6 +1,5 @@
 package eafcanghel.pcshop.user;
 
-//import eafcanghel.pcshop.order.Order;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import eafcanghel.pcshop.order.Order;
 import jakarta.persistence.*;
@@ -17,11 +16,12 @@ import java.util.List;
 @Entity
 //_user so that there is no conflict with Spring USER table
 @Table(name = "_USER")
-public class User {
+public class PcShopUser {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID", nullable = false)
+    @Setter(AccessLevel.NONE)
     private Integer id;
     @Size(max = 50)
     @Column(name = "FIRST_NAME", nullable = false)
@@ -31,11 +31,12 @@ public class User {
     private String lastName;
     @Size(max = 100)
     @Column(name = "EMAIL", nullable = false, unique = true)
+    @Setter(AccessLevel.NONE)
     private String email;
 
     @JsonIgnore
     @Size(min = 6, max = 100)
-    @Column(name = "PASSWORD", nullable = false, unique = true)
+    @Column(name = "PASSWORD", nullable = false)
     private String password;
 
     @Past
@@ -46,12 +47,5 @@ public class User {
     @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL)
     private List<Order> orders;
 
-//    @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL)
-//    private List<Order> orders;
-
-//    @NonNull
-//    @Enumerated(EnumType.STRING)
-//    @Column(name = "USER_ROLE")
-//    private Role role;
 
 }

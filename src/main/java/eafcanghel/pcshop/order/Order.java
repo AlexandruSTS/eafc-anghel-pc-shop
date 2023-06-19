@@ -1,8 +1,7 @@
 package eafcanghel.pcshop.order;
 
 import eafcanghel.pcshop.payment.Payment;
-import eafcanghel.pcshop.payment.PaymentMethod;
-import eafcanghel.pcshop.user.User;
+import eafcanghel.pcshop.user.PcShopUser;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -27,7 +26,7 @@ public class Order {
 
     @ManyToOne
     @JoinColumn(name = "CUSTOMER_ID", nullable = false)
-    private User customer;
+    private PcShopUser customer;
 
     @Column(name = "ORDER_DATE", nullable = false)
     private LocalDateTime orderDate;

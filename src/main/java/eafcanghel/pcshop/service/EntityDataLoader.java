@@ -11,7 +11,7 @@
 //import eafcanghel.pcshop.payment.Payment;
 //import eafcanghel.pcshop.payment.PaymentMethod;
 //import eafcanghel.pcshop.payment.PaymentRepository;
-//import eafcanghel.pcshop.user.User;
+//import eafcanghel.pcshop.user.PcShopUser;
 //import eafcanghel.pcshop.user.UserRepository;
 //import lombok.AllArgsConstructor;
 //import org.springframework.boot.CommandLineRunner;
@@ -38,22 +38,22 @@
 //    public void run(String... args) {
 //
 //        // Create user
-//        List<User> users = new ArrayList<>();
-//        User user1 = new User();
+//        List<PcShopUser> users = new ArrayList<>();
+//        PcShopUser user1 = new PcShopUser();
 //        user1.setFirstName("John");
 //        user1.setLastName("Doe");
 //        user1.setEmail("john.doe@example.com");
 //        user1.setPassword("password1");
 //        user1.setDob(Date.valueOf("1990-01-01"));
 //
-//        User user2 = new User();
+//        PcShopUser user2 = new PcShopUser();
 //        user2.setFirstName("Hellen");
 //        user2.setLastName("Sully");
 //        user2.setEmail("hellen.sully@example.com");
 //        user2.setPassword("password1");
 //        user2.setDob(Date.valueOf("1995-06-01"));
 //
-//        User user3 = new User();
+//        PcShopUser user3 = new PcShopUser();
 //        user3.setFirstName("Nina");
 //        user3.setLastName("Connor");
 //        user3.setEmail("nina.conner@example.com");

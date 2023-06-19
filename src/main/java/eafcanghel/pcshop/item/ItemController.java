@@ -5,12 +5,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.security.core.Authentication;
+import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 @RestController
 @AllArgsConstructor
 @RequestMapping("/items")
@@ -30,4 +29,30 @@ public class ItemController {
             return ResponseEntity.badRequest().body(emptyPage);
         }
     }
+
+    @PostMapping(value = "/add-item")
+    public ResponseEntity<?> addItem(@RequestBody Item item, Authentication authentication) {
+        // Check if the user is authenticated
+        if (!authentication.isAuthenticated()) {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("User is not authenticated.");
+        }
+        // Check if the user has the required permission
+        if (!hasPermission(authentication, "SCOPE_write:item")) {
+            return ResponseEntity.status(HttpStatus.FORBIDDEN).body("User does not have the required permission.");
+        }
+        try {
+            Item newItem = itemService.addItem(item);
+            return ResponseEntity.status(HttpStatus.CREATED).body(newItem);
+        } catch (Exception e) {
+            LOGGER.warn(e.getMessage());
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(e.getMessage());
+        }
+    }
+
+
+    private boolean hasPermission(Authentication authentication, String requiredPermission) {
+        return authentication.getAuthorities().stream()
+                .anyMatch(authority -> authority.getAuthority().equals(requiredPermission));
+    }
+
 }

@@ -1,13 +1,11 @@
 package eafcanghel.pcshop.category;
 
-import eafcanghel.pcshop.item.Item;
-import eafcanghel.pcshop.order.Order;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import java.util.Set;
 
 @Data
 @AllArgsConstructor
@@ -20,9 +18,13 @@ public class Category {
     @Column(name = "ID")
     private Integer id;
 
+    @NotNull(message = "Category name cannot be null")
+    @Size(min = 3, max = 255)
     @Column(name = "NAME")
     private String name;
 
+    @NotNull(message = "Category description cannot be null")
+    @Size(min = 1, max = 255)
     @Column(name = "DESCRIPTION")
     private String description;
 

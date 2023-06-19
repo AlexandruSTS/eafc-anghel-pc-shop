@@ -217,3 +217,5 @@ FROM ITEM I, CATEGORY C
 WHERE I.NAME IN ('Gigabyte Aorus AD27QD', 'Razer Viper Ultimate')
   AND C.NAME IN ('Screen', 'Mouse');
 
+
+
