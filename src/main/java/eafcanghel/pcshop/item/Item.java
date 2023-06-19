@@ -31,11 +31,11 @@ public class Item {
 
     @NotNull
     @Column(name = "PRICE")
-    @Min(value = 1, message = "Price must be at least 1")
-    @Max(value = 100000, message = "Price cannot exceed 100000")
+    @Min(value = 1, message = "must be at least 1")
+    @Max(value = 100000, message = "cannot exceed 100000")
     private Double price;
 
-    @NotEmpty(message = "Categories cannot be null")
+    @NotEmpty(message = "cannot be null")
     @ManyToMany
     Set<Category> categories;
 }

@@ -18,6 +18,8 @@ public class ItemController {
     private static final Logger LOGGER = LoggerFactory.getLogger(ItemController.class);
 
     private final ItemService itemService;
+
+
     @GetMapping(value = "/all-items")
     public ResponseEntity <Page<Item>> getAllItems(Pageable pageable) {
         try {
@@ -25,34 +27,30 @@ public class ItemController {
             return ResponseEntity.ok(itemsPage);
         } catch (Exception e) {
             LOGGER.warn(e.getMessage(), e);
-            Page<Item> emptyPage = Page.empty(); // Create an empty page
+            Page<Item> emptyPage = Page.empty();
             return ResponseEntity.badRequest().body(emptyPage);
         }
     }
 
     @PostMapping(value = "/add-item")
     public ResponseEntity<?> addItem(@RequestBody Item item, Authentication authentication) {
-        // Check if the user is authenticated
         if (!authentication.isAuthenticated()) {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("User is not authenticated.");
         }
-        // Check if the user has the required permission
         if (!hasPermission(authentication, "SCOPE_write:item")) {
             return ResponseEntity.status(HttpStatus.FORBIDDEN).body("User does not have the required permission.");
         }
         try {
             Item newItem = itemService.addItem(item);
             return ResponseEntity.status(HttpStatus.CREATED).body(newItem);
-        } catch (Exception e) {
+        } catch (ItemValidationException e) {
             LOGGER.warn(e.getMessage());
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(e.getMessage());
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(e.getErrors());
         }
     }
-
 
     private boolean hasPermission(Authentication authentication, String requiredPermission) {
         return authentication.getAuthorities().stream()
                 .anyMatch(authority -> authority.getAuthority().equals(requiredPermission));
     }
-
 }

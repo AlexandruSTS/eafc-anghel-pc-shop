@@ -2,10 +2,7 @@ package eafcanghel.pcshop.item;
 
 import eafcanghel.pcshop.category.Category;
 import eafcanghel.pcshop.category.CategoryRepository;
-import jakarta.validation.ConstraintViolation;
-import jakarta.validation.Validation;
-import jakarta.validation.Validator;
-import jakarta.validation.ValidatorFactory;
+import jakarta.validation.*;
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -31,40 +28,15 @@ public class ItemService {
     }
 
 
-    public void handleValidationErrors(Set<ConstraintViolation<Item>> violations) throws ItemValidationException {
-        if (!violations.isEmpty()) {
-            // Create a StringBuilder to collect the error messages
-            StringBuilder errorMessageBuilder = new StringBuilder();
-
-            // Append each validation error message to the StringBuilder
-            for (ConstraintViolation<Item> violation : violations) {
-                String fieldName = violation.getPropertyPath().toString();
-                String errorMessage = violation.getMessage();
-                errorMessageBuilder.append(fieldName).append(" - ").append(errorMessage).append("; ");
-            }
-
-            // Throw a custom exception with the error message
-            throw new ItemValidationException(errorMessageBuilder.toString());
-        }
-    }
-
-    public Item addItem(Item item) throws ItemValidationException {
+    public Item addItem(@Valid Item item) throws ItemValidationException {
         ValidatorFactory validatorFactory = Validation.buildDefaultValidatorFactory();
         Validator validator = validatorFactory.getValidator();
+        Set<ConstraintViolation<Object>> violations = validator.validate(item);
 
-        // Validate the item object
-        Set<ConstraintViolation<Item>> violations = validator.validate(item);
-
-        // Handle validation errors
-        handleValidationErrors(violations);
-
-        // Save the item to the database
+        if (!violations.isEmpty()) {
+            throw new ItemValidationException(violations);
+        }
         Item savedItem = itemRepository.save(item);
-
-        // Return the saved item
         return savedItem;
     }
-
-
-
 }
