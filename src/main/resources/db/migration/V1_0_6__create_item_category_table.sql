@@ -1,7 +1,7 @@
 CREATE TABLE ITEM_CATEGORIES (
-                               ITEM_ID BIGINT,
-                               CATEGORIES_ID BIGINT,
-                               PRIMARY KEY (ITEM_ID, CATEGORIES_ID),
-                               CONSTRAINT FK_ITEM_CATEGORIES_ITEM FOREIGN KEY (ITEM_ID) REFERENCES ITEM(ID),
-                               CONSTRAINT FK_ITEM_CATEGORY_CATEGORIES FOREIGN KEY (CATEGORIES_ID) REFERENCES CATEGORY(ID)
+                                 ITEM_ID INTEGER,
+                                 CATEGORIES_ID INTEGER,
+                                 PRIMARY KEY (ITEM_ID, CATEGORIES_ID),
+                                 CONSTRAINT FK_ITEM_CATEGORIES_ITEM FOREIGN KEY (ITEM_ID) REFERENCES ITEM(ID),
+                                 CONSTRAINT FK_ITEM_CATEGORY_CATEGORIES FOREIGN KEY (CATEGORIES_ID) REFERENCES CATEGORY(ID)
 );

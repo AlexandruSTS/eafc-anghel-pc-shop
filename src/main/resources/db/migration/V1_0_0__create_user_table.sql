@@ -1,6 +1,6 @@
 CREATE TABLE _USER
 (
-    ID            BIGINT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    ID            SERIAL PRIMARY KEY NOT NULL,
     FIRST_NAME    VARCHAR(255)                   NOT NULL,
     LAST_NAME     VARCHAR(255)                   NOT NULL,
     EMAIL         VARCHAR(255)                   NOT NULL,
