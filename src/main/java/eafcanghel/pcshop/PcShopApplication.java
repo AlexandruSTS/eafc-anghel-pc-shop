@@ -8,5 +8,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class PcShopApplication {
     public static void main(String[] args) {
         SpringApplication.run(PcShopApplication.class, args);
+
     }
 }
