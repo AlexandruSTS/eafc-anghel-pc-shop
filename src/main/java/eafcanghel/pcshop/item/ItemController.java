@@ -19,7 +19,6 @@ public class ItemController {
 
     private final ItemService itemService;
 
-
     @GetMapping(value = "/all-items")
     public ResponseEntity <Page<Item>> getAllItems(Pageable pageable) {
         try {

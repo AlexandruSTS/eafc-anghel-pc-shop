@@ -1,389 +1,185 @@
-2023-06-20 02:37:50,162 INFO [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:650] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-06-20 02:37:50,177 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
-2023-06-20 02:37:50,183 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
-2023-06-20 02:39:27,583 INFO [background-preinit] o.h.v.i.u.Version [Version.java:21] HV000001: Hibernate Validator 8.0.0.Final
-2023-06-20 02:39:27,609 INFO [restartedMain] e.p.PcShopApplication [StartupInfoLogger.java:51] Starting PcShopApplication using Java 17.0.7 with PID 21681 (/Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes started by dantatar in /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop)
-2023-06-20 02:39:27,610 INFO [restartedMain] e.p.PcShopApplication [SpringApplication.java:639] The following 1 profile is active: "dev"
-2023-06-20 02:39:27,636 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-06-20 02:39:27,637 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-06-20 02:39:28,078 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-06-20 02:39:28,130 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 42 ms. Found 5 JPA repository interfaces.
-2023-06-20 02:39:28,535 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8090 (http)
-2023-06-20 02:39:28,540 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8090"]
-2023-06-20 02:39:28,541 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-06-20 02:39:28,541 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.8]
-2023-06-20 02:39:28,576 INFO [restartedMain] o.a.c.c.C.[.[.[/pc-shop] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-06-20 02:39:28,576 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 939 ms
-2023-06-20 02:39:28,594 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2023-06-20 02:39:32,126 INFO [restartedMain] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection conn1: url=jdbc:h2:./data/pcshop user=PCSHOP
-2023-06-20 02:39:32,127 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2023-06-20 02:39:32,136 INFO [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:./data/pcshop'
-2023-06-20 02:39:32,239 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] Flyway Community Edition 9.16.3 by Redgate
-2023-06-20 02:39:32,240 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] See release notes here: https://rd.gt/416ObMi
-2023-06-20 02:39:32,240 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] 
-2023-06-20 02:39:32,252 INFO [restartedMain] o.f.c.i.d.b.BaseDatabaseType [Slf4jLog.java:37] Database: jdbc:h2:./data/pcshop (H2 2.1)
-2023-06-20 02:39:32,309 INFO [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:37] Successfully validated 8 migrations (execution time 00:00.019s)
-2023-06-20 02:39:32,314 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Current version of schema "PUBLIC": 1.0.7
-2023-06-20 02:39:32,314 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Schema "PUBLIC" is up to date. No migration necessary.
-2023-06-20 02:39:32,368 INFO [restartedMain] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-06-20 02:39:32,412 INFO [restartedMain] o.h.Version [Version.java:44] HHH000412: Hibernate ORM core version 6.2.2.Final
-2023-06-20 02:39:32,414 INFO [restartedMain] o.h.c.Environment [Environment.java:191] HHH000406: Using bytecode reflection optimizer
-2023-06-20 02:39:32,505 INFO [restartedMain] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] HHH000021: Bytecode provider name : bytebuddy
-2023-06-20 02:39:32,584 INFO [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-06-20 02:39:32,610 INFO [restartedMain] o.h.o.dialect [DialectFactoryImpl.java:93] HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
-2023-06-20 02:39:32,772 INFO [restartedMain] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] HHH000021: Bytecode provider name : bytebuddy
-2023-06-20 02:39:33,268 INFO [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:51] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-06-20 02:39:33,284 INFO [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-06-20 02:39:33,477 WARN [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:231] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-06-20 02:39:33,573 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page: class path resource [static/index.html]
-2023-06-20 02:39:33,829 INFO [restartedMain] o.s.s.w.DefaultSecurityFilterChain [DefaultSecurityFilterChain.java:54] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@241fb46a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@73319ed8, org.springframework.security.web.context.SecurityContextHolderFilter@1d9b9a0, org.springframework.security.web.header.HeaderWriterFilter@43161fc9, org.springframework.security.web.csrf.CsrfFilter@7b1d3f0d, org.springframework.security.web.authentication.logout.LogoutFilter@7684cbc0, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@36132ffd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@53b26ce9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@638f3589, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5cf22b84, org.springframework.security.web.access.ExceptionTranslationFilter@53b54186, org.springframework.security.web.access.intercept.AuthorizationFilter@49b34ec2]
-2023-06-20 02:39:33,862 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
-2023-06-20 02:39:33,875 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8090"]
-2023-06-20 02:39:33,884 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8090 (http) with context path '/pc-shop'
-2023-06-20 02:39:33,892 INFO [restartedMain] e.p.PcShopApplication [StartupInfoLogger.java:57] Started PcShopApplication in 6.515 seconds (process running for 7.185)
-2023-06-20 02:39:40,995 INFO [http-nio-8090-exec-3] o.a.c.c.C.[.[.[/pc-shop] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-06-20 02:39:40,995 INFO [http-nio-8090-exec-3] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
-2023-06-20 02:39:40,996 INFO [http-nio-8090-exec-3] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
-2023-06-20 02:39:47,652 WARN [http-nio-8090-exec-4] e.p.i.ItemController [ItemController.java:47] Item validation failed
-2023-06-20 04:21:56,812 WARN [http-nio-8090-exec-8] e.p.i.ItemController [ItemController.java:47] Item validation failed
-2023-06-20 04:21:59,678 WARN [http-nio-8090-exec-1] e.p.i.ItemController [ItemController.java:47] Item validation failed
-2023-06-20 04:22:01,161 WARN [http-nio-8090-exec-10] e.p.i.ItemController [ItemController.java:47] Item validation failed
-2023-06-20 04:22:03,873 WARN [http-nio-8090-exec-6] e.p.i.ItemController [ItemController.java:47] Item validation failed
-2023-06-20 04:32:03,585 INFO [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:650] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-06-20 04:32:03,591 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
-2023-06-20 04:32:03,592 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
-2023-06-20 04:34:00,377 INFO [background-preinit] o.h.v.i.u.Version [Version.java:21] HV000001: Hibernate Validator 8.0.0.Final
-2023-06-20 04:34:00,414 INFO [restartedMain] e.p.PcShopApplication [StartupInfoLogger.java:51] Starting PcShopApplication using Java 17.0.7 with PID 24254 (/Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes started by dantatar in /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop)
-2023-06-20 04:34:00,414 INFO [restartedMain] e.p.PcShopApplication [SpringApplication.java:639] The following 1 profile is active: "dev"
-2023-06-20 04:34:00,445 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-06-20 04:34:00,445 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-06-20 04:34:01,157 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-06-20 04:34:01,228 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 59 ms. Found 5 JPA repository interfaces.
-2023-06-20 04:34:02,140 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8090 (http)
-2023-06-20 04:34:02,150 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8090"]
-2023-06-20 04:34:02,150 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-06-20 04:34:02,150 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.8]
-2023-06-20 04:34:02,231 INFO [restartedMain] o.a.c.c.C.[.[.[/pc-shop] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-06-20 04:34:02,232 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1787 ms
-2023-06-20 04:34:02,260 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2023-06-20 04:34:02,710 INFO [restartedMain] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection conn1: url=jdbc:h2:./data/pcshop user=PCSHOP
-2023-06-20 04:34:02,712 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2023-06-20 04:34:02,730 INFO [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:./data/pcshop'
-2023-06-20 04:34:02,926 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] Flyway Community Edition 9.16.3 by Redgate
-2023-06-20 04:34:02,926 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] See release notes here: https://rd.gt/416ObMi
-2023-06-20 04:34:02,927 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] 
-2023-06-20 04:34:02,946 INFO [restartedMain] o.f.c.i.d.b.BaseDatabaseType [Slf4jLog.java:37] Database: jdbc:h2:./data/pcshop (H2 2.1)
-2023-06-20 04:34:03,025 INFO [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:37] Successfully validated 8 migrations (execution time 00:00.033s)
-2023-06-20 04:34:03,032 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Current version of schema "PUBLIC": 1.0.7
-2023-06-20 04:34:03,033 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Schema "PUBLIC" is up to date. No migration necessary.
-2023-06-20 04:34:03,105 INFO [restartedMain] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-06-20 04:34:03,201 INFO [restartedMain] o.h.Version [Version.java:44] HHH000412: Hibernate ORM core version 6.2.2.Final
-2023-06-20 04:34:03,204 INFO [restartedMain] o.h.c.Environment [Environment.java:191] HHH000406: Using bytecode reflection optimizer
-2023-06-20 04:34:03,431 INFO [restartedMain] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] HHH000021: Bytecode provider name : bytebuddy
-2023-06-20 04:34:03,586 INFO [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-06-20 04:34:03,624 INFO [restartedMain] o.h.o.dialect [DialectFactoryImpl.java:93] HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
-2023-06-20 04:34:03,969 INFO [restartedMain] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] HHH000021: Bytecode provider name : bytebuddy
-2023-06-20 04:34:04,805 INFO [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:51] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-06-20 04:34:04,853 INFO [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-06-20 04:34:05,256 WARN [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:231] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-06-20 04:34:05,447 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page: class path resource [static/index.html]
-2023-06-20 04:34:05,947 INFO [restartedMain] o.s.s.w.DefaultSecurityFilterChain [DefaultSecurityFilterChain.java:54] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6aa50953, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7aaf6341, org.springframework.security.web.context.SecurityContextHolderFilter@79cb105b, org.springframework.security.web.header.HeaderWriterFilter@1fbcdf09, org.springframework.security.web.csrf.CsrfFilter@6b9e1a0f, org.springframework.security.web.authentication.logout.LogoutFilter@e01c0df, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@646dc9fd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3c2a3c7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@11b074cf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@70877fc8, org.springframework.security.web.access.ExceptionTranslationFilter@7bbe18c2, org.springframework.security.web.access.intercept.AuthorizationFilter@33b323ec]
-2023-06-20 04:34:05,991 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
-2023-06-20 04:34:06,005 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8090"]
-2023-06-20 04:34:06,021 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8090 (http) with context path '/pc-shop'
-2023-06-20 04:34:06,031 INFO [restartedMain] e.p.PcShopApplication [StartupInfoLogger.java:57] Started PcShopApplication in 5.95 seconds (process running for 7.241)
-2023-06-20 04:34:58,996 INFO [http-nio-8090-exec-2] o.a.c.c.C.[.[.[/pc-shop] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-06-20 04:34:58,996 INFO [http-nio-8090-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
-2023-06-20 04:34:58,998 INFO [http-nio-8090-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
-2023-06-20 04:51:05,296 INFO [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:650] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-06-20 04:51:05,313 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
-2023-06-20 04:51:05,317 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
-2023-06-20 06:16:23,951 INFO [background-preinit] o.h.v.i.u.Version [Version.java:21] HV000001: Hibernate Validator 8.0.0.Final
-2023-06-20 06:16:23,995 INFO [restartedMain] e.p.PcShopApplication [StartupInfoLogger.java:51] Starting PcShopApplication using Java 17.0.7 with PID 26333 (/Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes started by dantatar in /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop)
-2023-06-20 06:16:23,997 INFO [restartedMain] e.p.PcShopApplication [SpringApplication.java:639] The following 1 profile is active: "dev"
-2023-06-20 06:16:24,046 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-06-20 06:16:24,047 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-06-20 06:16:24,763 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-06-20 06:16:24,840 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 64 ms. Found 5 JPA repository interfaces.
-2023-06-20 06:16:25,363 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8090 (http)
-2023-06-20 06:16:25,370 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8090"]
-2023-06-20 06:16:25,371 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-06-20 06:16:25,371 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.8]
-2023-06-20 06:16:25,415 INFO [restartedMain] o.a.c.c.C.[.[.[/pc-shop] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-06-20 06:16:25,416 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1368 ms
-2023-06-20 06:16:25,442 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2023-06-20 06:16:25,779 INFO [restartedMain] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection conn1: url=jdbc:h2:./data/pcshop user=PCSHOP
-2023-06-20 06:16:25,781 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2023-06-20 06:16:25,791 INFO [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:./data/pcshop'
-2023-06-20 06:16:25,940 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] Flyway Community Edition 9.16.3 by Redgate
-2023-06-20 06:16:25,941 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] See release notes here: https://rd.gt/416ObMi
-2023-06-20 06:16:25,942 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] 
-2023-06-20 06:16:25,957 INFO [restartedMain] o.f.c.i.d.b.BaseDatabaseType [Slf4jLog.java:37] Database: jdbc:h2:./data/pcshop (H2 2.1)
-2023-06-20 06:16:26,026 INFO [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:37] Successfully validated 8 migrations (execution time 00:00.027s)
-2023-06-20 06:16:26,033 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Current version of schema "PUBLIC": 1.0.7
-2023-06-20 06:16:26,034 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Schema "PUBLIC" is up to date. No migration necessary.
-2023-06-20 06:16:26,117 INFO [restartedMain] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-06-20 06:16:26,203 INFO [restartedMain] o.h.Version [Version.java:44] HHH000412: Hibernate ORM core version 6.2.2.Final
-2023-06-20 06:16:26,207 INFO [restartedMain] o.h.c.Environment [Environment.java:191] HHH000406: Using bytecode reflection optimizer
-2023-06-20 06:16:26,358 INFO [restartedMain] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] HHH000021: Bytecode provider name : bytebuddy
-2023-06-20 06:16:26,535 INFO [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-06-20 06:16:26,580 INFO [restartedMain] o.h.o.dialect [DialectFactoryImpl.java:93] HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
-2023-06-20 06:16:26,880 INFO [restartedMain] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] HHH000021: Bytecode provider name : bytebuddy
-2023-06-20 06:16:27,652 INFO [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:51] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-06-20 06:16:27,676 INFO [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-06-20 06:16:27,972 WARN [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:231] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-06-20 06:16:28,080 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page: class path resource [static/index.html]
-2023-06-20 06:16:28,442 INFO [restartedMain] o.s.s.w.DefaultSecurityFilterChain [DefaultSecurityFilterChain.java:54] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6aa50953, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7aaf6341, org.springframework.security.web.context.SecurityContextHolderFilter@79cb105b, org.springframework.security.web.header.HeaderWriterFilter@1fbcdf09, org.springframework.security.web.csrf.CsrfFilter@6b9e1a0f, org.springframework.security.web.authentication.logout.LogoutFilter@e01c0df, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@646dc9fd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3c2a3c7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@11b074cf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@70877fc8, org.springframework.security.web.access.ExceptionTranslationFilter@7bbe18c2, org.springframework.security.web.access.intercept.AuthorizationFilter@33b323ec]
-2023-06-20 06:16:28,480 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
-2023-06-20 06:16:28,492 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8090"]
-2023-06-20 06:16:28,503 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8090 (http) with context path '/pc-shop'
-2023-06-20 06:16:28,511 INFO [restartedMain] e.p.PcShopApplication [StartupInfoLogger.java:57] Started PcShopApplication in 4.846 seconds (process running for 5.752)
-2023-06-20 06:16:40,088 INFO [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:650] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-06-20 06:16:40,091 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
-2023-06-20 06:16:40,093 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
-2023-06-20 06:16:42,642 INFO [background-preinit] o.h.v.i.u.Version [Version.java:21] HV000001: Hibernate Validator 8.0.0.Final
-2023-06-20 06:16:42,701 INFO [restartedMain] e.p.PcShopApplication [StartupInfoLogger.java:51] Starting PcShopApplication using Java 17.0.7 with PID 26342 (/Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes started by dantatar in /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop)
-2023-06-20 06:16:42,702 INFO [restartedMain] e.p.PcShopApplication [SpringApplication.java:639] The following 1 profile is active: "dev"
-2023-06-20 06:16:42,742 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-06-20 06:16:42,742 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-06-20 06:16:43,566 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-06-20 06:16:43,631 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 54 ms. Found 5 JPA repository interfaces.
-2023-06-20 06:16:44,238 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 5000 (http)
-2023-06-20 06:16:44,248 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-5000"]
-2023-06-20 06:16:44,249 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-06-20 06:16:44,249 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.8]
-2023-06-20 06:16:44,311 INFO [restartedMain] o.a.c.c.C.[.[.[/pc-shop] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-06-20 06:16:44,311 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1568 ms
-2023-06-20 06:16:44,348 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2023-06-20 06:16:44,770 INFO [restartedMain] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection conn1: url=jdbc:h2:./data/pcshop user=PCSHOP
-2023-06-20 06:16:44,771 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2023-06-20 06:16:44,786 INFO [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:./data/pcshop'
-2023-06-20 06:16:44,939 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] Flyway Community Edition 9.16.3 by Redgate
-2023-06-20 06:16:44,940 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] See release notes here: https://rd.gt/416ObMi
-2023-06-20 06:16:44,940 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] 
-2023-06-20 06:16:44,955 INFO [restartedMain] o.f.c.i.d.b.BaseDatabaseType [Slf4jLog.java:37] Database: jdbc:h2:./data/pcshop (H2 2.1)
-2023-06-20 06:16:45,037 INFO [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:37] Successfully validated 8 migrations (execution time 00:00.036s)
-2023-06-20 06:16:45,049 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Current version of schema "PUBLIC": 1.0.7
-2023-06-20 06:16:45,050 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Schema "PUBLIC" is up to date. No migration necessary.
-2023-06-20 06:16:45,135 INFO [restartedMain] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-06-20 06:16:45,219 INFO [restartedMain] o.h.Version [Version.java:44] HHH000412: Hibernate ORM core version 6.2.2.Final
-2023-06-20 06:16:45,221 INFO [restartedMain] o.h.c.Environment [Environment.java:191] HHH000406: Using bytecode reflection optimizer
-2023-06-20 06:16:45,419 INFO [restartedMain] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] HHH000021: Bytecode provider name : bytebuddy
-2023-06-20 06:16:45,577 INFO [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-06-20 06:16:45,624 INFO [restartedMain] o.h.o.dialect [DialectFactoryImpl.java:93] HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
-2023-06-20 06:16:45,933 INFO [restartedMain] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] HHH000021: Bytecode provider name : bytebuddy
-2023-06-20 06:16:46,636 INFO [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:51] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-06-20 06:16:46,664 INFO [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-06-20 06:16:47,003 WARN [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:231] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-06-20 06:16:47,161 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page: class path resource [static/index.html]
-2023-06-20 06:16:47,717 INFO [restartedMain] o.s.s.w.DefaultSecurityFilterChain [DefaultSecurityFilterChain.java:54] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@709f661b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@52333b16, org.springframework.security.web.context.SecurityContextHolderFilter@6edfa20d, org.springframework.security.web.header.HeaderWriterFilter@74dd7f7a, org.springframework.security.web.csrf.CsrfFilter@78dd927b, org.springframework.security.web.authentication.logout.LogoutFilter@43bb162b, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@6c7927b4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@14ed9513, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7645b79, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@77d2e263, org.springframework.security.web.access.ExceptionTranslationFilter@5d121fbf, org.springframework.security.web.access.intercept.AuthorizationFilter@3cbbb088]
-2023-06-20 06:16:47,774 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
-2023-06-20 06:16:47,795 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-5000"]
-2023-06-20 06:16:47,800 WARN [restartedMain] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:616] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
-2023-06-20 06:16:47,802 INFO [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:650] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-06-20 06:16:47,806 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
-2023-06-20 06:16:47,998 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
-2023-06-20 06:16:48,002 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-5000"]
-2023-06-20 06:16:48,003 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
-2023-06-20 06:16:48,014 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-5000"]
-2023-06-20 06:16:48,016 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-5000"]
-2023-06-20 06:16:48,032 INFO [restartedMain] o.s.b.a.l.ConditionEvaluationReportLogger [ConditionEvaluationReportLogger.java:82] 
+2023-06-21 00:20:26,372 INFO [http-nio-8090-exec-4] o.a.c.h.Http11Processor [DirectJDKLog.java:175] Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in the request target [/pc-shop/items/all-items?${queryParams} ]. The valid characters are defined in RFC 7230 and RFC 3986
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:482)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:263)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-06-21 00:20:26,372 INFO [http-nio-8090-exec-5] o.a.c.h.Http11Processor [DirectJDKLog.java:175] Error parsing HTTP request header
+ Note: further occurrences of HTTP request parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in the request target [/pc-shop/items/all-items?${queryParams} ]. The valid characters are defined in RFC 7230 and RFC 3986
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:482)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:263)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-06-21 00:39:20,809 INFO [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-21 00:39:20,814 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-06-21 00:39:20,816 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-06-21 00:39:24,087 INFO [background-preinit] o.h.v.i.u.Version [Version.java:21] HV000001: Hibernate Validator 8.0.0.Final
+2023-06-21 00:39:24,111 INFO [restartedMain] e.p.PcShopApplication [StartupInfoLogger.java:51] Starting PcShopApplication using Java 17.0.7 with PID 44750 (/Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes started by dantatar in /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop)
+2023-06-21 00:39:24,111 INFO [restartedMain] e.p.PcShopApplication [SpringApplication.java:639] The following 1 profile is active: "dev"
+2023-06-21 00:39:24,136 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-21 00:39:24,137 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-21 00:39:24,582 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-21 00:39:24,638 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 50 ms. Found 5 JPA repository interfaces.
+2023-06-21 00:39:25,054 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8090 (http)
+2023-06-21 00:39:25,060 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8090"]
+2023-06-21 00:39:25,061 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-06-21 00:39:25,061 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-21 00:39:25,099 INFO [restartedMain] o.a.c.c.C.[.[.[/pc-shop] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-06-21 00:39:25,100 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 963 ms
+2023-06-21 00:39:25,121 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-06-21 00:39:25,354 INFO [restartedMain] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection conn1: url=jdbc:h2:./data/pcshop user=PCSHOP
+2023-06-21 00:39:25,356 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-06-21 00:39:25,363 INFO [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:./data/pcshop'
+2023-06-21 00:39:25,452 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] Flyway Community Edition 9.16.3 by Redgate
+2023-06-21 00:39:25,452 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] See release notes here: https://rd.gt/416ObMi
+2023-06-21 00:39:25,453 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] 
+2023-06-21 00:39:25,464 INFO [restartedMain] o.f.c.i.d.b.BaseDatabaseType [Slf4jLog.java:37] Database: jdbc:h2:./data/pcshop (H2 2.1)
+2023-06-21 00:39:25,511 INFO [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:37] Successfully validated 8 migrations (execution time 00:00.019s)
+2023-06-21 00:39:25,515 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Current version of schema "PUBLIC": 1.0.7
+2023-06-21 00:39:25,516 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Schema "PUBLIC" is up to date. No migration necessary.
+2023-06-21 00:39:25,561 INFO [restartedMain] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-21 00:39:25,600 INFO [restartedMain] o.h.Version [Version.java:44] HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-06-21 00:39:25,602 INFO [restartedMain] o.h.c.Environment [Environment.java:191] HHH000406: Using bytecode reflection optimizer
+2023-06-21 00:39:25,689 INFO [restartedMain] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] HHH000021: Bytecode provider name : bytebuddy
+2023-06-21 00:39:25,776 INFO [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-21 00:39:25,798 INFO [restartedMain] o.h.o.dialect [DialectFactoryImpl.java:93] HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
+2023-06-21 00:39:25,961 INFO [restartedMain] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] HHH000021: Bytecode provider name : bytebuddy
+2023-06-21 00:39:26,480 INFO [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:51] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-21 00:39:26,495 INFO [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-21 00:39:26,683 WARN [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:231] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-21 00:39:26,948 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
+2023-06-21 00:39:26,962 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8090"]
+2023-06-21 00:39:26,971 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8090 (http) with context path '/pc-shop'
+2023-06-21 00:39:26,979 INFO [restartedMain] e.p.PcShopApplication [StartupInfoLogger.java:57] Started PcShopApplication in 3.088 seconds (process running for 3.816)
+2023-06-21 00:46:09,926 INFO [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-21 00:46:09,929 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-06-21 00:46:09,931 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-06-21 00:47:51,549 INFO [background-preinit] o.h.v.i.u.Version [Version.java:21] HV000001: Hibernate Validator 8.0.0.Final
+2023-06-21 00:47:51,668 INFO [restartedMain] e.p.PcShopApplication [StartupInfoLogger.java:51] Starting PcShopApplication using Java 17.0.7 with PID 45201 (/Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes started by dantatar in /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop)
+2023-06-21 00:47:51,669 INFO [restartedMain] e.p.PcShopApplication [SpringApplication.java:639] The following 1 profile is active: "dev"
+2023-06-21 00:47:51,743 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-21 00:47:51,745 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-21 00:47:52,349 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-21 00:47:52,418 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 60 ms. Found 5 JPA repository interfaces.
+2023-06-21 00:47:52,897 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8090 (http)
+2023-06-21 00:47:52,903 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8090"]
+2023-06-21 00:47:52,904 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-06-21 00:47:52,905 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-21 00:47:52,942 INFO [restartedMain] o.a.c.c.C.[.[.[/pc-shop] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-06-21 00:47:52,942 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1196 ms
+2023-06-21 00:47:52,960 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-06-21 00:47:55,187 INFO [restartedMain] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection conn1: url=jdbc:h2:./data/pcshop user=PCSHOP
+2023-06-21 00:47:55,188 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-06-21 00:47:55,196 INFO [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:./data/pcshop'
+2023-06-21 00:47:55,280 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] Flyway Community Edition 9.16.3 by Redgate
+2023-06-21 00:47:55,281 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] See release notes here: https://rd.gt/416ObMi
+2023-06-21 00:47:55,281 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] 
+2023-06-21 00:47:55,291 INFO [restartedMain] o.f.c.i.d.b.BaseDatabaseType [Slf4jLog.java:37] Database: jdbc:h2:./data/pcshop (H2 2.1)
+2023-06-21 00:47:55,332 INFO [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:37] Successfully validated 8 migrations (execution time 00:00.016s)
+2023-06-21 00:47:55,337 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Current version of schema "PUBLIC": 1.0.7
+2023-06-21 00:47:55,337 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Schema "PUBLIC" is up to date. No migration necessary.
+2023-06-21 00:47:55,380 INFO [restartedMain] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-21 00:47:55,416 INFO [restartedMain] o.h.Version [Version.java:44] HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-06-21 00:47:55,418 INFO [restartedMain] o.h.c.Environment [Environment.java:191] HHH000406: Using bytecode reflection optimizer
+2023-06-21 00:47:55,539 INFO [restartedMain] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] HHH000021: Bytecode provider name : bytebuddy
+2023-06-21 00:47:55,650 INFO [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-21 00:47:55,681 INFO [restartedMain] o.h.o.dialect [DialectFactoryImpl.java:93] HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
+2023-06-21 00:47:55,904 INFO [restartedMain] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] HHH000021: Bytecode provider name : bytebuddy
+2023-06-21 00:47:56,495 INFO [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:51] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-21 00:47:56,510 INFO [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-21 00:47:56,713 WARN [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:231] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-21 00:47:57,045 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
+2023-06-21 00:47:57,061 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8090"]
+2023-06-21 00:47:57,073 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8090 (http) with context path '/pc-shop'
+2023-06-21 00:47:57,081 INFO [restartedMain] e.p.PcShopApplication [StartupInfoLogger.java:57] Started PcShopApplication in 5.836 seconds (process running for 6.81)
+2023-06-21 00:48:50,572 INFO [http-nio-8090-exec-3] o.a.c.c.C.[.[.[/pc-shop] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-21 00:48:50,573 INFO [http-nio-8090-exec-3] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
+2023-06-21 00:48:50,575 INFO [http-nio-8090-exec-3] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
+2023-06-21 01:42:26,657 INFO [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-21 01:42:26,664 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-06-21 01:42:26,668 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-06-21 04:26:40,076 INFO [background-preinit] o.h.v.i.u.Version [Version.java:21] HV000001: Hibernate Validator 8.0.0.Final
+2023-06-21 04:26:40,110 INFO [restartedMain] e.p.PcShopApplication [StartupInfoLogger.java:51] Starting PcShopApplication using Java 17.0.7 with PID 52370 (/Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes started by dantatar in /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop)
+2023-06-21 04:26:40,111 INFO [restartedMain] e.p.PcShopApplication [SpringApplication.java:639] The following 1 profile is active: "production"
+2023-06-21 04:26:40,152 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-21 04:26:40,153 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-21 04:26:40,834 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-21 04:26:40,914 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 67 ms. Found 5 JPA repository interfaces.
+2023-06-21 04:26:41,509 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8000 (http)
+2023-06-21 04:26:41,518 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8000"]
+2023-06-21 04:26:41,519 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-06-21 04:26:41,519 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-21 04:26:41,569 INFO [restartedMain] o.a.c.c.C.[.[.[/pc-shop] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-06-21 04:26:41,570 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1417 ms
+2023-06-21 04:26:41,599 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-06-21 04:26:41,961 INFO [restartedMain] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection conn1: url=jdbc:h2:./data/pcshop user=PCSHOP
+2023-06-21 04:26:41,963 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-06-21 04:26:41,975 INFO [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:./data/pcshop'
+2023-06-21 04:26:42,114 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] Flyway Community Edition 9.16.3 by Redgate
+2023-06-21 04:26:42,114 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] See release notes here: https://rd.gt/416ObMi
+2023-06-21 04:26:42,114 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] 
+2023-06-21 04:26:42,129 INFO [restartedMain] o.f.c.i.d.b.BaseDatabaseType [Slf4jLog.java:37] Database: jdbc:h2:./data/pcshop (H2 2.1)
+2023-06-21 04:26:42,196 INFO [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:37] Successfully validated 8 migrations (execution time 00:00.030s)
+2023-06-21 04:26:42,204 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Current version of schema "PUBLIC": 1.0.7
+2023-06-21 04:26:42,205 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Schema "PUBLIC" is up to date. No migration necessary.
+2023-06-21 04:26:42,293 INFO [restartedMain] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-21 04:26:42,379 INFO [restartedMain] o.h.Version [Version.java:44] HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-06-21 04:26:42,383 INFO [restartedMain] o.h.c.Environment [Environment.java:191] HHH000406: Using bytecode reflection optimizer
+2023-06-21 04:26:42,574 INFO [restartedMain] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] HHH000021: Bytecode provider name : bytebuddy
+2023-06-21 04:26:42,741 INFO [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-21 04:26:42,789 INFO [restartedMain] o.h.o.dialect [DialectFactoryImpl.java:93] HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
+2023-06-21 04:26:43,111 INFO [restartedMain] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] HHH000021: Bytecode provider name : bytebuddy
+2023-06-21 04:26:44,014 INFO [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:51] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-21 04:26:44,039 INFO [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-21 04:26:44,339 WARN [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:231] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-21 04:26:44,476 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page: class path resource [static/index.html]
+2023-06-21 04:26:44,710 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
+2023-06-21 04:26:44,727 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8000"]
+2023-06-21 04:26:44,741 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8000 (http) with context path '/pc-shop'
+2023-06-21 04:26:44,751 INFO [restartedMain] e.p.PcShopApplication [StartupInfoLogger.java:57] Started PcShopApplication in 5.06 seconds (process running for 6.149)
+2023-06-21 04:27:02,407 INFO [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-21 04:27:02,411 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-06-21 04:27:02,597 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-06-21 09:35:51,703 INFO [background-preinit] o.h.v.i.u.Version [Version.java:21] HV000001: Hibernate Validator 8.0.0.Final
+2023-06-21 09:35:51,740 INFO [restartedMain] e.p.PcShopApplication [StartupInfoLogger.java:51] Starting PcShopApplication using Java 17.0.7 with PID 53549 (/Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes started by dantatar in /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop)
+2023-06-21 09:35:51,741 INFO [restartedMain] e.p.PcShopApplication [SpringApplication.java:639] The following 1 profile is active: "production"
+2023-06-21 09:35:51,784 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-21 09:35:51,785 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-21 09:35:52,380 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-21 09:35:52,433 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 42 ms. Found 5 JPA repository interfaces.
+2023-06-21 09:35:52,938 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 5000 (http)
+2023-06-21 09:35:52,945 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-5000"]
+2023-06-21 09:35:52,946 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-06-21 09:35:52,946 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-21 09:35:52,996 INFO [restartedMain] o.a.c.c.C.[.[.[/pc-shop] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-06-21 09:35:52,996 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1211 ms
+2023-06-21 09:35:53,034 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-06-21 09:35:53,045 WARN [restartedMain] o.p.u.PGPropertyUtil [PGPropertyUtil.java:39] JDBC URL invalid port number: ${rds.port}
+2023-06-21 09:35:53,187 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] Flyway Community Edition 9.16.3 by Redgate
+2023-06-21 09:35:53,187 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] See release notes here: https://rd.gt/416ObMi
+2023-06-21 09:35:53,188 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] 
+2023-06-21 09:35:53,199 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-06-21 09:35:53,200 WARN [restartedMain] o.p.u.PGPropertyUtil [PGPropertyUtil.java:39] JDBC URL invalid port number: ${rds.port}
+2023-06-21 09:35:53,201 WARN [restartedMain] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:616] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Driver org.postgresql.Driver claims to not accept jdbcUrl, jdbc:postgresql://${rds.hostname}:${rds.port}/${rds.db.name}
+2023-06-21 09:35:53,203 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2023-06-21 09:35:53,216 INFO [restartedMain] o.s.b.a.l.ConditionEvaluationReportLogger [ConditionEvaluationReportLogger.java:82] 
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2023-06-20 06:16:48,079 ERROR [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter [LoggingFailureAnalysisReporter.java:40] 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 5000 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 5000 or configure this application to listen on another port.
-
-2023-06-20 06:21:26,183 INFO [background-preinit] o.h.v.i.u.Version [Version.java:21] HV000001: Hibernate Validator 8.0.0.Final
-2023-06-20 06:21:26,210 INFO [restartedMain] e.p.PcShopApplication [StartupInfoLogger.java:51] Starting PcShopApplication using Java 17.0.7 with PID 26416 (/Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes started by dantatar in /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop)
-2023-06-20 06:21:26,211 INFO [restartedMain] e.p.PcShopApplication [SpringApplication.java:639] The following 1 profile is active: "dev"
-2023-06-20 06:21:26,241 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-06-20 06:21:26,242 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-06-20 06:21:26,773 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-06-20 06:21:26,830 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 48 ms. Found 5 JPA repository interfaces.
-2023-06-20 06:21:27,374 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 5000 (http)
-2023-06-20 06:21:27,381 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-5000"]
-2023-06-20 06:21:27,381 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-06-20 06:21:27,381 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.8]
-2023-06-20 06:21:27,418 INFO [restartedMain] o.a.c.c.C.[.[.[/pc-shop] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-06-20 06:21:27,418 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1176 ms
-2023-06-20 06:21:27,443 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2023-06-20 06:21:27,788 INFO [restartedMain] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection conn1: url=jdbc:h2:./data/pcshop user=PCSHOP
-2023-06-20 06:21:27,789 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2023-06-20 06:21:27,798 INFO [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:./data/pcshop'
-2023-06-20 06:21:27,921 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] Flyway Community Edition 9.16.3 by Redgate
-2023-06-20 06:21:27,921 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] See release notes here: https://rd.gt/416ObMi
-2023-06-20 06:21:27,921 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] 
-2023-06-20 06:21:27,935 INFO [restartedMain] o.f.c.i.d.b.BaseDatabaseType [Slf4jLog.java:37] Database: jdbc:h2:./data/pcshop (H2 2.1)
-2023-06-20 06:21:27,997 INFO [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:37] Successfully validated 8 migrations (execution time 00:00.029s)
-2023-06-20 06:21:28,004 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Current version of schema "PUBLIC": 1.0.7
-2023-06-20 06:21:28,005 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Schema "PUBLIC" is up to date. No migration necessary.
-2023-06-20 06:21:28,081 INFO [restartedMain] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-06-20 06:21:28,165 INFO [restartedMain] o.h.Version [Version.java:44] HHH000412: Hibernate ORM core version 6.2.2.Final
-2023-06-20 06:21:28,168 INFO [restartedMain] o.h.c.Environment [Environment.java:191] HHH000406: Using bytecode reflection optimizer
-2023-06-20 06:21:28,300 INFO [restartedMain] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] HHH000021: Bytecode provider name : bytebuddy
-2023-06-20 06:21:28,447 INFO [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-06-20 06:21:28,492 INFO [restartedMain] o.h.o.dialect [DialectFactoryImpl.java:93] HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
-2023-06-20 06:21:28,737 INFO [restartedMain] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] HHH000021: Bytecode provider name : bytebuddy
-2023-06-20 06:21:29,438 INFO [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:51] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-06-20 06:21:29,463 INFO [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-06-20 06:21:29,736 WARN [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:231] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-06-20 06:21:29,848 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page: class path resource [static/index.html]
-2023-06-20 06:21:30,199 INFO [restartedMain] o.s.s.w.DefaultSecurityFilterChain [DefaultSecurityFilterChain.java:54] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@13a2847b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@75e70e0e, org.springframework.security.web.context.SecurityContextHolderFilter@1bcadd7d, org.springframework.security.web.header.HeaderWriterFilter@73650577, org.springframework.security.web.csrf.CsrfFilter@4d2ba82c, org.springframework.security.web.authentication.logout.LogoutFilter@75784c02, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@27a20be8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7bbe18c2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2d47d461, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@42adb611, org.springframework.security.web.access.ExceptionTranslationFilter@30cb49da, org.springframework.security.web.access.intercept.AuthorizationFilter@1071707d]
-2023-06-20 06:21:30,227 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
-2023-06-20 06:21:30,243 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-5000"]
-2023-06-20 06:21:30,246 WARN [restartedMain] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:616] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
-2023-06-20 06:21:30,247 INFO [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:650] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-06-20 06:21:30,250 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
-2023-06-20 06:21:30,432 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
-2023-06-20 06:21:30,435 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-5000"]
-2023-06-20 06:21:30,435 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
-2023-06-20 06:21:30,439 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-5000"]
-2023-06-20 06:21:30,439 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-5000"]
-2023-06-20 06:21:30,448 INFO [restartedMain] o.s.b.a.l.ConditionEvaluationReportLogger [ConditionEvaluationReportLogger.java:82] 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2023-06-20 06:21:30,470 ERROR [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter [LoggingFailureAnalysisReporter.java:40] 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 5000 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 5000 or configure this application to listen on another port.
-
-2023-06-20 11:25:38,476 INFO [background-preinit] o.h.v.i.u.Version [Version.java:21] HV000001: Hibernate Validator 8.0.0.Final
-2023-06-20 11:25:38,504 INFO [restartedMain] e.p.PcShopApplication [StartupInfoLogger.java:51] Starting PcShopApplication using Java 17.0.7 with PID 32732 (/Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes started by dantatar in /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop)
-2023-06-20 11:25:38,504 INFO [restartedMain] e.p.PcShopApplication [SpringApplication.java:639] The following 1 profile is active: "dev"
-2023-06-20 11:25:38,540 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-06-20 11:25:38,540 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-06-20 11:25:39,085 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-06-20 11:25:39,144 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 50 ms. Found 5 JPA repository interfaces.
-2023-06-20 11:25:39,644 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8090 (http)
-2023-06-20 11:25:39,650 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8090"]
-2023-06-20 11:25:39,651 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-06-20 11:25:39,651 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.8]
-2023-06-20 11:25:39,686 INFO [restartedMain] o.a.c.c.C.[.[.[/pc-shop] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-06-20 11:25:39,686 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1145 ms
-2023-06-20 11:25:39,704 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2023-06-20 11:25:39,954 INFO [restartedMain] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection conn1: url=jdbc:h2:./data/pcshop user=PCSHOP
-2023-06-20 11:25:39,956 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2023-06-20 11:25:39,967 INFO [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:./data/pcshop'
-2023-06-20 11:25:40,106 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] Flyway Community Edition 9.16.3 by Redgate
-2023-06-20 11:25:40,107 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] See release notes here: https://rd.gt/416ObMi
-2023-06-20 11:25:40,107 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] 
-2023-06-20 11:25:40,122 INFO [restartedMain] o.f.c.i.d.b.BaseDatabaseType [Slf4jLog.java:37] Database: jdbc:h2:./data/pcshop (H2 2.1)
-2023-06-20 11:25:40,182 INFO [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:37] Successfully validated 8 migrations (execution time 00:00.023s)
-2023-06-20 11:25:40,190 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Current version of schema "PUBLIC": 1.0.7
-2023-06-20 11:25:40,191 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Schema "PUBLIC" is up to date. No migration necessary.
-2023-06-20 11:25:40,258 INFO [restartedMain] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-06-20 11:25:40,307 INFO [restartedMain] o.h.Version [Version.java:44] HHH000412: Hibernate ORM core version 6.2.2.Final
-2023-06-20 11:25:40,309 INFO [restartedMain] o.h.c.Environment [Environment.java:191] HHH000406: Using bytecode reflection optimizer
-2023-06-20 11:25:40,411 INFO [restartedMain] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] HHH000021: Bytecode provider name : bytebuddy
-2023-06-20 11:25:40,538 INFO [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-06-20 11:25:40,578 INFO [restartedMain] o.h.o.dialect [DialectFactoryImpl.java:93] HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
-2023-06-20 11:25:40,818 INFO [restartedMain] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] HHH000021: Bytecode provider name : bytebuddy
-2023-06-20 11:25:41,414 INFO [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:51] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-06-20 11:25:41,428 INFO [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-06-20 11:25:41,676 WARN [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:231] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-06-20 11:25:42,111 INFO [restartedMain] o.s.s.w.DefaultSecurityFilterChain [DefaultSecurityFilterChain.java:54] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2edd0858, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@64b18fce, org.springframework.security.web.context.SecurityContextHolderFilter@3774e179, org.springframework.security.web.header.HeaderWriterFilter@6619d8e7, org.springframework.security.web.csrf.CsrfFilter@401b4706, org.springframework.security.web.authentication.logout.LogoutFilter@3551c2ce, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@43bb162b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78dd927b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d9178a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7f20c73d, org.springframework.security.web.access.ExceptionTranslationFilter@616c650, org.springframework.security.web.access.intercept.AuthorizationFilter@11e65b06]
-2023-06-20 11:25:42,148 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
-2023-06-20 11:25:42,161 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8090"]
-2023-06-20 11:25:42,185 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8090 (http) with context path '/pc-shop'
-2023-06-20 11:25:42,193 INFO [restartedMain] e.p.PcShopApplication [StartupInfoLogger.java:57] Started PcShopApplication in 3.916 seconds (process running for 4.806)
-2023-06-20 11:25:50,783 INFO [http-nio-8090-exec-1] o.a.c.c.C.[.[.[/pc-shop] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-06-20 11:25:50,784 INFO [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
-2023-06-20 11:25:50,786 INFO [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
-2023-06-20 11:46:15,245 INFO [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:650] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-06-20 11:46:15,261 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
-2023-06-20 11:46:15,264 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
-2023-06-20 12:22:15,312 INFO [background-preinit] o.h.v.i.u.Version [Version.java:21] HV000001: Hibernate Validator 8.0.0.Final
-2023-06-20 12:22:15,345 INFO [restartedMain] e.p.PcShopApplication [StartupInfoLogger.java:51] Starting PcShopApplication using Java 17.0.7 with PID 34031 (/Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes started by dantatar in /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop)
-2023-06-20 12:22:15,346 INFO [restartedMain] e.p.PcShopApplication [SpringApplication.java:639] The following 1 profile is active: "dev"
-2023-06-20 12:22:15,387 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-06-20 12:22:15,387 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-06-20 12:22:16,031 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-06-20 12:22:16,093 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 54 ms. Found 5 JPA repository interfaces.
-2023-06-20 12:22:16,694 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8090 (http)
-2023-06-20 12:22:16,703 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8090"]
-2023-06-20 12:22:16,704 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-06-20 12:22:16,705 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.8]
-2023-06-20 12:22:16,771 INFO [restartedMain] o.a.c.c.C.[.[.[/pc-shop] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-06-20 12:22:16,771 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1383 ms
-2023-06-20 12:22:16,803 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2023-06-20 12:22:17,171 INFO [restartedMain] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection conn1: url=jdbc:h2:./data/pcshop user=PCSHOP
-2023-06-20 12:22:17,173 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2023-06-20 12:22:17,185 INFO [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:./data/pcshop'
-2023-06-20 12:22:17,346 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] Flyway Community Edition 9.16.3 by Redgate
-2023-06-20 12:22:17,347 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] See release notes here: https://rd.gt/416ObMi
-2023-06-20 12:22:17,347 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] 
-2023-06-20 12:22:17,363 INFO [restartedMain] o.f.c.i.d.b.BaseDatabaseType [Slf4jLog.java:37] Database: jdbc:h2:./data/pcshop (H2 2.1)
-2023-06-20 12:22:17,432 INFO [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:37] Successfully validated 8 migrations (execution time 00:00.028s)
-2023-06-20 12:22:17,439 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Current version of schema "PUBLIC": 1.0.7
-2023-06-20 12:22:17,439 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Schema "PUBLIC" is up to date. No migration necessary.
-2023-06-20 12:22:17,539 INFO [restartedMain] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-06-20 12:22:17,614 INFO [restartedMain] o.h.Version [Version.java:44] HHH000412: Hibernate ORM core version 6.2.2.Final
-2023-06-20 12:22:17,616 INFO [restartedMain] o.h.c.Environment [Environment.java:191] HHH000406: Using bytecode reflection optimizer
-2023-06-20 12:22:17,823 INFO [restartedMain] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] HHH000021: Bytecode provider name : bytebuddy
-2023-06-20 12:22:18,054 INFO [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-06-20 12:22:18,120 INFO [restartedMain] o.h.o.dialect [DialectFactoryImpl.java:93] HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
-2023-06-20 12:22:18,495 INFO [restartedMain] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] HHH000021: Bytecode provider name : bytebuddy
-2023-06-20 12:22:19,786 INFO [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:51] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-06-20 12:22:19,820 INFO [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-06-20 12:22:20,103 WARN [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:231] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-06-20 12:22:20,232 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page: class path resource [static/index.html]
-2023-06-20 12:22:20,635 INFO [restartedMain] o.s.s.w.DefaultSecurityFilterChain [DefaultSecurityFilterChain.java:54] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@55f7f552, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@51eaa84, org.springframework.security.web.context.SecurityContextHolderFilter@1ffba35a, org.springframework.security.web.header.HeaderWriterFilter@618efd0c, org.springframework.security.web.csrf.CsrfFilter@6cea4a86, org.springframework.security.web.authentication.logout.LogoutFilter@65c3cb53, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@61a08b33, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3e240e4b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1049d102, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@60824007, org.springframework.security.web.access.ExceptionTranslationFilter@73f3c42f, org.springframework.security.web.access.intercept.AuthorizationFilter@7a810839]
-2023-06-20 12:22:20,691 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
-2023-06-20 12:22:20,712 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8090"]
-2023-06-20 12:22:20,725 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8090 (http) with context path '/pc-shop'
-2023-06-20 12:22:20,736 INFO [restartedMain] e.p.PcShopApplication [StartupInfoLogger.java:57] Started PcShopApplication in 5.739 seconds (process running for 6.685)
-2023-06-20 12:22:23,583 INFO [http-nio-8090-exec-1] o.a.c.c.C.[.[.[/pc-shop] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-06-20 12:22:23,584 INFO [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
-2023-06-20 12:22:23,585 INFO [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
-2023-06-20 12:35:16,883 INFO [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:650] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-06-20 12:35:16,886 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
-2023-06-20 12:35:17,068 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
-2023-06-20 12:37:16,083 INFO [background-preinit] o.h.v.i.u.Version [Version.java:21] HV000001: Hibernate Validator 8.0.0.Final
-2023-06-20 12:37:16,132 INFO [restartedMain] e.p.PcShopApplication [StartupInfoLogger.java:51] Starting PcShopApplication using Java 17.0.7 with PID 34221 (/Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes started by dantatar in /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop)
-2023-06-20 12:37:16,134 INFO [restartedMain] e.p.PcShopApplication [SpringApplication.java:639] The following 1 profile is active: "production"
-2023-06-20 12:37:16,180 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-06-20 12:37:16,181 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-06-20 12:37:16,798 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-06-20 12:37:16,859 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 54 ms. Found 5 JPA repository interfaces.
-2023-06-20 12:37:17,444 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 5000 (http)
-2023-06-20 12:37:17,453 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-5000"]
-2023-06-20 12:37:17,453 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-06-20 12:37:17,454 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.8]
-2023-06-20 12:37:17,510 INFO [restartedMain] o.a.c.c.C.[.[.[/pc-shop] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-06-20 12:37:17,511 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1330 ms
-2023-06-20 12:37:17,542 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2023-06-20 12:37:17,551 WARN [restartedMain] o.p.u.PGPropertyUtil [PGPropertyUtil.java:39] JDBC URL invalid port number: ${rds.port}
-2023-06-20 12:37:17,686 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] Flyway Community Edition 9.16.3 by Redgate
-2023-06-20 12:37:17,687 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] See release notes here: https://rd.gt/416ObMi
-2023-06-20 12:37:17,687 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] 
-2023-06-20 12:37:17,698 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2023-06-20 12:37:17,699 WARN [restartedMain] o.p.u.PGPropertyUtil [PGPropertyUtil.java:39] JDBC URL invalid port number: ${rds.port}
-2023-06-20 12:37:17,700 WARN [restartedMain] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:616] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Driver org.postgresql.Driver claims to not accept jdbcUrl, jdbc:postgresql://${rds.hostname}:${rds.port}/${rds.db.name}
-2023-06-20 12:37:17,702 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
-2023-06-20 12:37:17,716 INFO [restartedMain] o.s.b.a.l.ConditionEvaluationReportLogger [ConditionEvaluationReportLogger.java:82] 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2023-06-20 12:37:17,734 ERROR [restartedMain] o.s.b.SpringApplication [SpringApplication.java:823] Application run failed
+2023-06-21 09:35:53,234 ERROR [restartedMain] o.s.b.SpringApplication [SpringApplication.java:823] Application run failed
 org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Driver org.postgresql.Driver claims to not accept jdbcUrl, jdbc:postgresql://${rds.hostname}:${rds.port}/${rds.db.name}
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
@@ -423,18 +219,276 @@ Caused by: java.lang.RuntimeException: Driver org.postgresql.Driver claims to no
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1816)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
 	... 23 common frames omitted
-2023-06-20 14:02:04,435 INFO [background-preinit] o.h.v.i.u.Version [Version.java:21] HV000001: Hibernate Validator 8.0.0.Final
-2023-06-20 14:02:04,474 INFO [restartedMain] e.p.PcShopApplication [StartupInfoLogger.java:51] Starting PcShopApplication using Java 17.0.7 with PID 36074 (/Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes started by dantatar in /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop)
-2023-06-20 14:02:04,475 INFO [restartedMain] e.p.PcShopApplication [SpringApplication.java:639] The following 1 profile is active: "production"
-2023-06-20 14:02:04,516 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-06-20 14:02:04,516 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-06-20 14:02:05,154 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-06-20 14:02:05,217 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 54 ms. Found 5 JPA repository interfaces.
-2023-06-20 14:02:05,788 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 5000 (http)
-2023-06-20 14:02:05,850 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1333 ms
-2023-06-20 14:02:05,883 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2023-06-20 14:02:06,024 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] Flyway Community Edition 9.16.3 by Redgate
-2023-06-20 14:02:06,025 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] See release notes here: https://rd.gt/416ObMi
-2023-06-20 14:02:06,025 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] 
-2023-06-20 14:02:06,034 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2023-06-20 14:02:06,035 WARN [restartedMain] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java:616] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Driver org.postgresql.Driver claims to not accept jdbcUrl, jdbc:postgresql://${rds.hostname}:${rds.port}/${rds.db.name}
+2023-06-21 09:53:55,781 INFO [background-preinit] o.h.v.i.u.Version [Version.java:21] HV000001: Hibernate Validator 8.0.0.Final
+2023-06-21 09:53:55,813 INFO [restartedMain] e.p.PcShopApplication [StartupInfoLogger.java:51] Starting PcShopApplication using Java 17.0.7 with PID 54280 (/Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes started by dantatar in /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop)
+2023-06-21 09:53:55,813 INFO [restartedMain] e.p.PcShopApplication [SpringApplication.java:639] The following 1 profile is active: "@activatedProperties@"
+2023-06-21 09:53:55,850 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-21 09:53:55,850 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-21 09:53:56,309 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-21 09:53:56,385 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 70 ms. Found 5 JPA repository interfaces.
+2023-06-21 09:53:56,806 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-06-21 09:53:56,813 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-06-21 09:53:56,813 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-06-21 09:53:56,813 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-21 09:53:56,861 INFO [restartedMain] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-06-21 09:53:56,861 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1010 ms
+2023-06-21 09:53:56,892 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-06-21 09:53:57,085 INFO [restartedMain] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:6f56b6a1-1398-4f0f-964a-5cbb9cdcb175 user=SA
+2023-06-21 09:53:57,088 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-06-21 09:53:57,099 INFO [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:6f56b6a1-1398-4f0f-964a-5cbb9cdcb175'
+2023-06-21 09:53:57,222 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] Flyway Community Edition 9.16.3 by Redgate
+2023-06-21 09:53:57,222 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] See release notes here: https://rd.gt/416ObMi
+2023-06-21 09:53:57,222 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] 
+2023-06-21 09:53:57,233 INFO [restartedMain] o.f.c.i.d.b.BaseDatabaseType [Slf4jLog.java:37] Database: jdbc:h2:mem:6f56b6a1-1398-4f0f-964a-5cbb9cdcb175 (H2 2.1)
+2023-06-21 09:53:57,275 INFO [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:37] Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+2023-06-21 09:53:57,277 INFO [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:37] Successfully validated 8 migrations (execution time 00:00.011s)
+2023-06-21 09:53:57,281 INFO [restartedMain] o.f.c.i.s.JdbcTableSchemaHistory [Slf4jLog.java:37] Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2023-06-21 09:53:57,297 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Current version of schema "PUBLIC": << Empty Schema >>
+2023-06-21 09:53:57,302 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Migrating schema "PUBLIC" to version "1.0.0 - create user table"
+2023-06-21 09:53:57,313 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Migrating schema "PUBLIC" to version "1.0.1 - create order table"
+2023-06-21 09:53:57,321 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Migrating schema "PUBLIC" to version "1.0.2 - create item table"
+2023-06-21 09:53:57,327 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Migrating schema "PUBLIC" to version "1.0.3 - create payment table"
+2023-06-21 09:53:57,332 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Migrating schema "PUBLIC" to version "1.0.4 - create order line table"
+2023-06-21 09:53:57,339 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Migrating schema "PUBLIC" to version "1.0.5 - create category table"
+2023-06-21 09:53:57,345 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Migrating schema "PUBLIC" to version "1.0.6 - create item category table"
+2023-06-21 09:53:57,361 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Migrating schema "PUBLIC" to version "1.0.7 - insert items and categories"
+2023-06-21 09:53:57,405 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Successfully applied 8 migrations to schema "PUBLIC", now at version v1.0.7 (execution time 00:00.109s)
+2023-06-21 09:53:57,480 INFO [restartedMain] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-21 09:53:57,522 INFO [restartedMain] o.h.Version [Version.java:44] HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-06-21 09:53:57,524 INFO [restartedMain] o.h.c.Environment [Environment.java:191] HHH000406: Using bytecode reflection optimizer
+2023-06-21 09:53:57,642 INFO [restartedMain] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] HHH000021: Bytecode provider name : bytebuddy
+2023-06-21 09:53:57,753 INFO [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-21 09:53:57,794 INFO [restartedMain] o.h.o.dialect [DialectFactoryImpl.java:93] HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
+2023-06-21 09:53:58,017 INFO [restartedMain] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] HHH000021: Bytecode provider name : bytebuddy
+2023-06-21 09:53:58,631 INFO [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:51] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-21 09:53:58,633 INFO [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-21 09:53:58,821 WARN [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:231] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-21 09:53:58,946 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page: class path resource [static/index.html]
+2023-06-21 09:53:59,139 WARN [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration [UserDetailsServiceAutoConfiguration.java:87] 
+
+Using generated security password: 8a847840-78e0-4d3d-b1fa-f42fe8e884d2
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-06-21 09:53:59,241 INFO [restartedMain] o.s.s.w.DefaultSecurityFilterChain [DefaultSecurityFilterChain.java:54] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@79915ac8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@55030fc1, org.springframework.security.web.context.SecurityContextHolderFilter@1a0e5e6e, org.springframework.security.web.header.HeaderWriterFilter@1d323f4a, org.springframework.security.web.csrf.CsrfFilter@544a2c88, org.springframework.security.web.authentication.logout.LogoutFilter@c2a7af2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@49a5adb2, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@60f65794, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5e8ae53, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6c581cdf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4169b7f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@28749bb7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2faf46cf, org.springframework.security.web.access.ExceptionTranslationFilter@59b15b94, org.springframework.security.web.access.intercept.AuthorizationFilter@680d29f5]
+2023-06-21 09:53:59,281 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
+2023-06-21 09:53:59,299 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8080"]
+2023-06-21 09:53:59,313 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-21 09:53:59,324 INFO [restartedMain] e.p.PcShopApplication [StartupInfoLogger.java:57] Started PcShopApplication in 3.751 seconds (process running for 4.593)
+2023-06-21 09:57:24,699 INFO [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [LocalDevToolsAutoConfiguration.java:211] Restarting due to 38 class path changes (0 additions, 20 deletions, 18 modifications)
+2023-06-21 09:57:24,712 INFO [Thread-5] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8080"]
+2023-06-21 09:57:24,712 INFO [Thread-5] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2023-06-21 09:57:24,715 INFO [Thread-5] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8080"]
+2023-06-21 09:57:24,717 INFO [Thread-5] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8080"]
+2023-06-21 09:57:24,719 INFO [Thread-5] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-21 09:57:24,929 WARN [Thread-5] o.s.b.f.s.DisposableBeanAdapter [DisposableBeanAdapter.java:211] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-06-21 09:57:24,931 INFO [Thread-5] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-06-21 09:57:24,934 INFO [Thread-5] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-06-21 09:57:25,027 INFO [restartedMain] e.p.PcShopApplication [StartupInfoLogger.java:51] Starting PcShopApplication using Java 17.0.7 with PID 54280 (/Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes started by dantatar in /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop)
+2023-06-21 09:57:25,028 INFO [restartedMain] e.p.PcShopApplication [SpringApplication.java:639] The following 1 profile is active: "dev"
+2023-06-21 09:57:25,246 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-21 09:57:25,247 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2023-06-21 09:57:25,345 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8090 (http)
+2023-06-21 09:57:25,345 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8090"]
+2023-06-21 09:57:25,346 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-06-21 09:57:25,346 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-21 09:57:25,363 INFO [restartedMain] o.a.c.c.C.[.[.[/pc-shop] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-06-21 09:57:25,364 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 333 ms
+2023-06-21 09:57:25,379 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-2 - Starting...
+2023-06-21 09:57:25,654 INFO [restartedMain] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-2 - Added connection conn11: url=jdbc:h2:./data/pcshop user=PCSHOP
+2023-06-21 09:57:25,654 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-2 - Start completed.
+2023-06-21 09:57:25,655 INFO [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:./data/pcshop'
+2023-06-21 09:57:25,675 INFO [restartedMain] o.f.c.i.d.b.BaseDatabaseType [Slf4jLog.java:37] Database: jdbc:h2:./data/pcshop (H2 2.1)
+2023-06-21 09:57:25,684 INFO [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:37] Successfully validated 8 migrations (execution time 00:00.004s)
+2023-06-21 09:57:25,686 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Current version of schema "PUBLIC": 1.0.7
+2023-06-21 09:57:25,686 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Schema "PUBLIC" is up to date. No migration necessary.
+2023-06-21 09:57:25,700 INFO [restartedMain] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-21 09:57:25,706 INFO [restartedMain] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] HHH000021: Bytecode provider name : bytebuddy
+2023-06-21 09:57:25,706 INFO [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-21 09:57:25,708 INFO [restartedMain] o.h.o.dialect [DialectFactoryImpl.java:93] HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
+2023-06-21 09:57:25,716 INFO [restartedMain] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] HHH000021: Bytecode provider name : bytebuddy
+2023-06-21 09:57:25,743 INFO [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:51] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-21 09:57:25,760 INFO [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-21 09:57:25,777 WARN [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:231] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-21 09:57:25,811 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page: class path resource [static/index.html]
+2023-06-21 09:57:25,952 INFO [restartedMain] o.s.s.w.DefaultSecurityFilterChain [DefaultSecurityFilterChain.java:54] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@488c6661, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@77942e31, org.springframework.security.web.context.SecurityContextHolderFilter@245fc41a, org.springframework.security.web.header.HeaderWriterFilter@733e4876, org.springframework.security.web.csrf.CsrfFilter@6adbba4e, org.springframework.security.web.authentication.logout.LogoutFilter@2ba844bf, org.springframework.security.oauth2.server.resource.web.authentication.BearerTokenAuthenticationFilter@5303a38d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@13e11315, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@70f1aa10, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@78e39b23, org.springframework.security.web.access.ExceptionTranslationFilter@75f2c031, org.springframework.security.web.access.intercept.AuthorizationFilter@4d160e47]
+2023-06-21 09:57:25,965 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
+2023-06-21 09:57:25,975 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8090"]
+2023-06-21 09:57:25,977 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8090 (http) with context path '/pc-shop'
+2023-06-21 09:57:25,981 INFO [restartedMain] e.p.PcShopApplication [StartupInfoLogger.java:57] Started PcShopApplication in 0.989 seconds (process running for 211.251)
+2023-06-21 09:57:25,985 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:58] Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   OAuth2ResourceServerJwtConfiguration.JwtDecoderConfiguration#jwtDecoderByJwkKeySetUri matched:
+      - @ConditionalOnProperty (spring.security.oauth2.resourceserver.jwt.jwk-set-uri) matched (OnPropertyCondition)
+
+   OAuth2ResourceServerJwtConfiguration.OAuth2SecurityFilterChainConfiguration#jwtSecurityFilterChain matched:
+      - @ConditionalOnBean (types: org.springframework.security.oauth2.jwt.JwtDecoder; SearchStrategy: all) found bean 'jwtDecoderByJwkKeySetUri' (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   OAuth2ResourceServerOpaqueTokenConfiguration.OAuth2SecurityFilterChainConfiguration:
+      Did not match:
+         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.web.SecurityFilterChain' jwtSecurityFilterChain; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   SpringBootWebSecurityConfiguration.SecurityFilterChainConfiguration:
+      Did not match:
+         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.web.SecurityFilterChain' jwtSecurityFilterChain; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   UserDetailsServiceAutoConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationManager,org.springframework.security.authentication.AuthenticationProvider,org.springframework.security.core.userdetails.UserDetailsService,org.springframework.security.authentication.AuthenticationManagerResolver,org.springframework.security.oauth2.jwt.JwtDecoder,org.springframework.security.oauth2.server.resource.introspection.OpaqueTokenIntrospector,org.springframework.security.oauth2.client.registration.ClientRegistrationRepository,org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository; SearchStrategy: all) found beans of type 'org.springframework.security.oauth2.jwt.JwtDecoder' jwtDecoderByJwkKeySetUri (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2023-06-21 09:57:27,379 INFO [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [LocalDevToolsAutoConfiguration.java:211] Restarting due to 21 class path changes (21 additions, 0 deletions, 0 modifications)
+2023-06-21 09:57:27,381 INFO [Thread-7] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8090"]
+2023-06-21 09:57:27,382 INFO [Thread-7] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2023-06-21 09:57:27,383 INFO [Thread-7] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8090"]
+2023-06-21 09:57:27,384 INFO [Thread-7] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8090"]
+2023-06-21 09:57:27,386 INFO [Thread-7] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-21 09:57:27,387 INFO [Thread-7] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-2 - Shutdown initiated...
+2023-06-21 09:57:27,567 INFO [Thread-7] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-2 - Shutdown completed.
+2023-06-21 09:57:27,641 INFO [restartedMain] e.p.PcShopApplication [StartupInfoLogger.java:51] Starting PcShopApplication using Java 17.0.7 with PID 54280 (/Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes started by dantatar in /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop)
+2023-06-21 09:57:27,642 INFO [restartedMain] e.p.PcShopApplication [SpringApplication.java:639] The following 1 profile is active: "dev"
+2023-06-21 09:57:27,791 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-21 09:57:27,809 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 17 ms. Found 5 JPA repository interfaces.
+2023-06-21 09:57:27,917 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8090 (http)
+2023-06-21 09:57:27,918 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8090"]
+2023-06-21 09:57:27,918 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-06-21 09:57:27,918 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-21 09:57:27,932 INFO [restartedMain] o.a.c.c.C.[.[.[/pc-shop] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-06-21 09:57:27,932 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 288 ms
+2023-06-21 09:57:27,943 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-3 - Starting...
+2023-06-21 09:57:27,988 INFO [restartedMain] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-3 - Added connection conn22: url=jdbc:h2:./data/pcshop user=PCSHOP
+2023-06-21 09:57:27,989 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-3 - Start completed.
+2023-06-21 09:57:27,990 INFO [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:./data/pcshop'
+2023-06-21 09:57:28,014 INFO [restartedMain] o.f.c.i.d.b.BaseDatabaseType [Slf4jLog.java:37] Database: jdbc:h2:./data/pcshop (H2 2.1)
+2023-06-21 09:57:28,023 INFO [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:37] Successfully validated 8 migrations (execution time 00:00.005s)
+2023-06-21 09:57:28,025 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Current version of schema "PUBLIC": 1.0.7
+2023-06-21 09:57:28,025 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Schema "PUBLIC" is up to date. No migration necessary.
+2023-06-21 09:57:28,043 INFO [restartedMain] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-21 09:57:28,049 INFO [restartedMain] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] HHH000021: Bytecode provider name : bytebuddy
+2023-06-21 09:57:28,050 INFO [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-21 09:57:28,052 INFO [restartedMain] o.h.o.dialect [DialectFactoryImpl.java:93] HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
+2023-06-21 09:57:28,080 INFO [restartedMain] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] HHH000021: Bytecode provider name : bytebuddy
+2023-06-21 09:57:28,161 INFO [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:51] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-21 09:57:28,163 INFO [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-21 09:57:28,216 WARN [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:231] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-21 09:57:28,227 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page: class path resource [static/index.html]
+2023-06-21 09:57:28,298 INFO [restartedMain] o.s.s.w.DefaultSecurityFilterChain [DefaultSecurityFilterChain.java:54] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@cf7b9f8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4a57ee30, org.springframework.security.web.context.SecurityContextHolderFilter@5d6c765a, org.springframework.security.web.header.HeaderWriterFilter@134505ad, org.springframework.security.web.authentication.logout.LogoutFilter@256490f2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@60f91354, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2057fab4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@777de948, org.springframework.security.web.access.ExceptionTranslationFilter@49313be4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@73c6699a]
+2023-06-21 09:57:28,410 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
+2023-06-21 09:57:28,419 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8090"]
+2023-06-21 09:57:28,422 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8090 (http) with context path '/pc-shop'
+2023-06-21 09:57:28,427 INFO [restartedMain] e.p.PcShopApplication [StartupInfoLogger.java:57] Started PcShopApplication in 0.81 seconds (process running for 213.697)
+2023-06-21 09:57:28,429 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:58] Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   OAuth2ResourceServerJwtConfiguration.OAuth2SecurityFilterChainConfiguration:
+      Did not match:
+         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.web.SecurityFilterChain' filterChain; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) found beans named springSecurityFilterChain (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2023-06-21 09:57:33,171 INFO [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-21 09:57:33,172 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-3 - Shutdown initiated...
+2023-06-21 09:57:33,172 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-3 - Shutdown completed.
+2023-06-21 09:57:38,603 INFO [background-preinit] o.h.v.i.u.Version [Version.java:21] HV000001: Hibernate Validator 8.0.0.Final
+2023-06-21 09:57:38,635 INFO [restartedMain] e.p.PcShopApplication [StartupInfoLogger.java:51] Starting PcShopApplication using Java 17.0.7 with PID 54336 (/Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop/target/classes started by dantatar in /Users/dantatar/ditar/dev/SynologyDrive/AAN/school 2023/PROJINT/Projets/pc-shop)
+2023-06-21 09:57:38,635 INFO [restartedMain] e.p.PcShopApplication [SpringApplication.java:639] The following 1 profile is active: "dev"
+2023-06-21 09:57:38,668 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-21 09:57:38,668 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-21 09:57:39,173 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-21 09:57:39,216 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 38 ms. Found 5 JPA repository interfaces.
+2023-06-21 09:57:39,643 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8090 (http)
+2023-06-21 09:57:39,649 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8090"]
+2023-06-21 09:57:39,650 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-06-21 09:57:39,650 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-06-21 09:57:39,685 INFO [restartedMain] o.a.c.c.C.[.[.[/pc-shop] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-06-21 09:57:39,685 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1016 ms
+2023-06-21 09:57:39,704 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-06-21 09:57:39,974 INFO [restartedMain] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection conn1: url=jdbc:h2:./data/pcshop user=PCSHOP
+2023-06-21 09:57:39,976 INFO [restartedMain] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-06-21 09:57:39,987 INFO [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration [H2ConsoleAutoConfiguration.java:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:./data/pcshop'
+2023-06-21 09:57:40,091 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] Flyway Community Edition 9.16.3 by Redgate
+2023-06-21 09:57:40,091 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] See release notes here: https://rd.gt/416ObMi
+2023-06-21 09:57:40,091 INFO [restartedMain] o.f.c.i.l.VersionPrinter [Slf4jLog.java:37] 
+2023-06-21 09:57:40,101 INFO [restartedMain] o.f.c.i.d.b.BaseDatabaseType [Slf4jLog.java:37] Database: jdbc:h2:./data/pcshop (H2 2.1)
+2023-06-21 09:57:40,145 INFO [restartedMain] o.f.c.i.c.DbValidate [Slf4jLog.java:37] Successfully validated 8 migrations (execution time 00:00.017s)
+2023-06-21 09:57:40,150 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Current version of schema "PUBLIC": 1.0.7
+2023-06-21 09:57:40,150 INFO [restartedMain] o.f.c.i.c.DbMigrate [Slf4jLog.java:37] Schema "PUBLIC" is up to date. No migration necessary.
+2023-06-21 09:57:40,195 INFO [restartedMain] o.h.j.i.u.LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-21 09:57:40,237 INFO [restartedMain] o.h.Version [Version.java:44] HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-06-21 09:57:40,239 INFO [restartedMain] o.h.c.Environment [Environment.java:191] HHH000406: Using bytecode reflection optimizer
+2023-06-21 09:57:40,344 INFO [restartedMain] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] HHH000021: Bytecode provider name : bytebuddy
+2023-06-21 09:57:40,437 INFO [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo [SpringPersistenceUnitInfo.java:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-06-21 09:57:40,472 INFO [restartedMain] o.h.o.dialect [DialectFactoryImpl.java:93] HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
+2023-06-21 09:57:40,658 INFO [restartedMain] o.h.b.i.BytecodeProviderInitiator [BytecodeProviderInitiator.java:53] HHH000021: Bytecode provider name : bytebuddy
+2023-06-21 09:57:41,219 INFO [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator [JtaPlatformInitiator.java:51] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-21 09:57:41,238 INFO [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-21 09:57:41,430 WARN [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [JpaBaseConfiguration.java:231] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-21 09:57:41,509 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page: class path resource [static/index.html]
+2023-06-21 09:57:41,656 INFO [restartedMain] o.s.s.w.DefaultSecurityFilterChain [DefaultSecurityFilterChain.java:54] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5e6fed93, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5566f094, org.springframework.security.web.context.SecurityContextHolderFilter@7d30be7b, org.springframework.security.web.header.HeaderWriterFilter@631bccdf, org.springframework.security.web.authentication.logout.LogoutFilter@2ab957aa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d99c948, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4c104c72, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@698025a2, org.springframework.security.web.access.ExceptionTranslationFilter@811baab, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@541bbd74]
+2023-06-21 09:57:41,894 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
+2023-06-21 09:57:41,909 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8090"]
+2023-06-21 09:57:41,922 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8090 (http) with context path '/pc-shop'
+2023-06-21 09:57:41,932 INFO [restartedMain] e.p.PcShopApplication [StartupInfoLogger.java:57] Started PcShopApplication in 3.598 seconds (process running for 4.252)
+2023-06-21 09:59:04,596 INFO [http-nio-8090-exec-1] o.a.c.c.C.[.[.[/pc-shop] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-21 09:59:04,597 INFO [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
+2023-06-21 09:59:04,598 INFO [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
