@@ -1,0 +1,11 @@
+pipelines:
+  default:
+    - step:
+        name: Build and Test
+        image: adoptopenjdk:17-jdk-hotspot
+        caches:
+          - maven
+        script:
+          - apt-get update && apt-get install -y maven
+          - mvn -B package --file pom.xml
+          - mvn test
