@@ -38,4 +38,8 @@ public class Item {
     @NotEmpty(message = "cannot be null")
     @ManyToMany
     Set<Category> categories;
+
+    @Version
+    @Column(name = "VERSION")
+    private Integer version;
 }

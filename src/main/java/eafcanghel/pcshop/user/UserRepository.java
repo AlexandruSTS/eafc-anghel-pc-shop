@@ -1,6 +1,0 @@
-//package eafcanghel.pcshop.user;
-//
-//import org.springframework.data.jpa.repository.JpaRepository;
-//
-//public interface UserRepository extends JpaRepository<PcShopUser, Integer> {
-//}
